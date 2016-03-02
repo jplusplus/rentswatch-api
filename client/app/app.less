@@ -1,0 +1,50 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import 'bootstrap/less/bootstrap.less';
+@import 'font-awesome/less/font-awesome.less';
+
+.transform(@transform) {
+          transform: @transform;
+  -webkit-transform: @transform;
+      -ms-transform: @transform; // IE9 only
+       -o-transform: @transform;
+}
+
+@icon-font-path: '/bower_components/bootstrap/fonts/';
+@fa-font-path: '/bower_components/font-awesome/fonts';
+
+@font-family-base: 'Open Sans', @font-family-sans-serif;
+@font-family-sans-serif: sans-serif;
+
+@body-bg: #3e3a5a;
+@text-color:white;
+
+@brand-primary: #d35f5f;
+@link-color: @brand-primary;
+
+@input-bg: darken(@body-bg, 14);
+@input-border: darken(@body-bg, 21);
+@input-color: contrast(@body-bg);
+@input-border-focus: #e5b82e;
+@input-bg-disabled: lighten(@input-bg, 20);
+
+@input-group-addon-bg: @input-border;
+@input-group-addon-border-color: @input-border;
+
+@border-radius-base:0;
+@border-radius-small:0;
+@border-radius-large:2px;
+
+@grid-gutter-width: 10px;
+
+@navbar-default-bg: darken(@body-bg, 7);
+@navbar-default-link-color: contrast(@body-bg);
+@navbar-default-link-active-color: contrast(@body-bg);
+
+body {
+  background:url("../assets/images/buildings.png") left bottom fixed no-repeat @body-bg;
+  background-size:100% auto;
+}
+
+// injector
+@import 'main/main.less';
+// endinjector
