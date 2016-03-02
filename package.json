@@ -16,7 +16,7 @@
     "express-session": "~1.0.2",
     "jade": "~1.2.0",
     "lodash": "~2.4.1",
-    "mathjs": "^2.5.0",
+    "mathjs": "^2.7.0",
     "memjs": "^0.8.7",
     "memory-cache": "^0.1.4",
     "method-override": "~1.0.0",

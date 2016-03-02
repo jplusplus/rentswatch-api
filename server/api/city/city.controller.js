@@ -28,7 +28,10 @@ exports.index = function(req, res) {
 exports.show = function(req, res) {
   var city = cities.get({ name: req.params.name });
   if(city) {
-    res.json(200, city);    
+    city.getStats().then(function(stats) {
+      city = _.extend( _.cloneDeep(city), stats);
+      res.json(200, city);
+    }).fail( response.handleError(res, 500) );
   } else {
     response.handleError(res, 404)('Not found');
   }

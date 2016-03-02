@@ -30,7 +30,7 @@ var all = module.exports.all = function() {
   var deferred = Q.defer();
   // Build a query to get every trustable ads
   var query = [
-    'SELECT total_rent, living_space, latitude, longitude',
+    'SELECT total_rent, living_space, latitude, longitude, created_at',
     'FROM ad',
     'WHERE total_rent IS NOT NULL',
     'AND total_rent < ' + MAX_TOTAL_RENT,
@@ -60,7 +60,7 @@ var center = module.exports.center = function(lat, lng, distance) {
   var deferred = Q.defer();
   // Build a query to get every trustable ads
   var query = [
-    'SELECT total_rent, living_space, latitude, longitude',
+    'SELECT total_rent, living_space, latitude, longitude, created_at',
     'FROM ad',
     'WHERE total_rent IS NOT NULL',
     'AND total_rent < ' + MAX_TOTAL_RENT,
