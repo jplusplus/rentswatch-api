@@ -7,7 +7,7 @@ var response = require("../response"),
 
 var cities = require('./city.collection');
 
-var INDEX_EXCLUDE = ['decade'];
+var INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
 // Get list of cities
 exports.index = function(req, res) {
