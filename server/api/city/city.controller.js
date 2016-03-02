@@ -7,12 +7,20 @@ var response = require("../response"),
 
 var cities = require('./city.collection');
 
+var INDEX_EXCLUDE = ['decade'];
+
 // Get list of cities
 exports.index = function(req, res) {
   // Build paginator parameters
   var params = paginator.offset(req);
+  // Maps the cities array to remove some properties
+  res.json(200, _.map(cities.toArray(), function(city) {
+    city = _.cloneDeep(city);
+    // Delete some properties
+    INDEX_EXCLUDE.forEach(function(k) { delete city[k] });
+    return city;
   // Return a slice of the collections
-  res.json(200, cities.toArray().slice(params.offset, params.offset + params.limit) );
+  }).slice(params.offset, params.offset + params.limit) );
 };
 
 // Get a city by its name
