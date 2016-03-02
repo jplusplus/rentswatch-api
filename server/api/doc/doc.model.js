@@ -1,5 +1,6 @@
 var sqldb = require('../../sqldb'),
         _ = require('lodash'),
+     math = require('mathjs'),
         Q = require('q');
 
 const DEFAULT_CENTER_DISTANCE = 5;
@@ -7,7 +8,7 @@ const MAX_TOTAL_RENT = module.exports.MAX_TOTAL_RENT = 3000;
 const MAX_LIVING_SPACE = module.exports.MAX_LIVING_SPACE = 200;
 
 
-var extractSlope = module.exports.extractSlope = function(rows) {
+var getSlope = module.exports.getSlope = function(rows) {
   // Pluck two values at a time
   var values = _.reduce(rows, function(res, row) {
     res.x.push(row.total_rent);
@@ -23,6 +24,61 @@ var extractSlope = module.exports.extractSlope = function(rows) {
   }
 
   return sum_xy / sum_xx;
+};
+
+var getStats = module.exports.getStats = function(rows, byMonth) {
+  // Help to extract a uniq key by month for the given row
+  var getMonthKey = function(row) {
+    var date  = new Date(row.created_at);
+    var month = "0" + (date.getMonth() + 1)
+    return date.getFullYear() + '-' + month.substr(month.length - 2)
+  };
+  // Colect full statistics about this row
+  var stats = {
+    // Extract number of documents
+    total: rows.length,
+    // Extract the slope for the given rows
+    avgPricePerSqm: 1/getSlope(rows),
+    // Timestamp of the last snapshot
+    lastSnapshot:  ~~(Date.now()/1e3),
+    // Caculate std for this area
+    stdErr: math.std( _.map(rows, 'total_rent') ),
+  };
+  // Create an array containg stats aggregated by month
+  if(byMonth) {
+    // Groups rows by month
+    stats.months = _.chain(rows)
+      // Use a custom function to obtain the key
+      .groupBy(getMonthKey)
+      // Filter to month with more than 5 rows
+      .filter(function(rows) { return rows.length >= 5; })
+      // Colect full statistics grouped on every month
+      .map(function(rows) {
+        return _.extend(
+          // Create the key with the first rows (they all have the same)
+          { month: getMonthKey(rows[0]) },
+          // Merge objects
+          getStats(rows, false)
+        );
+      })
+      // Sort by month key
+      .sortBy('month').value();
+  }
+  // Return stats object
+  return stats;
+};
+
+
+// Filter rows in the given radius according to a center
+var inRadius = module.exports.inRadius = function(rows, latitude, longitude, radius) {
+  // Convert KM radius in degree
+  var deg = radius * .01;
+  return _.filter(rows, function(row) {
+    // Just using some Pythagorian intersection
+    var a = longitude - row.longitude,
+        b = latitude - row.latitude;
+    return Math.pow(a, 2) + Math.pow(b, 2) <= Math.pow(deg, 2)
+  });
 };
 
 // Gets all ads
@@ -174,10 +230,10 @@ var centeredDecades = module.exports.centeredDecades = function(lat, lng, distan
 
 var losRegression = module.exports.losRegression = function() {
   // Return the promise
-  return all().then(extractSlope)
+  return all().then(getSlope)
 };
 
 var centeredLosRegression = module.exports.losRegression = function(lat, lng, distance) {
   // Return the promise
-  return center(lat, lng, distance).then(extractSlope)
+  return center(lat, lng, distance).then(getSlope)
 };

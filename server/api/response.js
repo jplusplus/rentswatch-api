@@ -13,7 +13,11 @@ module.exports.validationError = function(res, statusCode) {
 module.exports.handleError = function(res, statusCode) {
   statusCode = statusCode || 500;
   return function(err) {
-    res.send(statusCode, err);
+    if( err instanceof Error) {
+      res.send(statusCode, err.message);
+    } else {
+      res.send(statusCode, err);
+    }
   };
 }
 

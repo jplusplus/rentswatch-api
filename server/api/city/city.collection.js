@@ -27,48 +27,24 @@ var bind = function(fn, obj) {
 }
 
 var getStats = function() {
-  // Help to extract a uniq key by month for the given row
-  var getMonthKey = function(row) {
-    var date  = new Date(row.created_at);
-    var month = "0" + (date.getMonth() + 1)
-    return date.getFullYear() + '-' + month.substr(month.length - 2)
-  };
-  // Create statistic for the given rows set
-  var getFullStats = function(rows) {
-    return {
-      // Extract number of documents
-      total: rows.length,
-      // Extract the slope for the given rows
-      avgPricePerSqm: 1/docs.extractSlope(rows),
-      // Timestamp of the last snapshot
-      lastSnapshot:  ~~(Date.now()/1e3),
-      // Caculate std for this area
-      stdErr: math.std( _.map(rows, 'total_rent') ),
-    };
-  };
   var deferred = Q.defer();
   var city = this;
   // Extracting slope...
   docs.center(city.latitude, city.longitude, city.radius).then(function(rows) {
     // Colect full statistics about this row
-    var stats = getFullStats(rows);
-    // Groups rows by month
-    stats.months = _.chain(rows)
-      // Use a custom function to obtain the key
-      .groupBy(getMonthKey)
-      // Filter to month with more than 5 rows
-      .filter(function(rows) { return rows.length >= 5; })
-      // Colect full statistics grouped on every month
-      .map(function(rows) {
-        return _.extend(
-          // Create the key with the first rows (they all have the same)
-          { month: getMonthKey(rows[0]) },
-          // Merge objects
-          getFullStats(rows)
+    var stats = docs.getStats(rows, true);
+    // Does the city have neighborhoods?
+    if( (city.neighborhoods || []).length ) {
+      // Get stats for every neighborhood
+      city.neighborhoods.forEach(function(nh) {
+        var filteredRows = docs.inRadius(rows, nh.latitude, nh.longitude, nh.radius);
+        // Extend the nh object
+        _.extend(nh,
+          // With statistics about the neighborhood (without months details)
+          docs.getStats(filteredRows, false)
         );
-      })
-      // Sort by month key
-      .sortBy('month').value();    
+      });
+    }
     // Resolve the promise
     deferred.resolve(stats);
   // Request failed
