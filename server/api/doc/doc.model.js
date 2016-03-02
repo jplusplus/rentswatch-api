@@ -113,6 +113,33 @@ var decades = module.exports.decades = function() {
 };
 
 
+var centeredCount = module.exports.centeredCount = function(lat, lng, distance) {
+  var deferred = Q.defer();
+  // Convert KM radius in degree
+  var deg = (distance || DEFAULT_CENTER_DISTANCE) * .01;
+  // Build a query to get every trustable ads
+  var query = [
+    'SELECT COUNT(id) as "count"',
+    'FROM ad',
+    'WHERE total_rent IS NOT NULL',
+    'AND total_rent < ' + MAX_TOTAL_RENT,
+    'AND living_space < ' + MAX_LIVING_SPACE,
+    'AND POWER(' + lng + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)'
+  ].join("\n");
+  // For better performance we use a poolConnection
+  sqldb.mysql.getConnection(function(err, connection) {
+    // We use the given connection
+    connection.query(query, function(err, rows, fields) {
+      if(err || !rows.length) deferred.reject(err);
+      else deferred.resolve(rows[0].count);
+      // And done with the connection.
+      connection.release();
+    });
+  });
+  // Return the promise
+  return deferred.promise;
+};
+
 // Count rents by decades around a point
 var centeredDecades = module.exports.centeredDecades = function(lat, lng, distance) {
   var deferred = Q.defer();

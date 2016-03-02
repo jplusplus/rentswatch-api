@@ -28,18 +28,14 @@ var bind = function(fn, obj) {
 var getStats = function() {
   var deferred = Q.defer();
   var city = this;
-  // Get center according to the request
-  docs.centeredDecades(city.latitude, city.longitude, city.radius).then(function(decades) {
-    var stats = { decades: decades };
+  // Extract number of documents
+  docs.centeredCount(city.latitude, city.longitude, city.radius).then(function(count) {
+    var stats = { total: count };
     // Extracting slope...
     docs.losRegression(city.latitude, city.longitude, city.radius).then(function(slope) {
       stats.slope = slope;
       // Timestamp of the last snapshot
       stats.lastSnapshot =  ~~(Date.now()/1e3)
-      // Calculates the total number of docs
-      stats.total = _.reduce( _.pluck(decades, 'count'), function(sum, c) {
-        return sum + c;
-      }, 0);
       // Resolve the promise
       deferred.resolve(stats);
     });
@@ -64,7 +60,7 @@ for(var i in cities) {
     // Extend the current city object with the cached data
     _.extend(city, require(filename));
   } catch (e) {
-    console.error(">> The city %s doesnt have valid cached data.", city.name);
+    // console.error(">> The city %s doesnt have valid cached data.", city.name);
   }
   // Add
   // Finaly, add the city to the collection
