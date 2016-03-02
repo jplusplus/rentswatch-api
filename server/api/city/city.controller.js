@@ -17,5 +17,10 @@ exports.index = function(req, res) {
 
 // Get a city by its name
 exports.show = function(req, res) {
-  res.json(200,  {});
+  var city = cities.get({ name: req.params.name });
+  if(city) {
+    res.json(200, city);
+  } else {
+    response.handleError(res, 404)('Not found');
+  }
 };
