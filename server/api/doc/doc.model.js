@@ -27,6 +27,47 @@ var getSlope = module.exports.getSlope = function(rows) {
   return sum_xy / sum_xx;
 };
 
+var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
+  // Convert degree in radian
+  var rad = (r)=> r * (Math.PI/180);
+  // To save rows bounds
+  var nlat = null, slat = null,
+      wlon = null, elon = null;
+  // To save every average prices
+  var avgPricesPerSqm = [];
+  // Iterator over rows to collect bound
+  rows.forEach(function(row) {
+    // Maximum latitude
+    nlat = nlat === null ? row.latitude : Math.max(nlat, row.latitude);
+    // Minimum latitude
+    slat = slat === null ? row.latitude : Math.min(slat, row.latitude);
+    // Maximum longitude
+    elon = elon === null ? row.longitude : Math.max(elon, row.longitude);
+    // Minimum longitude
+    wlon = wlon === null ? row.longitude : Math.min(wlon, row.longitude);
+  });
+  // Creates 1km2 range
+  for(var dslat = slat; dslat <= nlat;) {
+    var dnlat = 1/110.574;
+    for(var dwlon = wlon; dwlon <= elon;) {
+      var delon = 1/(111.320 * Math.cos(rad(dslat)));
+      // Collect rows for this slot
+      var slotRows = _.filter(rows, function(row) {
+        return row.latitude > dslat  && row.latitude  < dslat + dnlat &&
+               row.longitude > dwlon && row.longitude < dwlon + delon;
+      });
+      // At leat 5 docs
+      if( slotRows.length >= 5) {
+        avgPricesPerSqm.push( 1/getSlope(slotRows) );
+      }
+      dwlon += delon;
+    }
+    dslat += dnlat;
+  }
+  // At last, we calculate the variance of every average prices
+  return math.var(avgPricesPerSqm);
+};
+
 var getStats = module.exports.getStats = function(rows, byMonth) {
   // Help to extract a uniq key by month for the given row
   var getMonthKey = function(row) {
@@ -47,6 +88,8 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
   };
   // Create an array containg stats aggregated by month
   if(byMonth) {
+    // Subsets with month must inclue an inequality index
+    stats.inequalityIndex = getInequalityIndex(rows);
     // Groups rows by month
     stats.months = _.chain(rows)
       // Use a custom function to obtain the key
