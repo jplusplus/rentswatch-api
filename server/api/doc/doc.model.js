@@ -72,21 +72,21 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
 
 // Filter rows in the given radius according to a center
 var inRadius = module.exports.inRadius = function(rows, latitude, longitude, radius) {
-  // Convert KM radius in degree
+  // Convert degree in radian
   var rad = (r)=> r * (Math.PI/180);
-
   // Compute square bounds
-  nlat = latitude  + city_radius / 110.574
-  slat = latitude  - city_radius / 110.574
-  wlon = longitude - city_radius / (111.320 * Math.cos(rad(latitude)))
-  elon = longitude + city_radius / (111.320 * Math.cos(rad(latitude)))
+  var nlat = latitude  + radius / 110.574;
+  var slat = latitude  - radius / 110.574;
+  var wlon = longitude - radius / (111.320 * Math.cos(rad(latitude)));
+  var elon = longitude + radius / (111.320 * Math.cos(rad(latitude)));
 
   return _.chain(rows).filter(function(row) {
     // Only rows in the square
-    return nlat > row.latitude && slat < row.latitude && wlon > row.longitude && elon < row.longitude;
+    return nlat > row.latitude && slat < row.latitude && wlon < row.longitude && elon > row.longitude;
   }).filter(function(row) {
-    return haversine(row, { latitude: latitude, longitude: longitude }) < radius * 1e3
-  })
+    // Use haversine to calculate the distance between the points
+    return haversine(row, { latitude: latitude, longitude: longitude }) < radius * 1e3;
+  }).value();
 };
 
 // Gets all ads
@@ -98,9 +98,7 @@ var all = module.exports.all = function() {
     'FROM ad',
     'WHERE total_rent IS NOT NULL',
     'AND total_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
-    //'AND price_per_sqm < 70',
-    // 'AND price_per_sqm > 3',
+    'AND living_space < ' + MAX_LIVING_SPACE
   ].join("\n");
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
@@ -117,11 +115,18 @@ var all = module.exports.all = function() {
 };
 
 // Gets all ads in a given radius
-var center = module.exports.center = function(lat, lng, distance) {
-  // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
+var center = module.exports.center = function(lat, lon, radius) {
   // Return the promise
   var deferred = Q.defer();
+  // We may use a default radius
+  radius = radius || DEFAULT_CENTER_DISTANCE;
+  // Convert degree in radian
+  var rad = (r)=> r * (Math.PI/180);
+  // Compute square bounds
+  var nlat = lat + radius / 110.574;
+  var slat = lat - radius / 110.574;
+  var wlon = lon - radius / (111.320 * Math.cos(rad(lat)));
+  var elon = lon + radius / (111.320 * Math.cos(rad(lat)));
   // Build a query to get every trustable ads
   var query = [
     'SELECT total_rent, living_space, latitude, longitude, created_at',
@@ -129,16 +134,23 @@ var center = module.exports.center = function(lat, lng, distance) {
     'WHERE total_rent IS NOT NULL',
     'AND total_rent < ' + MAX_TOTAL_RENT,
     'AND living_space < ' + MAX_LIVING_SPACE,
-    'AND POWER(' + lng + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)',
-    //'AND price_per_sqm < 70',
-    // 'AND price_per_sqm > 3',
+    // For performance reason we filter the rows using
+    // a simple square comparaison
+    'AND ' + nlat + ' > latitude AND  ' + slat + ' < latitude',
+    'AND ' + wlon + ' < longitude AND ' + elon + ' > longitude'
   ].join("\n");
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
     // We use the given connection
     connection.query(query, function(err, rows) {
       if(err) deferred.reject(err);
-      else deferred.resolve(rows);
+      else {
+        // We refilter every rows to have more precise selection
+        deferred.resolve(_.filter(rows, function(row) {
+          // Use haversine to calculate the distance between the points
+          return haversine(row, {latitude: lat, longitude: lon}) < radius * 1e3;
+        }));
+      }
       // And done with the connection.
       connection.release();
     });
@@ -176,36 +188,8 @@ var deciles = module.exports.deciles = function() {
   return deferred.promise;
 };
 
-
-var centeredCount = module.exports.centeredCount = function(lat, lng, distance) {
-  var deferred = Q.defer();
-  // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
-  // Build a query to get every trustable ads
-  var query = [
-    'SELECT COUNT(id) as "count"',
-    'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
-    'AND POWER(' + lng + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)'
-  ].join("\n");
-  // For better performance we use a poolConnection
-  sqldb.mysql.getConnection(function(err, connection) {
-    // We use the given connection
-    connection.query(query, function(err, rows, fields) {
-      if(err || !rows.length) deferred.reject(err);
-      else deferred.resolve(rows[0].count);
-      // And done with the connection.
-      connection.release();
-    });
-  });
-  // Return the promise
-  return deferred.promise;
-};
-
 // Count rents by deciles around a point
-var centeredDeciles = module.exports.centeredDeciles = function(lat, lng, distance) {
+var centeredDeciles = module.exports.centeredDeciles = function(lat, lon, distance) {
   var deferred = Q.defer();
   // Convert KM radius in degree
   var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
@@ -219,7 +203,7 @@ var centeredDeciles = module.exports.centeredDeciles = function(lat, lng, distan
     'WHERE total_rent IS NOT NULL',
     'AND total_rent < ' + MAX_TOTAL_RENT,
     'AND living_space < ' + MAX_LIVING_SPACE,
-    'AND POWER(' + lng + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)',
+    'AND POWER(' + lon + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)',
     'GROUP BY total_rent div 10'
   ].join("\n");
   // For better performance we use a poolConnection
@@ -241,7 +225,7 @@ var losRegression = module.exports.losRegression = function() {
   return all().then(getSlope)
 };
 
-var centeredLosRegression = module.exports.losRegression = function(lat, lng, distance) {
+var centeredLosRegression = module.exports.losRegression = function(lat, lon, distance) {
   // Return the promise
-  return center(lat, lng, distance).then(getSlope)
+  return center(lat, lon, distance).then(getSlope)
 };
