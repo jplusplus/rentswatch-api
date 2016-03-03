@@ -1,7 +1,8 @@
 var sqldb = require('../../sqldb'),
         _ = require('lodash'),
      math = require('mathjs'),
-        Q = require('q');
+        Q = require('q'),
+haversine = require('haversine');
 
 const DEFAULT_CENTER_DISTANCE = 5;
 const MAX_TOTAL_RENT = module.exports.MAX_TOTAL_RENT = 3000;
@@ -72,13 +73,20 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
 // Filter rows in the given radius according to a center
 var inRadius = module.exports.inRadius = function(rows, latitude, longitude, radius) {
   // Convert KM radius in degree
-  var deg = radius * 1/110.574;
-  return _.filter(rows, function(row) {
-    // Just using some Pythagorian intersection
-    var a = longitude - row.longitude,
-        b = latitude - row.latitude;
-    return Math.pow(a, 2) + Math.pow(b, 2) <= Math.pow(deg, 2)
-  });
+  var rad = (r)=> r * (Math.PI/180);
+
+  // Compute square bounds
+  nlat = latitude  + city_radius / 110.574
+  slat = latitude  - city_radius / 110.574
+  wlon = longitude - city_radius / (111.320 * Math.cos(rad(latitude)))
+  elon = longitude + city_radius / (111.320 * Math.cos(rad(latitude)))
+
+  return _.chain(rows).filter(function(row) {
+    // Only rows in the square
+    return nlat > row.latitude && slat < row.latitude && wlon > row.longitude && elon < row.longitude;
+  }).filter(function(row) {
+    return haversine(row, { latitude: latitude, longitude: longitude }) < radius * 1e3
+  })
 };
 
 // Gets all ads

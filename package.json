@@ -13,6 +13,7 @@
     "errorhandler": "1.4.3",
     "express": "4.13.4",
     "express-session": "1.13.0",
+    "haversine": "1.0.0",
     "jade": "1.11.0",
     "lodash": "4.6.1",
     "mathjs": "2.7.0",
