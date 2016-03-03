@@ -65,7 +65,7 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
     dslat += dnlat;
   }
   // At last, we calculate the variance of every average prices
-  return math.var(avgPricesPerSqm);
+  return avgPricesPerSqm.length ? math.var(avgPricesPerSqm) : null;
 };
 
 var getStats = module.exports.getStats = function(rows, byMonth) {
