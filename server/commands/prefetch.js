@@ -20,4 +20,8 @@ async.eachSeries(cities.toArray(), function(city, callback) {
     callback(null, output);
   }, callback).fail(callback);
 // When all promises are resolved we stop the program
-}, process.exit);
+}, function(err) {
+  // Print out errors
+  if(err) console.error(err);
+  process.exit()
+});

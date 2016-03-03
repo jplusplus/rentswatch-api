@@ -42,7 +42,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
     // Timestamp of the last snapshot
     lastSnapshot:  ~~(Date.now()/1e3),
     // Caculate std for this area
-    stdErr: math.std( _.map(rows, 'total_rent') ),
+    stdErr: rows.length ? math.std( _.map(rows, 'total_rent') ) : null,
   };
   // Create an array containg stats aggregated by month
   if(byMonth) {
