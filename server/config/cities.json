@@ -189,13 +189,6 @@
     "radius": 5
   },
   {
-    "name": "Harburg",
-    "latitude": 53.46057,
-    "longitude": 9.98388,
-    "country": "DE",
-    "radius": 5
-  },
-  {
     "name": "Hannover",
     "latitude": 52.37052,
     "longitude": 9.73322,
@@ -213,27 +206,6 @@
     "name": "Marienthal",
     "latitude": 53.56667,
     "longitude": 10.08333,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Hamburg-Mitte",
-    "latitude": 53.55,
-    "longitude": 10.01667,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Eimsbüttel",
-    "latitude": 53.56667,
-    "longitude": 9.98333,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Altona",
-    "latitude": 53.55,
-    "longitude": 9.93333,
     "country": "DE",
     "radius": 5
   },
@@ -361,7 +333,87 @@
     "latitude": 52.52437,
     "longitude": 13.41053,
     "country": "DE",
-    "radius": 25
+    "radius": 25,
+    "neighborhoods": [
+      {
+        "name": "Neukölln",
+        "latitude": 52.440771,
+        "longitude": 13.444507,
+        "radius": 2
+      },
+      {
+        "name": "Marzahn",
+        "latitude": 52.542659,
+        "longitude": 13.549363,
+        "radius": 2
+      },
+      {
+        "name": "Mitte",
+        "latitude": 52.519444,
+        "longitude": 13.406667,
+        "radius": 2
+      },
+      {
+        "name": "Friedrichshain",
+        "latitude": 52.515919,
+        "longitude": 13.454574,
+        "radius": 2
+      },
+      {
+        "name": "Kreuzberg",
+        "latitude": 52.498605,
+        "longitude": 13.391799,
+        "radius": 2
+      },
+      {
+        "name": "Wilmersdorf",
+        "latitude": 52.48333,
+        "longitude": 13.31667,
+        "radius": 2
+      },
+      {
+        "name": "Charlottenburg",
+        "latitude": 52.51667,
+        "longitude": 13.28333,
+        "radius": 2
+      },
+      {
+        "name": "Moabit",
+        "latitude": 52.52635,
+        "longitude": 13.33903,
+        "radius": 2
+      },
+      {
+        "name": "Pankow",
+        "latitude": 52.56926,
+        "longitude": 13.40186,
+        "radius": 2
+      },
+      {
+        "name": "Prenzlauer Berg",
+        "latitude": 52.53878,
+        "longitude": 13.42443,
+        "radius": 2
+      },
+      {
+        "name": "Reinickendorf",
+        "latitude": 52.56667,
+        "longitude": 13.33333,
+        "radius": 2
+      },
+      {
+        "name": "Wedding",
+        "latitude": 52.54734,
+        "longitude": 13.35594,
+        "radius": 2
+      },
+      {
+        "name": "Tempelhof",
+        "latitude": 52.46667,
+        "longitude": 13.4,
+        "radius": 2
+      }
+    ]
   },
   {
     "name": "Augsburg",
@@ -374,27 +426,6 @@
     "name": "Aachen",
     "latitude": 50.77664,
     "longitude": 6.08342,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Bochum-Hordel",
-    "latitude": 51.50168,
-    "longitude": 7.1756,
-    "country": "DE",
-    "radius": 6
-  },
-  {
-    "name": "Halle Neustadt",
-    "latitude": 51.47924,
-    "longitude": 11.91605,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Hamburg-Nord",
-    "latitude": 53.58935,
-    "longitude": 9.984,
     "country": "DE",
     "radius": 5
   },
