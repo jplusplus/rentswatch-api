@@ -44,6 +44,8 @@ var getStats = function() {
           docs.getStats(filteredRows, false)
         );
       });
+      // Add the new neighborhoods array to the stats
+      stats.neighborhoods = city.neighborhoods;
     }
     // Resolve the promise
     deferred.resolve(stats);

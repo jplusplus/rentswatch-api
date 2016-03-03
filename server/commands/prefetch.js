@@ -8,6 +8,7 @@ var fs = require('fs'),
   path = require('path');
 // Cities collection
 var cities = require("../api/city/city.collection");
+
 // Collect promises for each city
 async.eachSeries(cities.toArray(), function(city, callback) {
   return city.getStats().then(function(stats) {
@@ -15,8 +16,8 @@ async.eachSeries(cities.toArray(), function(city, callback) {
     // Write stats for this city
     fs.writeFileSync(output, JSON.stringify(stats, null, 2));
     console.log(">> %s saved", city.name);
-    // Return the output file as value
+    // Return the output file as promise result
     callback(null, output);
-  }).fail(callback);
+  }, callback).fail(callback);
 // When all promises are resolved we stop the program
-}, process.exit)
+}, process.exit);

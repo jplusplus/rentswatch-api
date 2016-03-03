@@ -15,7 +15,7 @@ exports.index = function(req, res) {
   var params = paginator.offset(req);
   var list = cities.toArray().slice(params.offset, params.offset + params.limit);
   // Maps the cities array to remove some properties
-  res.json(200, _.map(list, function(city) {
+  res.status(200).json(_.map(list, function(city) {
     city = _.cloneDeep(city);
     // Delete some properties
     INDEX_EXCLUDE.forEach(function(k) { delete city[k] });
@@ -28,9 +28,9 @@ exports.index = function(req, res) {
 exports.show = function(req, res) {
   var city = cities.get({ name: req.params.name });
   if(city) {
-    res.json(200, city);
+    res.status(200).json(city);
     /* city.getStats().then(function(stats) {
-      res.json(200, city);
+      res.status(200).json(city);
       city = _.extend( _.cloneDeep(city), stats);
     }).fail( response.handleError(res, 500) ); */
   } else {
