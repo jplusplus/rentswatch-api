@@ -7,48 +7,6 @@
     "radius": 14
   },
   {
-    "name": "Wels",
-    "latitude": 48.16667,
-    "longitude": 14.03333,
-    "country": "AT",
-    "radius": 4
-  },
-  {
-    "name": "Villach",
-    "latitude": 46.61028,
-    "longitude": 13.85583,
-    "country": "AT",
-    "radius": 4
-  },
-  {
-    "name": "Salzburg",
-    "latitude": 47.79941,
-    "longitude": 13.04399,
-    "country": "AT",
-    "radius": 4
-  },
-  {
-    "name": "Linz",
-    "latitude": 48.30639,
-    "longitude": 14.28611,
-    "country": "AT",
-    "radius": 5
-  },
-  {
-    "name": "Klagenfurt am Wörthersee",
-    "latitude": 46.62472,
-    "longitude": 14.30528,
-    "country": "AT",
-    "radius": 4
-  },
-  {
-    "name": "Innsbruck",
-    "latitude": 47.26266,
-    "longitude": 11.39454,
-    "country": "AT",
-    "radius": 4
-  },
-  {
     "name": "Graz",
     "latitude": 47.06667,
     "longitude": 15.45,
@@ -56,123 +14,11 @@
     "radius": 5
   },
   {
-    "name": "Verviers",
-    "latitude": 50.58907,
-    "longitude": 5.86241,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Tournai",
-    "latitude": 50.60715,
-    "longitude": 3.38932,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Sint-Niklaas",
-    "latitude": 51.16509,
-    "longitude": 4.1437,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Seraing",
-    "latitude": 50.58362,
-    "longitude": 5.50115,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Roeselare",
-    "latitude": 50.94653,
-    "longitude": 3.12269,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Ostend",
-    "latitude": 51.21551,
-    "longitude": 2.927,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Namur",
-    "latitude": 50.4669,
-    "longitude": 4.86746,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Mouscron",
-    "latitude": 50.74497,
-    "longitude": 3.20639,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Mons",
-    "latitude": 50.45413,
-    "longitude": 3.95229,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Mechelen",
-    "latitude": 51.02574,
-    "longitude": 4.47762,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Liège",
-    "latitude": 50.63373,
-    "longitude": 5.56749,
-    "country": "BE",
-    "radius": 5
-  },
-  {
-    "name": "Leuven",
-    "latitude": 50.87959,
-    "longitude": 4.70093,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "La Louvière",
-    "latitude": 50.48657,
-    "longitude": 4.18785,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Kortrijk",
-    "latitude": 50.82803,
-    "longitude": 3.26487,
-    "country": "BE",
-    "radius": 4
-  },
-  {
-    "name": "Hasselt",
-    "latitude": 50.93106,
-    "longitude": 5.33781,
-    "country": "BE",
-    "radius": 4
-  },
-  {
     "name": "Gent",
     "latitude": 51.05,
     "longitude": 3.71667,
     "country": "BE",
     "radius": 5
-  },
-  {
-    "name": "Genk",
-    "latitude": 50.965,
-    "longitude": 5.50082,
-    "country": "BE",
-    "radius": 4
   },
   {
     "name": "Charleroi",
@@ -189,25 +35,11 @@
     "radius": 10
   },
   {
-    "name": "Brugge",
-    "latitude": 51.20892,
-    "longitude": 3.22424,
-    "country": "BE",
-    "radius": 4
-  },
-  {
     "name": "Antwerpen",
     "latitude": 51.21989,
     "longitude": 4.40346,
     "country": "BE",
     "radius": 6
-  },
-  {
-    "name": "Aalst",
-    "latitude": 50.93604,
-    "longitude": 4.0355,
-    "country": "BE",
-    "radius": 4
   },
   {
     "name": "Zürich",
@@ -217,102 +49,11 @@
     "radius": 6
   },
   {
-    "name": "Winterthur",
-    "latitude": 47.50564,
-    "longitude": 8.72413,
-    "country": "CH",
-    "radius": 4
-  },
-  {
-    "name": "Sankt Gallen",
-    "latitude": 47.42391,
-    "longitude": 9.37477,
-    "country": "CH",
-    "radius": 4
-  },
-  {
-    "name": "Luzern",
-    "latitude": 47.05048,
-    "longitude": 8.30635,
-    "country": "CH",
-    "radius": 4
-  },
-  {
-    "name": "Lausanne",
-    "latitude": 46.516,
-    "longitude": 6.63282,
-    "country": "CH",
-    "radius": 4
-  },
-  {
-    "name": "Genève",
-    "latitude": 46.20222,
-    "longitude": 6.14569,
-    "country": "CH",
-    "radius": 5
-  },
-  {
-    "name": "Bern",
-    "latitude": 46.94809,
-    "longitude": 7.44744,
-    "country": "CH",
-    "radius": 4
-  },
-  {
-    "name": "Basel",
-    "latitude": 47.55839,
-    "longitude": 7.57327,
-    "country": "CH",
-    "radius": 5
-  },
-  {
-    "name": "Zürich",
-    "latitude": 47.42326,
-    "longitude": 8.52166,
-    "country": "CH",
-    "radius": 4
-  },
-  {
-    "name": "Zlín",
-    "latitude": 49.22645,
-    "longitude": 17.67065,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Ústí nad Labem",
-    "latitude": 50.6607,
-    "longitude": 14.03227,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Teplice",
-    "latitude": 50.6404,
-    "longitude": 13.82451,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
     "name": "Prague",
     "latitude": 50.08804,
     "longitude": 14.42076,
     "country": "CZ",
     "radius": 11
-  },
-  {
-    "name": "Pilsen",
-    "latitude": 49.74747,
-    "longitude": 13.37759,
-    "country": "CZ",
-    "radius": 5
-  },
-  {
-    "name": "Pardubice",
-    "latitude": 50.04075,
-    "longitude": 15.77659,
-    "country": "CZ",
-    "radius": 4
   },
   {
     "name": "Ostrava",
@@ -322,123 +63,11 @@
     "radius": 5
   },
   {
-    "name": "Opava",
-    "latitude": 49.93866,
-    "longitude": 17.90257,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Olomouc",
-    "latitude": 49.59552,
-    "longitude": 17.25175,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Most",
-    "latitude": 50.50301,
-    "longitude": 13.63617,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Liberec",
-    "latitude": 50.76711,
-    "longitude": 15.05619,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Kladno",
-    "latitude": 50.14734,
-    "longitude": 14.10285,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Karviná",
-    "latitude": 49.854,
-    "longitude": 18.54169,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Karlovy Vary",
-    "latitude": 50.23271,
-    "longitude": 12.87117,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Jihlava",
-    "latitude": 49.3961,
-    "longitude": 15.59124,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Hradec Králové",
-    "latitude": 50.20923,
-    "longitude": 15.83277,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Havířov",
-    "latitude": 49.77984,
-    "longitude": 18.43688,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Frýdek-Místek",
-    "latitude": 49.68333,
-    "longitude": 18.35,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Děčín",
-    "latitude": 50.78215,
-    "longitude": 14.21478,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "Chomutov",
-    "latitude": 50.46048,
-    "longitude": 13.41779,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
-    "name": "České Budějovice",
-    "latitude": 48.97447,
-    "longitude": 14.47434,
-    "country": "CZ",
-    "radius": 4
-  },
-  {
     "name": "Brno",
     "latitude": 49.19522,
     "longitude": 16.60796,
     "country": "CZ",
     "radius": 6
-  },
-  {
-    "name": "Zwickau",
-    "latitude": 50.72724,
-    "longitude": 12.48839,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Würzburg",
-    "latitude": 49.79391,
-    "longitude": 9.95121,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Wuppertal",
@@ -448,55 +77,6 @@
     "radius": 6
   },
   {
-    "name": "Worms",
-    "latitude": 49.63278,
-    "longitude": 8.35916,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Wolfsburg",
-    "latitude": 52.42452,
-    "longitude": 10.7815,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Wolfenbüttel",
-    "latitude": 52.16442,
-    "longitude": 10.54095,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Witten",
-    "latitude": 51.44362,
-    "longitude": 7.35258,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Winterhude",
-    "latitude": 53.6,
-    "longitude": 10,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Willich",
-    "latitude": 51.26371,
-    "longitude": 6.54734,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Wilhelmshaven",
-    "latitude": 53.52998,
-    "longitude": 8.11253,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Wiesbaden",
     "latitude": 50.08258,
     "longitude": 8.24932,
@@ -504,319 +84,11 @@
     "radius": 5
   },
   {
-    "name": "Wetzlar",
-    "latitude": 50.56109,
-    "longitude": 8.50495,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Wesel",
-    "latitude": 51.6669,
-    "longitude": 6.62037,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Weimar",
-    "latitude": 50.9803,
-    "longitude": 11.32903,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Waiblingen",
-    "latitude": 48.83241,
-    "longitude": 9.31641,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Villingen-Schwenningen",
-    "latitude": 48.06226,
-    "longitude": 8.49358,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Viersen",
-    "latitude": 51.25435,
-    "longitude": 6.39441,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Velbert",
-    "latitude": 51.33537,
-    "longitude": 7.04348,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Unna",
-    "latitude": 51.53795,
-    "longitude": 7.68969,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Ulm",
-    "latitude": 48.39841,
-    "longitude": 9.99155,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Tübingen",
-    "latitude": 48.52266,
-    "longitude": 9.05222,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Troisdorf",
-    "latitude": 50.80901,
-    "longitude": 7.14968,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Trier",
-    "latitude": 49.75565,
-    "longitude": 6.63935,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Stuttgart",
     "latitude": 48.78232,
     "longitude": 9.17702,
     "country": "DE",
     "radius": 7
-  },
-  {
-    "name": "Stralsund",
-    "latitude": 54.30911,
-    "longitude": 13.0818,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Stolberg",
-    "latitude": 50.77368,
-    "longitude": 6.22595,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Steglitz",
-    "latitude": 52.45606,
-    "longitude": 13.332,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Speyer",
-    "latitude": 49.32083,
-    "longitude": 8.43111,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Solingen",
-    "latitude": 51.17343,
-    "longitude": 7.0845,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Sindelfingen",
-    "latitude": 48.7,
-    "longitude": 9.01667,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Siegen",
-    "latitude": 50.87481,
-    "longitude": 8.02431,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Schwerte",
-    "latitude": 51.44387,
-    "longitude": 7.5675,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Schwerin",
-    "latitude": 53.62937,
-    "longitude": 11.41316,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Schweinfurt",
-    "latitude": 50.04937,
-    "longitude": 10.22175,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Schwäbisch Gmünd",
-    "latitude": 48.79947,
-    "longitude": 9.79809,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Sankt Augustin",
-    "latitude": 50.77538,
-    "longitude": 7.197,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Saarbrücken",
-    "latitude": 49.2354,
-    "longitude": 6.98165,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Rüsselsheim",
-    "latitude": 49.98955,
-    "longitude": 8.42251,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Rostock",
-    "latitude": 54.0887,
-    "longitude": 12.14049,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Rosenheim",
-    "latitude": 47.85637,
-    "longitude": 12.12247,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Rheine",
-    "latitude": 52.28509,
-    "longitude": 7.44055,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Reutlingen",
-    "latitude": 48.49144,
-    "longitude": 9.20427,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Remscheid",
-    "latitude": 51.17983,
-    "longitude": 7.1925,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Regensburg",
-    "latitude": 49.01513,
-    "longitude": 12.10161,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Recklinghausen",
-    "latitude": 51.61379,
-    "longitude": 7.19738,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Ratingen",
-    "latitude": 51.29724,
-    "longitude": 6.84929,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Pulheim",
-    "latitude": 50.99965,
-    "longitude": 6.80632,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Potsdam",
-    "latitude": 52.39886,
-    "longitude": 13.06566,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Plauen",
-    "latitude": 50.4973,
-    "longitude": 12.13782,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Pforzheim",
-    "latitude": 48.88436,
-    "longitude": 8.69892,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Passau",
-    "latitude": 48.5665,
-    "longitude": 13.43122,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Paderborn",
-    "latitude": 51.71905,
-    "longitude": 8.75439,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Osnabrück",
-    "latitude": 52.27264,
-    "longitude": 8.0498,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Oldenburg",
-    "latitude": 53.14118,
-    "longitude": 8.21467,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Offenburg",
-    "latitude": 48.47377,
-    "longitude": 7.94495,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Offenbach",
-    "latitude": 50.10061,
-    "longitude": 8.76647,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Oberhausen",
@@ -833,81 +105,11 @@
     "radius": 7
   },
   {
-    "name": "Nordhorn",
-    "latitude": 52.43081,
-    "longitude": 7.06833,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Norderstedt",
-    "latitude": 53.6859,
-    "longitude": 9.98041,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Nippes",
-    "latitude": 50.96545,
-    "longitude": 6.95314,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Neuwied",
-    "latitude": 50.4336,
-    "longitude": 7.47057,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Neu-Ulm",
-    "latitude": 48.39279,
-    "longitude": 10.01112,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Neustadt",
-    "latitude": 49.35009,
-    "longitude": 8.13886,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Neue Neustadt",
     "latitude": 52.15,
     "longitude": 11.63333,
     "country": "DE",
     "radius": 5
-  },
-  {
-    "name": "Neuss",
-    "latitude": 51.19807,
-    "longitude": 6.68504,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Neumünster",
-    "latitude": 54.07477,
-    "longitude": 9.98195,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Neubrück",
-    "latitude": 51.13434,
-    "longitude": 6.63857,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Neubrandenburg",
-    "latitude": 53.56414,
-    "longitude": 13.27532,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Münster",
@@ -924,13 +126,6 @@
     "radius": 11
   },
   {
-    "name": "Mülheim (Ruhr)",
-    "latitude": 51.43333,
-    "longitude": 6.88333,
-    "country": "DE",
-    "radius": 5
-  },
-  {
     "name": "Mönchengladbach",
     "latitude": 51.18539,
     "longitude": 6.44172,
@@ -938,58 +133,9 @@
     "radius": 5
   },
   {
-    "name": "Moers",
-    "latitude": 51.45342,
-    "longitude": 6.6326,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Minden",
-    "latitude": 52.28953,
-    "longitude": 8.91455,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Menden",
-    "latitude": 51.44337,
-    "longitude": 7.77825,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Meerbusch",
-    "latitude": 51.26118,
-    "longitude": 6.6717,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Marl",
-    "latitude": 51.65671,
-    "longitude": 7.09038,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Marburg an der Lahn",
-    "latitude": 50.80904,
-    "longitude": 8.77069,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Mannheim",
     "latitude": 49.49671,
     "longitude": 8.47955,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Mainz",
-    "latitude": 49.98419,
-    "longitude": 8.2791,
     "country": "DE",
     "radius": 5
   },
@@ -1001,65 +147,9 @@
     "radius": 5
   },
   {
-    "name": "Lünen",
-    "latitude": 51.61634,
-    "longitude": 7.52872,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Lüneburg",
-    "latitude": 53.2509,
-    "longitude": 10.41409,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Ludwigshafen am Rhein",
-    "latitude": 49.48121,
-    "longitude": 8.44641,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Ludwigsburg",
-    "latitude": 48.89731,
-    "longitude": 9.19161,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Lüdenscheid",
-    "latitude": 51.21977,
-    "longitude": 7.6273,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Lübeck",
     "latitude": 53.86893,
     "longitude": 10.68729,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Lippstadt",
-    "latitude": 51.67369,
-    "longitude": 8.34482,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Lingen",
-    "latitude": 52.52143,
-    "longitude": 7.31845,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Leverkusen",
-    "latitude": 51.0303,
-    "longitude": 6.98432,
     "country": "DE",
     "radius": 5
   },
@@ -1071,39 +161,11 @@
     "radius": 7
   },
   {
-    "name": "Langenhagen",
-    "latitude": 52.44758,
-    "longitude": 9.73741,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Langenfeld",
-    "latitude": 51.10821,
-    "longitude": 6.94831,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Landshut",
-    "latitude": 48.52961,
-    "longitude": 12.16179,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Krefeld",
     "latitude": 51.33921,
     "longitude": 6.58615,
     "country": "DE",
     "radius": 5
-  },
-  {
-    "name": "Konstanz",
-    "latitude": 47.66033,
-    "longitude": 9.17582,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Köln",
@@ -1113,37 +175,9 @@
     "radius": 10
   },
   {
-    "name": "Koblenz",
-    "latitude": 50.35357,
-    "longitude": 7.57883,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Kiel",
     "latitude": 54.32133,
     "longitude": 10.13489,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Kerpen",
-    "latitude": 50.86991,
-    "longitude": 6.69691,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Kempten (Allgäu)",
-    "latitude": 47.72674,
-    "longitude": 10.31389,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Kassel",
-    "latitude": 51.31667,
-    "longitude": 9.5,
     "country": "DE",
     "radius": 5
   },
@@ -1153,111 +187,6 @@
     "longitude": 8.40444,
     "country": "DE",
     "radius": 5
-  },
-  {
-    "name": "Kaiserslautern",
-    "latitude": 49.443,
-    "longitude": 7.77161,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Jena",
-    "latitude": 50.92878,
-    "longitude": 11.5899,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Iserlohn",
-    "latitude": 51.37547,
-    "longitude": 7.70281,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Ingolstadt",
-    "latitude": 48.76508,
-    "longitude": 11.42372,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Ibbenbüren",
-    "latitude": 52.27964,
-    "longitude": 7.71457,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Hürth",
-    "latitude": 50.87079,
-    "longitude": 6.86761,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Hildesheim",
-    "latitude": 52.15077,
-    "longitude": 9.95112,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Hilden",
-    "latitude": 51.16818,
-    "longitude": 6.93093,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Herten",
-    "latitude": 51.59638,
-    "longitude": 7.14387,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Herne",
-    "latitude": 51.5388,
-    "longitude": 7.22572,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Herford",
-    "latitude": 52.11457,
-    "longitude": 8.67343,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Heilbronn",
-    "latitude": 49.13995,
-    "longitude": 9.22054,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Heidenheim an der Brenz",
-    "latitude": 48.67798,
-    "longitude": 10.15162,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Heidelberg",
-    "latitude": 49.40768,
-    "longitude": 8.69079,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Hattingen",
-    "latitude": 51.39894,
-    "longitude": 7.18557,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Harburg",
@@ -1274,27 +203,6 @@
     "radius": 7
   },
   {
-    "name": "Hanau am Main",
-    "latitude": 50.13423,
-    "longitude": 8.91418,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Hamm",
-    "latitude": 51.68033,
-    "longitude": 7.82089,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Hameln",
-    "latitude": 52.10397,
-    "longitude": 9.35623,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Wandsbek",
     "latitude": 53.56667,
     "longitude": 10.1,
@@ -1305,6 +213,27 @@
     "name": "Marienthal",
     "latitude": 53.56667,
     "longitude": 10.08333,
+    "country": "DE",
+    "radius": 5
+  },
+  {
+    "name": "Hamburg-Mitte",
+    "latitude": 53.55,
+    "longitude": 10.01667,
+    "country": "DE",
+    "radius": 5
+  },
+  {
+    "name": "Eimsbüttel",
+    "latitude": 53.56667,
+    "longitude": 9.98333,
+    "country": "DE",
+    "radius": 5
+  },
+  {
+    "name": "Altona",
+    "latitude": 53.55,
+    "longitude": 9.93333,
     "country": "DE",
     "radius": 5
   },
@@ -1323,116 +252,11 @@
     "radius": 5
   },
   {
-    "name": "Hagen",
-    "latitude": 51.36081,
-    "longitude": 7.47168,
-    "country": "DE",
-    "radius": 5
-  },
-  {
-    "name": "Gütersloh",
-    "latitude": 51.90693,
-    "longitude": 8.37853,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Gummersbach",
-    "latitude": 51.02608,
-    "longitude": 7.56473,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Grevenbroich",
-    "latitude": 51.09102,
-    "longitude": 6.5827,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Greifswald",
-    "latitude": 54.09311,
-    "longitude": 13.38786,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Göttingen",
-    "latitude": 51.53443,
-    "longitude": 9.93228,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Görlitz",
-    "latitude": 51.15518,
-    "longitude": 14.98853,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Göppingen",
-    "latitude": 48.70354,
-    "longitude": 9.65209,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Gladbeck",
-    "latitude": 51.57077,
-    "longitude": 6.98593,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Gießen",
-    "latitude": 50.58727,
-    "longitude": 8.67554,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Gera",
-    "latitude": 50.88029,
-    "longitude": 12.08187,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Gelsenkirchen",
     "latitude": 51.5075,
     "longitude": 7.12283,
     "country": "DE",
     "radius": 5
-  },
-  {
-    "name": "Garbsen",
-    "latitude": 52.41371,
-    "longitude": 9.5899,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Fürth",
-    "latitude": 49.47593,
-    "longitude": 10.98856,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Fulda",
-    "latitude": 50.55162,
-    "longitude": 9.67518,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Friedrichshafen",
-    "latitude": 47.65689,
-    "longitude": 9.47554,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Freiburg",
@@ -1449,53 +273,11 @@
     "radius": 8
   },
   {
-    "name": "Frankfurt (Oder)",
-    "latitude": 52.34714,
-    "longitude": 14.55062,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Flensburg",
-    "latitude": 54.78431,
-    "longitude": 9.43961,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Euskirchen",
-    "latitude": 50.66057,
-    "longitude": 6.78722,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Esslingen",
-    "latitude": 48.73961,
-    "longitude": 9.30473,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Essen",
     "latitude": 51.45657,
     "longitude": 7.01228,
     "country": "DE",
     "radius": 7
-  },
-  {
-    "name": "Eschweiler",
-    "latitude": 50.81854,
-    "longitude": 6.27184,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Erlangen",
-    "latitude": 49.59099,
-    "longitude": 11.00783,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Erfurt",
@@ -1505,32 +287,11 @@
     "radius": 5
   },
   {
-    "name": "Erftstadt",
-    "latitude": 50.81481,
-    "longitude": 6.79387,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Emden",
-    "latitude": 53.36745,
-    "longitude": 7.20778,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Düsseldorf",
     "latitude": 51.22172,
     "longitude": 6.77616,
     "country": "DE",
     "radius": 7
-  },
-  {
-    "name": "Düren",
-    "latitude": 50.80434,
-    "longitude": 6.49299,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Duisburg",
@@ -1554,95 +315,11 @@
     "radius": 7
   },
   {
-    "name": "Dorsten",
-    "latitude": 51.66166,
-    "longitude": 6.96514,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Dormagen",
-    "latitude": 51.09683,
-    "longitude": 6.83167,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Dinslaken",
-    "latitude": 51.56227,
-    "longitude": 6.7434,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Detmold",
-    "latitude": 51.93855,
-    "longitude": 8.87318,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Dessau",
-    "latitude": 51.83864,
-    "longitude": 12.24555,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Delmenhorst",
-    "latitude": 53.0511,
-    "longitude": 8.63091,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Darmstadt",
-    "latitude": 49.87167,
-    "longitude": 8.65027,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Cuxhaven",
-    "latitude": 53.87176,
-    "longitude": 8.69087,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Cottbus",
-    "latitude": 51.75769,
-    "longitude": 14.32888,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Chemnitz",
     "latitude": 50.8357,
     "longitude": 12.92922,
     "country": "DE",
     "radius": 5
-  },
-  {
-    "name": "Celle",
-    "latitude": 52.62264,
-    "longitude": 10.08047,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Castrop-Rauxel",
-    "latitude": 51.55657,
-    "longitude": 7.31155,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bremerhaven",
-    "latitude": 53.55021,
-    "longitude": 8.57673,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Bremen",
@@ -1659,20 +336,6 @@
     "radius": 5
   },
   {
-    "name": "Brandenburg an der Havel",
-    "latitude": 52.41667,
-    "longitude": 12.55,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bottrop",
-    "latitude": 51.52392,
-    "longitude": 6.9285,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Bonn",
     "latitude": 50.73438,
     "longitude": 7.09549,
@@ -1680,25 +343,11 @@
     "radius": 5
   },
   {
-    "name": "Bogenhausen",
-    "latitude": 48.15221,
-    "longitude": 11.61585,
-    "country": "DE",
-    "radius": 4
-  },
-  {
     "name": "Bochum",
     "latitude": 51.48165,
     "longitude": 7.21648,
     "country": "DE",
     "radius": 6
-  },
-  {
-    "name": "Bocholt",
-    "latitude": 51.83879,
-    "longitude": 6.61531,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Bielefeld",
@@ -1712,143 +361,7 @@
     "latitude": 52.52437,
     "longitude": 13.41053,
     "country": "DE",
-    "radius": 25,
-    "neighborhoods": [
-      {
-        "name": "Neukölln",
-        "latitude": 52.440771,
-        "longitude": 13.444507,
-        "radius": 2
-      },
-      {
-        "name": "Marzahn",
-        "latitude": 52.542659,
-        "longitude": 13.549363,
-        "radius": 2
-      },
-      {
-        "name": "Mitte",
-        "latitude": 52.519444,
-        "longitude": 13.406667,
-        "radius": 2
-      },
-      {
-        "name": "Friedrichshain",
-        "latitude": 52.515919,
-        "longitude": 13.454574,
-        "radius": 2
-      },
-      {
-        "name": "Kreuzberg",
-        "latitude": 52.498605,
-        "longitude": 13.391799,
-        "radius": 2
-      },
-      {
-        "name": "Wilmersdorf",
-        "latitude": 52.48333,
-        "longitude": 13.31667,
-        "radius": 2
-      },
-      {
-        "name": "Charlottenburg",
-        "latitude": 52.51667,
-        "longitude": 13.28333,
-        "radius": 2
-      },
-      {
-        "name": "Moabit",
-        "latitude": 52.52635,
-        "longitude": 13.33903,
-        "radius": 2
-      },
-      {
-        "name": "Pankow",
-        "latitude": 52.56926,
-        "longitude": 13.40186,
-        "radius": 2
-      },
-      {
-        "name": "Prenzlauer Berg",
-        "latitude": 52.53878,
-        "longitude": 13.42443,
-        "radius": 2
-      },
-      {
-        "name": "Reinickendorf",
-        "latitude": 52.56667,
-        "longitude": 13.33333,
-        "radius": 2
-      },
-      {
-        "name": "Wedding",
-        "latitude": 52.54734,
-        "longitude": 13.35594,
-        "radius": 2
-      },
-      {
-        "name": "Tempelhof",
-        "latitude": 52.46667,
-        "longitude": 13.4,
-        "radius": 2
-      }
-    ]
-  },
-  {
-    "name": "Bergkamen",
-    "latitude": 51.61633,
-    "longitude": 7.64451,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bergisch Gladbach",
-    "latitude": 50.9856,
-    "longitude": 7.13298,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bergheim",
-    "latitude": 50.95572,
-    "longitude": 6.63986,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bayreuth",
-    "latitude": 49.94782,
-    "longitude": 11.57893,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bamberg",
-    "latitude": 49.89873,
-    "longitude": 10.90067,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bad Salzuflen",
-    "latitude": 52.0862,
-    "longitude": 8.74434,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Bad Homburg vor der Höhe",
-    "latitude": 50.22683,
-    "longitude": 8.61816,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Baden-Baden",
-    "latitude": 48.7606,
-    "longitude": 8.23975,
-    "country": "DE",
-    "radius": 4
+    "radius": 25
   },
   {
     "name": "Augsburg",
@@ -1856,34 +369,6 @@
     "longitude": 10.89851,
     "country": "DE",
     "radius": 5
-  },
-  {
-    "name": "Aschaffenburg",
-    "latitude": 49.97704,
-    "longitude": 9.15214,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Arnsberg",
-    "latitude": 51.38333,
-    "longitude": 8.08333,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Ahlen",
-    "latitude": 51.76338,
-    "longitude": 7.8887,
-    "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Aalen",
-    "latitude": 48.83777,
-    "longitude": 10.0933,
-    "country": "DE",
-    "radius": 4
   },
   {
     "name": "Aachen",
@@ -1907,32 +392,11 @@
     "radius": 5
   },
   {
-    "name": "Bergedorf",
-    "latitude": 53.48462,
-    "longitude": 10.22904,
+    "name": "Hamburg-Nord",
+    "latitude": 53.58935,
+    "longitude": 9.984,
     "country": "DE",
-    "radius": 4
-  },
-  {
-    "name": "Vejle",
-    "latitude": 55.70927,
-    "longitude": 9.5357,
-    "country": "DK",
-    "radius": 4
-  },
-  {
-    "name": "Randers",
-    "latitude": 56.4607,
-    "longitude": 10.03639,
-    "country": "DK",
-    "radius": 4
-  },
-  {
-    "name": "Odense",
-    "latitude": 55.39594,
-    "longitude": 10.38831,
-    "country": "DK",
-    "radius": 4
+    "radius": 5
   },
   {
     "name": "Copenhagen",
@@ -1942,53 +406,11 @@
     "radius": 11
   },
   {
-    "name": "Kolding",
-    "latitude": 55.4904,
-    "longitude": 9.47216,
-    "country": "DK",
-    "radius": 4
-  },
-  {
-    "name": "Horsens",
-    "latitude": 55.86066,
-    "longitude": 9.85034,
-    "country": "DK",
-    "radius": 4
-  },
-  {
-    "name": "Frederiksberg",
-    "latitude": 55.67938,
-    "longitude": 12.53463,
-    "country": "DK",
-    "radius": 4
-  },
-  {
-    "name": "Esbjerg",
-    "latitude": 55.47028,
-    "longitude": 8.45187,
-    "country": "DK",
-    "radius": 4
-  },
-  {
     "name": "Århus",
     "latitude": 56.15674,
     "longitude": 10.21076,
     "country": "DK",
     "radius": 5
-  },
-  {
-    "name": "Aalborg",
-    "latitude": 57.048,
-    "longitude": 9.9187,
-    "country": "DK",
-    "radius": 4
-  },
-  {
-    "name": "Tartu",
-    "latitude": 58.38062,
-    "longitude": 26.72509,
-    "country": "EE",
-    "radius": 4
   },
   {
     "name": "Tallinn",
@@ -1998,74 +420,11 @@
     "radius": 6
   },
   {
-    "name": "Narva",
-    "latitude": 59.37722,
-    "longitude": 28.19028,
-    "country": "EE",
-    "radius": 4
-  },
-  {
-    "name": "Vila-real",
-    "latitude": 39.9383,
-    "longitude": -0.10087,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Vélez-Málaga",
-    "latitude": 36.78107,
-    "longitude": -4.10266,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Valencia",
     "latitude": 39.46975,
     "longitude": -0.37739,
     "country": "ES",
     "radius": 9
-  },
-  {
-    "name": "Utrera",
-    "latitude": 37.18516,
-    "longitude": -5.78093,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Torrevieja",
-    "latitude": 37.97872,
-    "longitude": -0.68222,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Torrent",
-    "latitude": 39.43705,
-    "longitude": -0.46546,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Torremolinos",
-    "latitude": 36.62035,
-    "longitude": -4.49976,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Toledo",
-    "latitude": 39.8581,
-    "longitude": -4.02263,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Talavera de la Reina",
-    "latitude": 39.96348,
-    "longitude": -4.83076,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Sevilla",
@@ -2075,67 +434,11 @@
     "radius": 8
   },
   {
-    "name": "San Vicent del Raspeig",
-    "latitude": 38.3964,
-    "longitude": -0.5255,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Sanlúcar de Barrameda",
-    "latitude": 36.77808,
-    "longitude": -6.3515,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "San Fernando",
-    "latitude": 36.4759,
-    "longitude": -6.19817,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Sagunto",
-    "latitude": 39.68333,
-    "longitude": -0.26667,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Roquetas de Mar",
-    "latitude": 36.76419,
-    "longitude": -2.61475,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Puertollano",
-    "latitude": 38.68712,
-    "longitude": -4.10734,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Paterna",
-    "latitude": 39.5,
-    "longitude": -0.43333,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Palma",
     "latitude": 39.56939,
     "longitude": 2.65024,
     "country": "ES",
     "radius": 6
-  },
-  {
-    "name": "Orihuela",
-    "latitude": 38.08483,
-    "longitude": -0.94401,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Murcia",
@@ -2145,67 +448,11 @@
     "radius": 6
   },
   {
-    "name": "Motril",
-    "latitude": 36.75066,
-    "longitude": -3.5179,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Molina de Segura",
-    "latitude": 38.05456,
-    "longitude": -1.20763,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Mijas",
-    "latitude": 36.59575,
-    "longitude": -4.63728,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Mérida",
-    "latitude": 38.91611,
-    "longitude": -6.34366,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Marbella",
-    "latitude": 36.51543,
-    "longitude": -4.88583,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Málaga",
     "latitude": 36.72016,
     "longitude": -4.42034,
     "country": "ES",
     "radius": 7
-  },
-  {
-    "name": "Lorca",
-    "latitude": 37.67119,
-    "longitude": -1.7017,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Linares",
-    "latitude": 38.09519,
-    "longitude": -3.63602,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "La Línea de la Concepción",
-    "latitude": 36.16809,
-    "longitude": -5.34777,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Jerez de la Frontera",
@@ -2215,67 +462,11 @@
     "radius": 5
   },
   {
-    "name": "Jaén",
-    "latitude": 37.76922,
-    "longitude": -3.79028,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Huelva",
-    "latitude": 37.26638,
-    "longitude": -6.94004,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Granada",
     "latitude": 37.18817,
     "longitude": -3.60667,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Gandia",
-    "latitude": 38.96667,
-    "longitude": -0.18333,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Fuengirola",
-    "latitude": 36.53998,
-    "longitude": -4.62473,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Estepona",
-    "latitude": 36.42764,
-    "longitude": -5.14589,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "El Puerto de Santa María",
-    "latitude": 36.59389,
-    "longitude": -6.23298,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "El Ejido",
-    "latitude": 36.77629,
-    "longitude": -2.81456,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Elda",
-    "latitude": 38.47783,
-    "longitude": -0.79157,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Elche",
@@ -2285,13 +476,6 @@
     "radius": 5
   },
   {
-    "name": "Dos Hermanas",
-    "latitude": 37.28287,
-    "longitude": -5.92088,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Córdoba",
     "latitude": 37.89155,
     "longitude": -4.77275,
@@ -2299,86 +483,9 @@
     "radius": 6
   },
   {
-    "name": "Ciudad Real",
-    "latitude": 38.98626,
-    "longitude": -3.92907,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Chiclana de la Frontera",
-    "latitude": 36.41915,
-    "longitude": -6.14941,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Castelló de la Plana",
-    "latitude": 39.98567,
-    "longitude": -0.04935,
-    "country": "ES",
-    "radius": 5
-  },
-  {
     "name": "Cartagena",
     "latitude": 37.60512,
     "longitude": -0.98623,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Campiña",
-    "latitude": 38.21896,
-    "longitude": -2.98069,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Calvià",
-    "latitude": 39.5657,
-    "longitude": 2.50621,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Cadiz",
-    "latitude": 36.52978,
-    "longitude": -6.29465,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Cáceres",
-    "latitude": 39.47649,
-    "longitude": -6.37224,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Benidorm",
-    "latitude": 38.53816,
-    "longitude": -0.13098,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Benalmádena",
-    "latitude": 36.5961,
-    "longitude": -4.57267,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Badajoz",
-    "latitude": 38.87789,
-    "longitude": -6.97061,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Almería",
-    "latitude": 36.83814,
-    "longitude": -2.45974,
     "country": "ES",
     "radius": 5
   },
@@ -2390,53 +497,11 @@
     "radius": 6
   },
   {
-    "name": "Algeciras",
-    "latitude": 36.13326,
-    "longitude": -5.45051,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Alcoy",
-    "latitude": 38.70545,
-    "longitude": -0.47432,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Alcalá de Guadaira",
-    "latitude": 37.33791,
-    "longitude": -5.83951,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Albacete",
-    "latitude": 38.99424,
-    "longitude": -1.85643,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Groa de Murviedro",
-    "latitude": 39.64167,
-    "longitude": -0.23889,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Zaragoza",
     "latitude": 41.65606,
     "longitude": -0.87734,
     "country": "ES",
     "radius": 8
-  },
-  {
-    "name": "Zamora",
-    "latitude": 41.50633,
-    "longitude": -5.74456,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Gasteiz / Vitoria",
@@ -2446,39 +511,11 @@
     "radius": 5
   },
   {
-    "name": "Villaverde",
-    "latitude": 40.35,
-    "longitude": -3.7,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Vilanova i la Geltrú",
-    "latitude": 41.22392,
-    "longitude": 1.72511,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Viladecans",
-    "latitude": 41.31405,
-    "longitude": 2.01427,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Vigo",
     "latitude": 42.23282,
     "longitude": -8.72264,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Vicálvaro",
-    "latitude": 40.4,
-    "longitude": -3.6,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Valladolid",
@@ -2488,137 +525,11 @@
     "radius": 5
   },
   {
-    "name": "Valdemoro",
-    "latitude": 40.19081,
-    "longitude": -3.67887,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Rivas-Vaciamadrid",
-    "latitude": 40.32605,
-    "longitude": -3.51089,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Torrelavega",
-    "latitude": 43.34943,
-    "longitude": -4.04785,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Torrejón de Ardoz",
-    "latitude": 40.45535,
-    "longitude": -3.46973,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Tetuán de las Victorias",
-    "latitude": 40.46667,
-    "longitude": -3.71667,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Terrassa",
     "latitude": 41.56667,
     "longitude": 2.01667,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Tarragona",
-    "latitude": 41.11667,
-    "longitude": 1.25,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Segovia",
-    "latitude": 40.94808,
-    "longitude": -4.11839,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Cerdanyola del Vallès",
-    "latitude": 41.49109,
-    "longitude": 2.14079,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Barakaldo",
-    "latitude": 43.29639,
-    "longitude": -2.98813,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Santiago de Compostela",
-    "latitude": 42.88052,
-    "longitude": -8.54569,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Santander",
-    "latitude": 43.46472,
-    "longitude": -3.80444,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Santa Coloma de Gramenet",
-    "latitude": 41.45152,
-    "longitude": 2.2081,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "San Sebastián de los Reyes",
-    "latitude": 40.55555,
-    "longitude": -3.62733,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Donostia / San Sebastián",
-    "latitude": 43.31283,
-    "longitude": -1.97499,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Sant Cugat del Vallès",
-    "latitude": 41.47063,
-    "longitude": 2.08611,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Sant Boi de Llobregat",
-    "latitude": 41.34357,
-    "longitude": 2.03659,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Sant Andreu de Palomar",
-    "latitude": 41.43541,
-    "longitude": 2.18982,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Salamanca",
-    "latitude": 40.96882,
-    "longitude": -5.66388,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Sabadell",
@@ -2628,67 +539,11 @@
     "radius": 5
   },
   {
-    "name": "Rubí",
-    "latitude": 41.49226,
-    "longitude": 2.03305,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Reus",
-    "latitude": 41.15612,
-    "longitude": 1.10687,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Puente de Vallecas",
     "latitude": 40.39354,
     "longitude": -3.662,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Pozuelo de Alarcón",
-    "latitude": 40.43293,
-    "longitude": -3.81338,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Pontevedra",
-    "latitude": 42.431,
-    "longitude": -8.64435,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Ponferrada",
-    "latitude": 42.54664,
-    "longitude": -6.59619,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Parla",
-    "latitude": 40.23604,
-    "longitude": -3.76752,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Pamplona",
-    "latitude": 42.81687,
-    "longitude": -1.64323,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Palencia",
-    "latitude": 42.00955,
-    "longitude": -4.52406,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Oviedo",
@@ -2698,53 +553,11 @@
     "radius": 5
   },
   {
-    "name": "Ourense",
-    "latitude": 42.33669,
-    "longitude": -7.86407,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Móstoles",
     "latitude": 40.32234,
     "longitude": -3.86496,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Moratalaz",
-    "latitude": 40.41667,
-    "longitude": -3.65,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Mollet del Vallès",
-    "latitude": 41.54026,
-    "longitude": 2.21306,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Mataró",
-    "latitude": 41.54211,
-    "longitude": 2.4445,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Manresa",
-    "latitude": 41.72815,
-    "longitude": 1.82399,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Majadahonda",
-    "latitude": 40.47353,
-    "longitude": -3.87182,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Madrid",
@@ -2754,67 +567,11 @@
     "radius": 24
   },
   {
-    "name": "Lugo",
-    "latitude": 43.00992,
-    "longitude": -7.55602,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Logroño",
-    "latitude": 42.46667,
-    "longitude": -2.45,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Lleida",
-    "latitude": 41.61674,
-    "longitude": 0.62218,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "León",
-    "latitude": 42.60003,
-    "longitude": -5.57032,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Leganés",
-    "latitude": 40.32718,
-    "longitude": -3.7635,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Las Rozas de Madrid",
-    "latitude": 40.49292,
-    "longitude": -3.87371,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "A Coruña",
     "latitude": 43.37135,
     "longitude": -8.396,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Irun",
-    "latitude": 43.33904,
-    "longitude": -1.78938,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Huesca",
-    "latitude": 42.13615,
-    "longitude": -0.4087,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "L'Hospitalet de Llobregat",
@@ -2824,41 +581,6 @@
     "radius": 5
   },
   {
-    "name": "Hortaleza",
-    "latitude": 40.47444,
-    "longitude": -3.6411,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Getxo",
-    "latitude": 43.35689,
-    "longitude": -3.01146,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Guadalajara",
-    "latitude": 40.62862,
-    "longitude": -3.16185,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Granollers",
-    "latitude": 41.60797,
-    "longitude": 2.28773,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Gràcia",
-    "latitude": 41.40237,
-    "longitude": 2.15641,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Gijón",
     "latitude": 43.53573,
     "longitude": -5.66152,
@@ -2866,93 +588,9 @@
     "radius": 5
   },
   {
-    "name": "Getafe",
-    "latitude": 40.30571,
-    "longitude": -3.73295,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Girona",
-    "latitude": 41.98311,
-    "longitude": 2.82493,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Fuenlabrada",
-    "latitude": 40.28419,
-    "longitude": -3.79415,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "El Prat de Llobregat",
-    "latitude": 41.32784,
-    "longitude": 2.09472,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Ferrol",
-    "latitude": 43.48321,
-    "longitude": -8.23689,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Cuenca",
-    "latitude": 40.06667,
-    "longitude": -2.13333,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Coslada",
-    "latitude": 40.42378,
-    "longitude": -3.56129,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Cornellà de Llobregat",
-    "latitude": 41.35,
-    "longitude": 2.08333,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Collado-Villalba",
-    "latitude": 40.63506,
-    "longitude": -4.00486,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Ciudad Lineal",
     "latitude": 40.45455,
     "longitude": -3.64808,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Chamartín",
-    "latitude": 40.46206,
-    "longitude": -3.6766,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Castelldefels",
-    "latitude": 41.27794,
-    "longitude": 1.97033,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Burgos",
-    "latitude": 42.35022,
-    "longitude": -3.67527,
     "country": "ES",
     "radius": 5
   },
@@ -2978,55 +616,6 @@
     "radius": 5
   },
   {
-    "name": "Avilés",
-    "latitude": 43.55473,
-    "longitude": -5.92483,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Ávila",
-    "latitude": 40.65724,
-    "longitude": -4.69951,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Arganda",
-    "latitude": 40.30076,
-    "longitude": -3.43722,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Aranjuez",
-    "latitude": 40.03108,
-    "longitude": -3.60246,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Algorta",
-    "latitude": 43.34927,
-    "longitude": -3.0094,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Alcorcón",
-    "latitude": 40.34582,
-    "longitude": -3.82487,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Alcobendas",
-    "latitude": 40.54746,
-    "longitude": -3.64197,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Alcalá de Henares",
     "latitude": 40.48205,
     "longitude": -3.35996,
@@ -3034,51 +623,9 @@
     "radius": 5
   },
   {
-    "name": "Nou Barris",
-    "latitude": 41.44163,
-    "longitude": 2.17727,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Moncloa-Aravaca",
-    "latitude": 40.43547,
-    "longitude": -3.7317,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Eixample",
     "latitude": 41.38896,
     "longitude": 2.16179,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "les Corts",
-    "latitude": 41.38712,
-    "longitude": 2.13007,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Sarrià-Sant Gervasi",
-    "latitude": 41.40104,
-    "longitude": 2.1394,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Horta-Guinardó",
-    "latitude": 41.41849,
-    "longitude": 2.1677,
-    "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Sants-Montjuïc",
-    "latitude": 41.37263,
-    "longitude": 2.1546,
     "country": "ES",
     "radius": 5
   },
@@ -3090,53 +637,11 @@
     "radius": 5
   },
   {
-    "name": "Ciutat Vella",
-    "latitude": 41.38022,
-    "longitude": 2.17319,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Arganzuela",
-    "latitude": 40.40021,
-    "longitude": -3.69618,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "San Blas",
-    "latitude": 40.43893,
-    "longitude": -3.61537,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Latina",
     "latitude": 40.38897,
     "longitude": -3.74569,
     "country": "ES",
     "radius": 5
-  },
-  {
-    "name": "Usera",
-    "latitude": 40.38866,
-    "longitude": -3.70035,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Salamanca",
-    "latitude": 40.42972,
-    "longitude": -3.67975,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Chamberí",
-    "latitude": 40.43404,
-    "longitude": -3.70379,
-    "country": "ES",
-    "radius": 4
   },
   {
     "name": "Carabanchel",
@@ -3146,66 +651,10 @@
     "radius": 5
   },
   {
-    "name": "City Center",
-    "latitude": 40.41831,
-    "longitude": -3.70275,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Retiro",
-    "latitude": 40.41317,
-    "longitude": -3.68307,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Delicias",
-    "latitude": 41.64928,
-    "longitude": -0.90757,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Santutxu",
-    "latitude": 43.25347,
-    "longitude": -2.9161,
-    "country": "ES",
-    "radius": 4
-  },
-  {
     "name": "Fuencarral-El Pardo",
     "latitude": 40.4984,
     "longitude": -3.7314,
     "country": "ES",
-    "radius": 5
-  },
-  {
-    "name": "Villa de Vallecas",
-    "latitude": 40.36695,
-    "longitude": -3.60146,
-    "country": "ES",
-    "radius": 4
-  },
-  {
-    "name": "Vantaa",
-    "latitude": 60.29414,
-    "longitude": 25.04099,
-    "country": "FI",
-    "radius": 5
-  },
-  {
-    "name": "Vaasa",
-    "latitude": 63.096,
-    "longitude": 21.61577,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Turku",
-    "latitude": 60.45148,
-    "longitude": 22.26869,
-    "country": "FI",
     "radius": 5
   },
   {
@@ -3214,62 +663,6 @@
     "longitude": 23.78712,
     "country": "FI",
     "radius": 5
-  },
-  {
-    "name": "Pori",
-    "latitude": 61.48333,
-    "longitude": 21.78333,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Oulu",
-    "latitude": 65.01236,
-    "longitude": 25.46816,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Lappeenranta",
-    "latitude": 61.05871,
-    "longitude": 28.18871,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Lahti",
-    "latitude": 60.98267,
-    "longitude": 25.66151,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Kuopio",
-    "latitude": 62.89238,
-    "longitude": 27.67703,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Kotka",
-    "latitude": 60.46667,
-    "longitude": 26.91667,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Jyväskylä",
-    "latitude": 62.24147,
-    "longitude": 25.72088,
-    "country": "FI",
-    "radius": 4
-  },
-  {
-    "name": "Joensuu",
-    "latitude": 62.60118,
-    "longitude": 29.76316,
-    "country": "FI",
-    "radius": 4
   },
   {
     "name": "Helsinki",
@@ -3286,88 +679,11 @@
     "radius": 5
   },
   {
-    "name": "Vitry-sur-Seine",
-    "latitude": 48.78716,
-    "longitude": 2.40332,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Villeurbanne",
-    "latitude": 45.76667,
-    "longitude": 4.88333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Versailles",
-    "latitude": 48.8,
-    "longitude": 2.13333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Vénissieux",
-    "latitude": 45.70254,
-    "longitude": 4.87147,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Vannes",
-    "latitude": 47.66667,
-    "longitude": -2.75,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Valence",
-    "latitude": 44.93333,
-    "longitude": 4.9,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Troyes",
-    "latitude": 48.3,
-    "longitude": 4.08333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Tours",
-    "latitude": 47.38333,
-    "longitude": 0.68333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Tourcoing",
-    "latitude": 50.72391,
-    "longitude": 3.16117,
-    "country": "FR",
-    "radius": 4
-  },
-  {
     "name": "Toulouse",
     "latitude": 43.60426,
     "longitude": 1.44367,
     "country": "FR",
     "radius": 6
-  },
-  {
-    "name": "Toulon",
-    "latitude": 43.11667,
-    "longitude": 5.93333,
-    "country": "FR",
-    "radius": 5
-  },
-  {
-    "name": "Tarbes",
-    "latitude": 43.23333,
-    "longitude": 0.08333,
-    "country": "FR",
-    "radius": 4
   },
   {
     "name": "Strasbourg",
@@ -3377,137 +693,11 @@
     "radius": 5
   },
   {
-    "name": "Sartrouville",
-    "latitude": 48.9482,
-    "longitude": 2.19169,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Sarcelles",
-    "latitude": 49,
-    "longitude": 2.38333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Quentin",
-    "latitude": 49.84889,
-    "longitude": 3.28757,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Nazaire",
-    "latitude": 47.28333,
-    "longitude": -2.2,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Maur-des-Fossés",
-    "latitude": 48.79395,
-    "longitude": 2.49323,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Malo",
-    "latitude": 48.65,
-    "longitude": -2.01667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Étienne",
-    "latitude": 45.43389,
-    "longitude": 4.39,
-    "country": "FR",
-    "radius": 5
-  },
-  {
-    "name": "Saint-Denis",
-    "latitude": 48.93333,
-    "longitude": 2.36667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Brieuc",
-    "latitude": 48.51513,
-    "longitude": -2.76838,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Rueil-Malmaison",
-    "latitude": 48.8765,
-    "longitude": 2.18967,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Rouen",
-    "latitude": 49.44313,
-    "longitude": 1.09932,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Roubaix",
-    "latitude": 50.69421,
-    "longitude": 3.17456,
-    "country": "FR",
-    "radius": 4
-  },
-  {
     "name": "Rennes",
     "latitude": 48.11198,
     "longitude": -1.67429,
     "country": "FR",
     "radius": 5
-  },
-  {
-    "name": "Reims",
-    "latitude": 49.25,
-    "longitude": 4.03333,
-    "country": "FR",
-    "radius": 5
-  },
-  {
-    "name": "Quimper",
-    "latitude": 48,
-    "longitude": -4.1,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Poitiers",
-    "latitude": 46.58333,
-    "longitude": 0.33333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Pessac",
-    "latitude": 44.81011,
-    "longitude": -0.64129,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Perpignan",
-    "latitude": 42.69764,
-    "longitude": 2.89541,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Pau",
-    "latitude": 43.3,
-    "longitude": -0.36667,
-    "country": "FR",
-    "radius": 4
   },
   {
     "name": "Paris",
@@ -3517,60 +707,11 @@
     "radius": 17
   },
   {
-    "name": "Pantin",
-    "latitude": 48.89437,
-    "longitude": 2.40935,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Orléans",
-    "latitude": 47.90289,
-    "longitude": 1.90389,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Noisy-le-Grand",
-    "latitude": 48.84979,
-    "longitude": 2.56266,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Niort",
-    "latitude": 46.32313,
-    "longitude": -0.45877,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Nîmes",
-    "latitude": 43.83333,
-    "longitude": 4.35,
-    "country": "FR",
-    "radius": 4
-  },
-  {
     "name": "Nice",
     "latitude": 43.70313,
     "longitude": 7.26608,
     "country": "FR",
     "radius": 6
-  },
-  {
-    "name": "Neuilly-sur-Seine",
-    "latitude": 48.8846,
-    "longitude": 2.26965,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Narbonne",
-    "latitude": 43.18333,
-    "longitude": 3,
-    "country": "FR",
-    "radius": 4
   },
   {
     "name": "Nantes",
@@ -3580,67 +721,11 @@
     "radius": 5
   },
   {
-    "name": "Nanterre",
-    "latitude": 48.89198,
-    "longitude": 2.20675,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Nancy",
-    "latitude": 48.68439,
-    "longitude": 6.18496,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Mulhouse",
-    "latitude": 47.75,
-    "longitude": 7.33333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Montreuil",
-    "latitude": 48.86415,
-    "longitude": 2.44322,
-    "country": "FR",
-    "radius": 4
-  },
-  {
     "name": "Montpellier",
     "latitude": 43.61092,
     "longitude": 3.87723,
     "country": "FR",
     "radius": 5
-  },
-  {
-    "name": "Montauban",
-    "latitude": 44.01667,
-    "longitude": 1.35,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Metz",
-    "latitude": 49.11911,
-    "longitude": 6.17269,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Mérignac",
-    "latitude": 44.83248,
-    "longitude": -0.63381,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Meaux",
-    "latitude": 48.96014,
-    "longitude": 2.87885,
-    "country": "FR",
-    "radius": 4
   },
   {
     "name": "Marseille",
@@ -3650,32 +735,11 @@
     "radius": 8
   },
   {
-    "name": "Maisons-Alfort",
-    "latitude": 48.81171,
-    "longitude": 2.43945,
-    "country": "FR",
-    "radius": 4
-  },
-  {
     "name": "Lyon",
     "latitude": 45.74846,
     "longitude": 4.84671,
     "country": "FR",
     "radius": 6
-  },
-  {
-    "name": "Lorient",
-    "latitude": 47.75,
-    "longitude": -3.36667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Limoges",
-    "latitude": 45.83153,
-    "longitude": 1.25781,
-    "country": "FR",
-    "radius": 4
   },
   {
     "name": "Lille",
@@ -3685,485 +749,9 @@
     "radius": 5
   },
   {
-    "name": "Levallois-Perret",
-    "latitude": 48.89389,
-    "longitude": 2.28864,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Le Mans",
-    "latitude": 48,
-    "longitude": 0.2,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Le Havre",
-    "latitude": 49.4938,
-    "longitude": 0.10767,
-    "country": "FR",
-    "radius": 5
-  },
-  {
-    "name": "Laval",
-    "latitude": 48.06667,
-    "longitude": -0.76667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "La Seyne-sur-Mer",
-    "latitude": 43.09818,
-    "longitude": 5.88471,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "La Roche-sur-Yon",
-    "latitude": 46.66667,
-    "longitude": -1.43333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "La Rochelle",
-    "latitude": 46.16667,
-    "longitude": -1.15,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Ivry-sur-Seine",
-    "latitude": 48.81568,
-    "longitude": 2.38487,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Issy-les-Moulineaux",
-    "latitude": 48.82104,
-    "longitude": 2.27718,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Hyères",
-    "latitude": 43.11954,
-    "longitude": 6.13897,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Grenoble",
-    "latitude": 45.16667,
-    "longitude": 5.71667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Fréjus",
-    "latitude": 43.43286,
-    "longitude": 6.73524,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Fontenay-sous-Bois",
-    "latitude": 48.85442,
-    "longitude": 2.48268,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Évry",
-    "latitude": 48.63333,
-    "longitude": 2.45,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Évreux",
-    "latitude": 49.02414,
-    "longitude": 1.15082,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Dunkerque",
-    "latitude": 51.03297,
-    "longitude": 2.377,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Drancy",
-    "latitude": 48.92578,
-    "longitude": 2.44533,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Dijon",
-    "latitude": 47.31667,
-    "longitude": 5.01667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Créteil",
-    "latitude": 48.78333,
-    "longitude": 2.46667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Courbevoie",
-    "latitude": 48.89672,
-    "longitude": 2.25666,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Colombes",
-    "latitude": 48.91882,
-    "longitude": 2.25404,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Colmar",
-    "latitude": 48.08333,
-    "longitude": 7.36667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Clichy",
-    "latitude": 48.90018,
-    "longitude": 2.30952,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Clermont-Ferrand",
-    "latitude": 45.77966,
-    "longitude": 3.08628,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Clamart",
-    "latitude": 48.80299,
-    "longitude": 2.26692,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Cholet",
-    "latitude": 47.06667,
-    "longitude": -0.88333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Châteauroux",
-    "latitude": 46.81667,
-    "longitude": 1.7,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Charleville-Mézières",
-    "latitude": 49.76667,
-    "longitude": 4.71667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Champigny-sur-Marne",
-    "latitude": 48.81642,
-    "longitude": 2.49366,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Chambéry",
-    "latitude": 45.56667,
-    "longitude": 5.93333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Châlons-en-Champagne",
-    "latitude": 48.95393,
-    "longitude": 4.36724,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Cergy",
-    "latitude": 49.03645,
-    "longitude": 2.07613,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Cannes",
-    "latitude": 43.55135,
-    "longitude": 7.01275,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Calais",
-    "latitude": 50.95194,
-    "longitude": 1.85635,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Caen",
-    "latitude": 49.18585,
-    "longitude": -0.35912,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Brive-la-Gaillarde",
-    "latitude": 45.15,
-    "longitude": 1.53333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Brest",
-    "latitude": 48.4,
-    "longitude": -4.48333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Bourges",
-    "latitude": 47.08333,
-    "longitude": 2.4,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Boulogne-Billancourt",
-    "latitude": 48.83333,
-    "longitude": 2.25,
-    "country": "FR",
-    "radius": 4
-  },
-  {
     "name": "Bordeaux",
     "latitude": 44.84044,
     "longitude": -0.5805,
-    "country": "FR",
-    "radius": 5
-  },
-  {
-    "name": "Blois",
-    "latitude": 47.58333,
-    "longitude": 1.33333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Béziers",
-    "latitude": 43.34122,
-    "longitude": 3.21402,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Besançon",
-    "latitude": 47.24878,
-    "longitude": 6.01815,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Belfort",
-    "latitude": 47.63333,
-    "longitude": 6.86667,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Beauvais",
-    "latitude": 49.43333,
-    "longitude": 2.08333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Avignon",
-    "latitude": 43.94834,
-    "longitude": 4.80892,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Aulnay-sous-Bois",
-    "latitude": 48.93814,
-    "longitude": 2.49402,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Aubervilliers",
-    "latitude": 48.91667,
-    "longitude": 2.38333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Asnières-sur-Seine",
-    "latitude": 48.91667,
-    "longitude": 2.28333,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Arles",
-    "latitude": 43.67681,
-    "longitude": 4.63031,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Argenteuil",
-    "latitude": 48.95,
-    "longitude": 2.25,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Antony",
-    "latitude": 48.75,
-    "longitude": 2.3,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Antibes",
-    "latitude": 43.56241,
-    "longitude": 7.12777,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Angers",
-    "latitude": 47.46667,
-    "longitude": -0.55,
-    "country": "FR",
-    "radius": 5
-  },
-  {
-    "name": "Amiens",
-    "latitude": 49.9,
-    "longitude": 2.3,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Albi",
-    "latitude": 43.9298,
-    "longitude": 2.148,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Ajaccio",
-    "latitude": 41.92723,
-    "longitude": 8.73462,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Aix-en-Provence",
-    "latitude": 43.5283,
-    "longitude": 5.44973,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Villeneuve-d'Ascq",
-    "latitude": 50.61669,
-    "longitude": 3.16664,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 08",
-    "latitude": 43.27083,
-    "longitude": 5.3821,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 10",
-    "latitude": 43.27889,
-    "longitude": 5.41523,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 09",
-    "latitude": 43.25433,
-    "longitude": 5.4057,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 11",
-    "latitude": 43.2907,
-    "longitude": 5.4384,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 12",
-    "latitude": 43.29614,
-    "longitude": 5.43617,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 13",
-    "latitude": 43.31856,
-    "longitude": 5.40836,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 14",
-    "latitude": 43.34447,
-    "longitude": 5.38004,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Marseille 15",
-    "latitude": 43.37224,
-    "longitude": 5.35386,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Saint-Quentin-en-Yvelines",
-    "latitude": 48.77186,
-    "longitude": 2.01891,
-    "country": "FR",
-    "radius": 4
-  },
-  {
-    "name": "Cergy-Pontoise",
-    "latitude": 49.03894,
-    "longitude": 2.07805,
     "country": "FR",
     "radius": 5
   },
@@ -4175,95 +763,11 @@
     "radius": 8
   },
   {
-    "name": "Zadar",
-    "latitude": 44.11972,
-    "longitude": 15.24222,
-    "country": "HR",
-    "radius": 4
-  },
-  {
-    "name": "Split",
-    "latitude": 43.50891,
-    "longitude": 16.43915,
-    "country": "HR",
-    "radius": 5
-  },
-  {
-    "name": "Slavonski Brod",
-    "latitude": 45.16028,
-    "longitude": 18.01556,
-    "country": "HR",
-    "radius": 4
-  },
-  {
-    "name": "Sesvete",
-    "latitude": 45.83111,
-    "longitude": 16.11639,
-    "country": "HR",
-    "radius": 4
-  },
-  {
-    "name": "Rijeka",
-    "latitude": 45.34306,
-    "longitude": 14.40917,
-    "country": "HR",
-    "radius": 4
-  },
-  {
-    "name": "Pula",
-    "latitude": 44.86833,
-    "longitude": 13.84806,
-    "country": "HR",
-    "radius": 4
-  },
-  {
-    "name": "Osijek",
-    "latitude": 45.55111,
-    "longitude": 18.69389,
-    "country": "HR",
-    "radius": 4
-  },
-  {
     "name": "Zagreb - Centar",
     "latitude": 45.81313,
     "longitude": 15.97753,
     "country": "HR",
     "radius": 8
-  },
-  {
-    "name": "Szolnok",
-    "latitude": 47.18333,
-    "longitude": 20.2,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Szeged",
-    "latitude": 46.253,
-    "longitude": 20.14824,
-    "country": "HU",
-    "radius": 5
-  },
-  {
-    "name": "Nyíregyháza",
-    "latitude": 47.95539,
-    "longitude": 21.71671,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Miskolc",
-    "latitude": 48.1,
-    "longitude": 20.78333,
-    "country": "HU",
-    "radius": 5
-  },
-  {
-    "name": "Eger",
-    "latitude": 47.90265,
-    "longitude": 20.37329,
-    "country": "HU",
-    "radius": 4
   },
   {
     "name": "Debrecen",
@@ -4273,291 +777,11 @@
     "radius": 5
   },
   {
-    "name": "Békéscsaba",
-    "latitude": 46.68333,
-    "longitude": 21.1,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Zalaegerszeg",
-    "latitude": 46.84,
-    "longitude": 16.84389,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Veszprém",
-    "latitude": 47.09327,
-    "longitude": 17.91149,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Tatabánya",
-    "latitude": 47.58494,
-    "longitude": 18.39325,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Szombathely",
-    "latitude": 47.23088,
-    "longitude": 16.62155,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Székesfehérvár",
-    "latitude": 47.18995,
-    "longitude": 18.41034,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Sopron",
-    "latitude": 47.68501,
-    "longitude": 16.59049,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Pécs",
-    "latitude": 46.08333,
-    "longitude": 18.23333,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Parádsasvár",
-    "latitude": 47.9126,
-    "longitude": 19.97709,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Nagykanizsa",
-    "latitude": 46.45347,
-    "longitude": 16.99104,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Kecskemét",
-    "latitude": 46.90618,
-    "longitude": 19.69128,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Kaposvár",
-    "latitude": 46.36667,
-    "longitude": 17.8,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Győr",
-    "latitude": 47.68333,
-    "longitude": 17.63512,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Érd",
-    "latitude": 47.39489,
-    "longitude": 18.91361,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Dunaújváros",
-    "latitude": 46.96479,
-    "longitude": 18.93974,
-    "country": "HU",
-    "radius": 4
-  },
-  {
     "name": "Budapest",
     "latitude": 47.49801,
     "longitude": 19.03991,
     "country": "HU",
     "radius": 14
-  },
-  {
-    "name": "Budapest XII. kerület",
-    "latitude": 47.49192,
-    "longitude": 19.01493,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XI. kerület",
-    "latitude": 47.47603,
-    "longitude": 19.03605,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest IX. kerület",
-    "latitude": 47.48299,
-    "longitude": 19.06591,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest VIII. kerület",
-    "latitude": 47.48919,
-    "longitude": 19.07012,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest VII. kerület",
-    "latitude": 47.50045,
-    "longitude": 19.06875,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XIV. kerület",
-    "latitude": 47.5183,
-    "longitude": 19.10789,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XIII. kerület",
-    "latitude": 47.52978,
-    "longitude": 19.08068,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest IV. kerület",
-    "latitude": 47.56182,
-    "longitude": 19.08909,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XV. kerület",
-    "latitude": 47.56263,
-    "longitude": 19.11681,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XVI. kerület",
-    "latitude": 47.51482,
-    "longitude": 19.17028,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest X. kerület",
-    "latitude": 47.4791,
-    "longitude": 19.15835,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XIX. kerület",
-    "latitude": 47.45293,
-    "longitude": 19.14943,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XVIII. kerület",
-    "latitude": 47.44417,
-    "longitude": 19.17595,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XXII. kerület",
-    "latitude": 47.42698,
-    "longitude": 19.04016,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XXI. kerület",
-    "latitude": 47.43047,
-    "longitude": 19.07098,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XX. kerület",
-    "latitude": 47.43674,
-    "longitude": 19.10093,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest XVII. kerület",
-    "latitude": 47.47997,
-    "longitude": 19.25388,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest III. kerület",
-    "latitude": 47.54157,
-    "longitude": 19.04501,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Budapest II. kerület",
-    "latitude": 47.51984,
-    "longitude": 19.02218,
-    "country": "HU",
-    "radius": 4
-  },
-  {
-    "name": "Vittoria",
-    "latitude": 36.95151,
-    "longitude": 14.52788,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Trapani",
-    "latitude": 38.0176,
-    "longitude": 12.53617,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Siracusa",
-    "latitude": 37.08415,
-    "longitude": 15.27628,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Reggio Calabria",
-    "latitude": 38.11047,
-    "longitude": 15.66129,
-    "country": "IT",
-    "radius": 5
-  },
-  {
-    "name": "Ragusa",
-    "latitude": 36.92574,
-    "longitude": 14.72443,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Quartu Sant'Elena",
-    "latitude": 39.22935,
-    "longitude": 9.25004,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Palermo",
@@ -4567,46 +791,11 @@
     "radius": 8
   },
   {
-    "name": "Nicastro-Sambiase",
-    "latitude": 38.97089,
-    "longitude": 16.31285,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Messina",
     "latitude": 38.19394,
     "longitude": 15.55256,
     "country": "IT",
     "radius": 5
-  },
-  {
-    "name": "Marsala",
-    "latitude": 37.7992,
-    "longitude": 12.4367,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Gela",
-    "latitude": 37.07381,
-    "longitude": 14.24038,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Cosenza",
-    "latitude": 39.2989,
-    "longitude": 16.25307,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Catanzaro",
-    "latitude": 38.88247,
-    "longitude": 16.60086,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Catania",
@@ -4616,102 +805,11 @@
     "radius": 5
   },
   {
-    "name": "Caltanissetta",
-    "latitude": 37.49025,
-    "longitude": 14.06216,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Cagliari",
-    "latitude": 39.23054,
-    "longitude": 9.11917,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Bagheria",
-    "latitude": 38.07892,
-    "longitude": 13.51237,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Vigevano",
-    "latitude": 45.31407,
-    "longitude": 8.85437,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Vicenza",
-    "latitude": 45.54672,
-    "longitude": 11.5475,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Verona",
     "latitude": 45.4299,
     "longitude": 10.98444,
     "country": "IT",
     "radius": 5
-  },
-  {
-    "name": "Venice",
-    "latitude": 45.43713,
-    "longitude": 12.33265,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Varese",
-    "latitude": 45.82058,
-    "longitude": 8.82511,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Udine",
-    "latitude": 46.0637,
-    "longitude": 13.24458,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Trieste",
-    "latitude": 45.64325,
-    "longitude": 13.7903,
-    "country": "IT",
-    "radius": 5
-  },
-  {
-    "name": "Treviso",
-    "latitude": 45.66673,
-    "longitude": 12.2416,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Trento",
-    "latitude": 46.06787,
-    "longitude": 11.12108,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Trani",
-    "latitude": 41.27733,
-    "longitude": 16.41011,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Torre del Greco",
-    "latitude": 40.77939,
-    "longitude": 14.39782,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Turin",
@@ -4721,158 +819,11 @@
     "radius": 9
   },
   {
-    "name": "Terni",
-    "latitude": 42.56184,
-    "longitude": 12.63667,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Taranto",
-    "latitude": 40.41639,
-    "longitude": 17.25478,
-    "country": "IT",
-    "radius": 5
-  },
-  {
-    "name": "Sesto San Giovanni",
-    "latitude": 45.53329,
-    "longitude": 9.22585,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Savona",
-    "latitude": 44.30905,
-    "longitude": 8.47715,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Sassari",
-    "latitude": 40.72787,
-    "longitude": 8.55037,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "San Severo",
-    "latitude": 41.68564,
-    "longitude": 15.38148,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Salerno",
-    "latitude": 40.67545,
-    "longitude": 14.79328,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Rome",
     "latitude": 41.89193,
     "longitude": 12.51133,
     "country": "IT",
     "radius": 18
-  },
-  {
-    "name": "Rimini",
-    "latitude": 44.05755,
-    "longitude": 12.56528,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Reggio nell'Emilia",
-    "latitude": 44.69825,
-    "longitude": 10.63125,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Ravenna",
-    "latitude": 44.41344,
-    "longitude": 12.20121,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Prato",
-    "latitude": 43.87309,
-    "longitude": 11.08278,
-    "country": "IT",
-    "radius": 5
-  },
-  {
-    "name": "Potenza",
-    "latitude": 40.64175,
-    "longitude": 15.80794,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Portici",
-    "latitude": 40.81563,
-    "longitude": 14.33716,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Pistoia",
-    "latitude": 43.93064,
-    "longitude": 10.92365,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Pisa",
-    "latitude": 43.70853,
-    "longitude": 10.4036,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Piacenza",
-    "latitude": 45.04202,
-    "longitude": 9.70462,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Pescara",
-    "latitude": 42.4584,
-    "longitude": 14.20283,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Pesaro",
-    "latitude": 43.90921,
-    "longitude": 12.9164,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Perugia",
-    "latitude": 43.1122,
-    "longitude": 12.38878,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Pavia",
-    "latitude": 45.19205,
-    "longitude": 9.15917,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Parma",
-    "latitude": 44.79935,
-    "longitude": 10.32618,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Padova",
@@ -4882,39 +833,11 @@
     "radius": 5
   },
   {
-    "name": "Novara",
-    "latitude": 45.44834,
-    "longitude": 8.62328,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Napoli",
     "latitude": 40.85631,
     "longitude": 14.24641,
     "country": "IT",
     "radius": 9
-  },
-  {
-    "name": "Monza",
-    "latitude": 45.58005,
-    "longitude": 9.27246,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Molfetta",
-    "latitude": 41.20036,
-    "longitude": 16.59905,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Modena",
-    "latitude": 44.64783,
-    "longitude": 10.92539,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Milano",
@@ -4924,130 +847,11 @@
     "radius": 11
   },
   {
-    "name": "Mestre",
-    "latitude": 45.47152,
-    "longitude": 12.24017,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Matera",
-    "latitude": 40.66599,
-    "longitude": 16.60463,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Massa",
-    "latitude": 44.03541,
-    "longitude": 10.13927,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Manfredonia",
-    "latitude": 41.63065,
-    "longitude": 15.91876,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Lucca",
-    "latitude": 43.8497,
-    "longitude": 10.47234,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Livorno",
-    "latitude": 43.54427,
-    "longitude": 10.32615,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Lido di Ostia",
-    "latitude": 41.73212,
-    "longitude": 12.27654,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Legnano",
-    "latitude": 45.59788,
-    "longitude": 8.91506,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Lecce",
-    "latitude": 40.35481,
-    "longitude": 18.17244,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Latina",
-    "latitude": 41.46614,
-    "longitude": 12.9043,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "La Spezia",
-    "latitude": 44.11096,
-    "longitude": 9.83632,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Imola",
-    "latitude": 44.35916,
-    "longitude": 11.7132,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Grosseto",
-    "latitude": 42.76296,
-    "longitude": 11.10941,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Giugliano in Campania",
-    "latitude": 40.92849,
-    "longitude": 14.20197,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Genoa",
     "latitude": 44.4264,
     "longitude": 8.91519,
     "country": "IT",
     "radius": 7
-  },
-  {
-    "name": "Gallarate",
-    "latitude": 45.66019,
-    "longitude": 8.79164,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Forlì",
-    "latitude": 44.22054,
-    "longitude": 12.05245,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Foggia",
-    "latitude": 41.45845,
-    "longitude": 15.55188,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Florence",
@@ -5057,151 +861,11 @@
     "radius": 6
   },
   {
-    "name": "Ferrara",
-    "latitude": 44.84346,
-    "longitude": 11.60868,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Ercolano",
-    "latitude": 40.80783,
-    "longitude": 14.35012,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Cremona",
-    "latitude": 45.13325,
-    "longitude": 10.02129,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Como",
-    "latitude": 45.80079,
-    "longitude": 9.08065,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Cinisello Balsamo",
-    "latitude": 45.55823,
-    "longitude": 9.21495,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Cesena",
-    "latitude": 44.1391,
-    "longitude": 12.24315,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Cerignola",
-    "latitude": 41.26523,
-    "longitude": 15.89559,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Castellammare di Stabia",
-    "latitude": 40.70211,
-    "longitude": 14.48685,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Casoria",
-    "latitude": 40.90751,
-    "longitude": 14.293,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Caserta",
-    "latitude": 41.07262,
-    "longitude": 14.33231,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Carrara",
-    "latitude": 44.07926,
-    "longitude": 10.09789,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Carpi Centro",
-    "latitude": 44.78237,
-    "longitude": 10.8777,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Busto Arsizio",
-    "latitude": 45.61128,
-    "longitude": 8.84914,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Brindisi",
-    "latitude": 40.63215,
-    "longitude": 17.93607,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Brescia",
-    "latitude": 45.53558,
-    "longitude": 10.21472,
-    "country": "IT",
-    "radius": 5
-  },
-  {
-    "name": "Bolzano",
-    "latitude": 46.49067,
-    "longitude": 11.33982,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Bologna",
     "latitude": 44.49381,
     "longitude": 11.33875,
     "country": "IT",
     "radius": 6
-  },
-  {
-    "name": "Bitonto",
-    "latitude": 41.11006,
-    "longitude": 16.69086,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Bisceglie",
-    "latitude": 41.24264,
-    "longitude": 16.50104,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Bergamo",
-    "latitude": 45.69601,
-    "longitude": 9.66721,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Barletta",
-    "latitude": 41.31429,
-    "longitude": 16.28165,
-    "country": "IT",
-    "radius": 4
   },
   {
     "name": "Bari",
@@ -5211,116 +875,11 @@
     "radius": 5
   },
   {
-    "name": "Aversa",
-    "latitude": 40.97259,
-    "longitude": 14.20745,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Asti",
-    "latitude": 44.90162,
-    "longitude": 8.20751,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Arezzo",
-    "latitude": 43.46276,
-    "longitude": 11.88068,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Andria",
-    "latitude": 41.23117,
-    "longitude": 16.29797,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Ancona",
-    "latitude": 43.5942,
-    "longitude": 13.50337,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Altamura",
-    "latitude": 40.82664,
-    "longitude": 16.54952,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Alessandria",
-    "latitude": 44.90924,
-    "longitude": 8.61007,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Afragola",
-    "latitude": 40.92298,
-    "longitude": 14.30935,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Acilia-Castel Fusano-Ostia Antica",
-    "latitude": 41.76337,
-    "longitude": 12.33078,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Acerra",
-    "latitude": 40.94477,
-    "longitude": 14.3714,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Guidonia Montecelio",
-    "latitude": 41.99362,
-    "longitude": 12.72238,
-    "country": "IT",
-    "radius": 4
-  },
-  {
-    "name": "Lamezia Terme",
-    "latitude": 38.96255,
-    "longitude": 16.30938,
-    "country": "IT",
-    "radius": 4
-  },
-  {
     "name": "Vilnius",
     "latitude": 54.68916,
     "longitude": 25.2798,
     "country": "LT",
     "radius": 7
-  },
-  {
-    "name": "Šiauliai",
-    "latitude": 55.93333,
-    "longitude": 23.31667,
-    "country": "LT",
-    "radius": 4
-  },
-  {
-    "name": "Panevėžys",
-    "latitude": 55.73333,
-    "longitude": 24.35,
-    "country": "LT",
-    "radius": 4
-  },
-  {
-    "name": "Klaipėda",
-    "latitude": 55.71722,
-    "longitude": 21.1175,
-    "country": "LT",
-    "radius": 5
   },
   {
     "name": "Kaunas",
@@ -5330,137 +889,11 @@
     "radius": 6
   },
   {
-    "name": "Alytus",
-    "latitude": 54.4,
-    "longitude": 24.05,
-    "country": "LT",
-    "radius": 4
-  },
-  {
-    "name": "Dainava (Kaunas)",
-    "latitude": 54.91525,
-    "longitude": 23.96831,
-    "country": "LT",
-    "radius": 4
-  },
-  {
-    "name": "Eiguliai",
-    "latitude": 54.93133,
-    "longitude": 23.93243,
-    "country": "LT",
-    "radius": 4
-  },
-  {
-    "name": "Luxembourg",
-    "latitude": 49.61167,
-    "longitude": 6.13,
-    "country": "LU",
-    "radius": 4
-  },
-  {
-    "name": "Vec-Liepāja",
-    "latitude": 56.53333,
-    "longitude": 21.01667,
-    "country": "LV",
-    "radius": 4
-  },
-  {
     "name": "Riga",
     "latitude": 56.946,
     "longitude": 24.10589,
     "country": "LV",
     "radius": 8
-  },
-  {
-    "name": "Liepāja",
-    "latitude": 56.51667,
-    "longitude": 21.01667,
-    "country": "LV",
-    "radius": 4
-  },
-  {
-    "name": "Jūrmala",
-    "latitude": 56.968,
-    "longitude": 23.77038,
-    "country": "LV",
-    "radius": 4
-  },
-  {
-    "name": "Jelgava",
-    "latitude": 56.65,
-    "longitude": 23.71278,
-    "country": "LV",
-    "radius": 4
-  },
-  {
-    "name": "Daugavpils",
-    "latitude": 55.88333,
-    "longitude": 26.53333,
-    "country": "LV",
-    "radius": 4
-  },
-  {
-    "name": "Zwolle",
-    "latitude": 52.5125,
-    "longitude": 6.09444,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Zoetermeer",
-    "latitude": 52.0575,
-    "longitude": 4.49306,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Zeist",
-    "latitude": 52.09,
-    "longitude": 5.23333,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Zaanstad",
-    "latitude": 52.45313,
-    "longitude": 4.81356,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Zaandam",
-    "latitude": 52.43854,
-    "longitude": 4.82643,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Vlaardingen",
-    "latitude": 51.9125,
-    "longitude": 4.34167,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Venlo",
-    "latitude": 51.37,
-    "longitude": 6.16806,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Velsen-Zuid",
-    "latitude": 52.46,
-    "longitude": 4.65,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Veenendaal",
-    "latitude": 52.02863,
-    "longitude": 5.55891,
-    "country": "NL",
-    "radius": 4
   },
   {
     "name": "Utrecht",
@@ -5470,39 +903,11 @@
     "radius": 5
   },
   {
-    "name": "Tilburg",
-    "latitude": 51.55551,
-    "longitude": 5.0913,
-    "country": "NL",
-    "radius": 5
-  },
-  {
-    "name": "Spijkenisse",
-    "latitude": 51.845,
-    "longitude": 4.32917,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "'s-Hertogenbosch",
-    "latitude": 51.69917,
-    "longitude": 5.30417,
-    "country": "NL",
-    "radius": 4
-  },
-  {
     "name": "The Hague",
     "latitude": 52.07667,
     "longitude": 4.29861,
     "country": "NL",
     "radius": 6
-  },
-  {
-    "name": "Schiedam",
-    "latitude": 51.91917,
-    "longitude": 4.38889,
-    "country": "NL",
-    "radius": 4
   },
   {
     "name": "Rotterdam",
@@ -5512,256 +917,11 @@
     "radius": 7
   },
   {
-    "name": "Roosendaal",
-    "latitude": 51.53083,
-    "longitude": 4.46528,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Purmerend",
-    "latitude": 52.505,
-    "longitude": 4.95972,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Oss",
-    "latitude": 51.765,
-    "longitude": 5.51806,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Oosterhout",
-    "latitude": 51.645,
-    "longitude": 4.85972,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Nijmegen",
-    "latitude": 51.8425,
-    "longitude": 5.85278,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Nieuwegein",
-    "latitude": 52.02917,
-    "longitude": 5.08056,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Maastricht",
-    "latitude": 50.84833,
-    "longitude": 5.68889,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Lelystad",
-    "latitude": 52.50833,
-    "longitude": 5.475,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Leiden",
-    "latitude": 52.15833,
-    "longitude": 4.49306,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Leeuwarden",
-    "latitude": 53.20139,
-    "longitude": 5.80859,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Hoorn",
-    "latitude": 52.6425,
-    "longitude": 5.05972,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Hoofddorp",
-    "latitude": 52.3025,
-    "longitude": 4.68889,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Hilversum",
-    "latitude": 52.22333,
-    "longitude": 5.17639,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Hengelo",
-    "latitude": 52.26583,
-    "longitude": 6.79306,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Helmond",
-    "latitude": 51.48167,
-    "longitude": 5.66111,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Heerlen",
-    "latitude": 50.88365,
-    "longitude": 5.98154,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Hardenberg",
-    "latitude": 52.57583,
-    "longitude": 6.61944,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Haarlem",
-    "latitude": 52.38084,
-    "longitude": 4.63683,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Groningen",
-    "latitude": 53.21917,
-    "longitude": 6.56667,
-    "country": "NL",
-    "radius": 5
-  },
-  {
-    "name": "Gouda",
-    "latitude": 52.01667,
-    "longitude": 4.70833,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Enschede",
-    "latitude": 52.21833,
-    "longitude": 6.89583,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Emmen",
-    "latitude": 52.77917,
-    "longitude": 6.90694,
-    "country": "NL",
-    "radius": 4
-  },
-  {
     "name": "Eindhoven",
     "latitude": 51.44083,
     "longitude": 5.47778,
     "country": "NL",
     "radius": 5
-  },
-  {
-    "name": "Ede",
-    "latitude": 52.03333,
-    "longitude": 5.65833,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Dordrecht",
-    "latitude": 51.81,
-    "longitude": 4.67361,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Deventer",
-    "latitude": 52.255,
-    "longitude": 6.16389,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Den Helder",
-    "latitude": 52.95988,
-    "longitude": 4.75933,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Delft",
-    "latitude": 52.00667,
-    "longitude": 4.35556,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Delfshaven",
-    "latitude": 51.90488,
-    "longitude": 4.45315,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Capelle aan den IJssel",
-    "latitude": 51.92917,
-    "longitude": 4.57778,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Breda",
-    "latitude": 51.58656,
-    "longitude": 4.77596,
-    "country": "NL",
-    "radius": 5
-  },
-  {
-    "name": "Born",
-    "latitude": 51.03167,
-    "longitude": 5.80972,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Bergen op Zoom",
-    "latitude": 51.495,
-    "longitude": 4.29167,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Assen",
-    "latitude": 52.99667,
-    "longitude": 6.5625,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Arnhem",
-    "latitude": 51.98,
-    "longitude": 5.91111,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Apeldoorn",
-    "latitude": 52.21,
-    "longitude": 5.96944,
-    "country": "NL",
-    "radius": 4
   },
   {
     "name": "Amsterdam",
@@ -5771,158 +931,11 @@
     "radius": 8
   },
   {
-    "name": "Amstelveen",
-    "latitude": 52.30083,
-    "longitude": 4.86389,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Amersfoort",
-    "latitude": 52.155,
-    "longitude": 5.3875,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Alphen aan den Rijn",
-    "latitude": 52.12917,
-    "longitude": 4.65546,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Almere Stad",
-    "latitude": 52.37025,
-    "longitude": 5.21413,
-    "country": "NL",
-    "radius": 5
-  },
-  {
-    "name": "Almelo",
-    "latitude": 52.35667,
-    "longitude": 6.6625,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Alkmaar",
-    "latitude": 52.63167,
-    "longitude": 4.74861,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Amsterdam-Zuidoost",
-    "latitude": 52.3075,
-    "longitude": 4.97222,
-    "country": "NL",
-    "radius": 4
-  },
-  {
-    "name": "Żoliborz",
-    "latitude": 52.26896,
-    "longitude": 20.98644,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Zamość",
-    "latitude": 50.72314,
-    "longitude": 23.25196,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Wola",
-    "latitude": 52.2401,
-    "longitude": 20.98869,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Wawer",
-    "latitude": 52.19656,
-    "longitude": 21.17752,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Warsaw",
     "latitude": 52.22977,
     "longitude": 21.01178,
     "country": "PL",
     "radius": 14
-  },
-  {
-    "name": "Tomaszów Mazowiecki",
-    "latitude": 51.53131,
-    "longitude": 20.00855,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Tarnów",
-    "latitude": 50.01381,
-    "longitude": 20.98698,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Tarnobrzeg",
-    "latitude": 50.57304,
-    "longitude": 21.67937,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Targówek",
-    "latitude": 52.29185,
-    "longitude": 21.04845,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Suwałki",
-    "latitude": 54.11175,
-    "longitude": 22.93087,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Starachowice",
-    "latitude": 51.0374,
-    "longitude": 21.07126,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Stalowa Wola",
-    "latitude": 50.58286,
-    "longitude": 22.05334,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Śródmieście",
-    "latitude": 52.22904,
-    "longitude": 21.01644,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Siedlce",
-    "latitude": 52.16772,
-    "longitude": 22.29006,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Rzeszów",
-    "latitude": 50.04132,
-    "longitude": 21.99901,
-    "country": "PL",
-    "radius": 4
   },
   {
     "name": "Radom",
@@ -5932,67 +945,11 @@
     "radius": 5
   },
   {
-    "name": "Przemyśl",
-    "latitude": 49.78498,
-    "longitude": 22.76728,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Pruszków",
-    "latitude": 52.17072,
-    "longitude": 20.81214,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Ostrowiec Świętokrzyski",
-    "latitude": 50.92936,
-    "longitude": 21.38525,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Ostrołęka",
-    "latitude": 53.08621,
-    "longitude": 21.57566,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Olsztyn",
-    "latitude": 53.77995,
-    "longitude": 20.49416,
-    "country": "PL",
-    "radius": 5
-  },
-  {
-    "name": "Ochota",
-    "latitude": 52.22096,
-    "longitude": 20.98526,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Nowy Sącz",
-    "latitude": 49.62177,
-    "longitude": 20.69705,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Mokotów",
     "latitude": 52.1934,
     "longitude": 21.03487,
     "country": "PL",
     "radius": 5
-  },
-  {
-    "name": "Mielec",
-    "latitude": 50.28709,
-    "longitude": 21.4239,
-    "country": "PL",
-    "radius": 4
   },
   {
     "name": "Lublin",
@@ -6002,20 +959,6 @@
     "radius": 6
   },
   {
-    "name": "Łomża",
-    "latitude": 53.17806,
-    "longitude": 22.05935,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Legionowo",
-    "latitude": 52.40149,
-    "longitude": 20.92664,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Kielce",
     "latitude": 50.87033,
     "longitude": 20.62752,
@@ -6023,86 +966,9 @@
     "radius": 5
   },
   {
-    "name": "Ełk",
-    "latitude": 53.82824,
-    "longitude": 22.36469,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Chełm",
-    "latitude": 51.14312,
-    "longitude": 23.4716,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Bielany",
-    "latitude": 52.29242,
-    "longitude": 20.93531,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Białystok",
     "latitude": 53.13333,
     "longitude": 23.16433,
-    "country": "PL",
-    "radius": 5
-  },
-  {
-    "name": "Białołeka",
-    "latitude": 52.32127,
-    "longitude": 20.97204,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Biała Podlaska",
-    "latitude": 52.03238,
-    "longitude": 23.11652,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Bemowo",
-    "latitude": 52.2546,
-    "longitude": 20.90844,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Żory",
-    "latitude": 50.04523,
-    "longitude": 18.70062,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Zielona Góra",
-    "latitude": 51.93548,
-    "longitude": 15.50643,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Zgierz",
-    "latitude": 51.85561,
-    "longitude": 19.40623,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Zawiercie",
-    "latitude": 50.48766,
-    "longitude": 19.41679,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Zabrze",
-    "latitude": 50.32492,
-    "longitude": 18.78576,
     "country": "PL",
     "radius": 5
   },
@@ -6114,46 +980,11 @@
     "radius": 7
   },
   {
-    "name": "Włocławek",
-    "latitude": 52.64817,
-    "longitude": 19.0678,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Wałbrzych",
-    "latitude": 50.77141,
-    "longitude": 16.28432,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Tychy",
-    "latitude": 50.13717,
-    "longitude": 18.96641,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Toruń",
     "latitude": 53.01375,
     "longitude": 18.59814,
     "country": "PL",
     "radius": 5
-  },
-  {
-    "name": "Tczew",
-    "latitude": 54.09242,
-    "longitude": 18.77787,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Tarnowskie Góry",
-    "latitude": 50.44548,
-    "longitude": 18.86147,
-    "country": "PL",
-    "radius": 4
   },
   {
     "name": "Szczecin",
@@ -6163,67 +994,11 @@
     "radius": 6
   },
   {
-    "name": "Świętochłowice",
-    "latitude": 50.29636,
-    "longitude": 18.91726,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Świdnica",
-    "latitude": 50.84378,
-    "longitude": 16.48859,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Stargard Szczeciński",
-    "latitude": 53.33672,
-    "longitude": 15.0499,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Sosnowiec",
     "latitude": 50.28682,
     "longitude": 19.10385,
     "country": "PL",
     "radius": 5
-  },
-  {
-    "name": "Słupsk",
-    "latitude": 54.46405,
-    "longitude": 17.02872,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Siemianowice Śląskie",
-    "latitude": 50.32738,
-    "longitude": 19.02901,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Rybnik",
-    "latitude": 50.09713,
-    "longitude": 18.54179,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Ruda Śląska",
-    "latitude": 50.2584,
-    "longitude": 18.85632,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Racibórz",
-    "latitude": 50.09195,
-    "longitude": 18.21928,
-    "country": "PL",
-    "radius": 4
   },
   {
     "name": "Poznań",
@@ -6233,88 +1008,11 @@
     "radius": 7
   },
   {
-    "name": "Płock",
-    "latitude": 52.54682,
-    "longitude": 19.70638,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Piotrków Trybunalski",
-    "latitude": 51.40547,
-    "longitude": 19.70321,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Piła",
-    "latitude": 53.15145,
-    "longitude": 16.73782,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Piekary Śląskie",
-    "latitude": 50.38017,
-    "longitude": 18.92653,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Pabianice",
-    "latitude": 51.66446,
-    "longitude": 19.35473,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Ostrów Wielkopolski",
-    "latitude": 51.65501,
-    "longitude": 17.80686,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Opole",
-    "latitude": 50.67211,
-    "longitude": 17.92533,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Mysłowice",
-    "latitude": 50.20745,
-    "longitude": 19.16668,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Lubin",
-    "latitude": 51.40089,
-    "longitude": 16.20149,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Łódź",
     "latitude": 51.75,
     "longitude": 19.46667,
     "country": "PL",
     "radius": 8
-  },
-  {
-    "name": "Leszno",
-    "latitude": 51.84034,
-    "longitude": 16.57494,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Legnica",
-    "latitude": 51.21006,
-    "longitude": 16.1619,
-    "country": "PL",
-    "radius": 4
   },
   {
     "name": "Kraków",
@@ -6324,100 +1022,9 @@
     "radius": 8
   },
   {
-    "name": "Koszalin",
-    "latitude": 54.19438,
-    "longitude": 16.17222,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Konin",
-    "latitude": 52.22338,
-    "longitude": 18.25121,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Kędzierzyn-Koźle",
-    "latitude": 50.34984,
-    "longitude": 18.22606,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Katowice",
     "latitude": 50.25841,
     "longitude": 19.02754,
-    "country": "PL",
-    "radius": 5
-  },
-  {
-    "name": "Kalisz",
-    "latitude": 51.76109,
-    "longitude": 18.09102,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Jelenia Góra",
-    "latitude": 50.89973,
-    "longitude": 15.72899,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Jaworzno",
-    "latitude": 50.20528,
-    "longitude": 19.27498,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Jastrzębie Zdrój",
-    "latitude": 49.95542,
-    "longitude": 18.57479,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Inowrocław",
-    "latitude": 52.79886,
-    "longitude": 18.26387,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Grudziądz",
-    "latitude": 53.48411,
-    "longitude": 18.75366,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Gorzów Wielkopolski",
-    "latitude": 52.73679,
-    "longitude": 15.22878,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Gniezno",
-    "latitude": 52.53481,
-    "longitude": 17.58259,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Głogów",
-    "latitude": 51.66361,
-    "longitude": 16.0845,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Gliwice",
-    "latitude": 50.29761,
-    "longitude": 18.67658,
     "country": "PL",
     "radius": 5
   },
@@ -6436,44 +1043,9 @@
     "radius": 6
   },
   {
-    "name": "Fordon",
-    "latitude": 53.14821,
-    "longitude": 18.17036,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Elbląg",
-    "latitude": 54.1522,
-    "longitude": 19.40884,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Dąbrowa Górnicza",
-    "latitude": 50.31818,
-    "longitude": 19.2374,
-    "country": "PL",
-    "radius": 4
-  },
-  {
     "name": "Częstochowa",
     "latitude": 50.79646,
     "longitude": 19.12409,
-    "country": "PL",
-    "radius": 5
-  },
-  {
-    "name": "Chorzów",
-    "latitude": 50.30582,
-    "longitude": 18.9742,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Bytom",
-    "latitude": 50.34802,
-    "longitude": 18.93282,
     "country": "PL",
     "radius": 5
   },
@@ -6485,137 +1057,11 @@
     "radius": 6
   },
   {
-    "name": "Bielsko-Biala",
-    "latitude": 49.82245,
-    "longitude": 19.04686,
-    "country": "PL",
-    "radius": 5
-  },
-  {
-    "name": "Bełchatów",
-    "latitude": 51.36883,
-    "longitude": 19.35671,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Będzin",
-    "latitude": 50.32607,
-    "longitude": 19.12565,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Ursynów",
-    "latitude": 52.15051,
-    "longitude": 21.05041,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Praga Północ",
-    "latitude": 52.25443,
-    "longitude": 21.03472,
-    "country": "PL",
-    "radius": 4
-  },
-  {
-    "name": "Praga Południe",
-    "latitude": 52.24424,
-    "longitude": 21.08545,
-    "country": "PL",
-    "radius": 5
-  },
-  {
-    "name": "Setúbal",
-    "latitude": 38.5244,
-    "longitude": -8.8882,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Rio de Mouro",
-    "latitude": 38.77457,
-    "longitude": -9.3276,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Queluz",
-    "latitude": 38.75657,
-    "longitude": -9.25451,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Odivelas",
-    "latitude": 38.79269,
-    "longitude": -9.1838,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Loures",
-    "latitude": 38.83091,
-    "longitude": -9.16845,
-    "country": "PT",
-    "radius": 4
-  },
-  {
     "name": "Lisbon",
     "latitude": 38.71667,
     "longitude": -9.13333,
     "country": "PT",
     "radius": 7
-  },
-  {
-    "name": "Évora",
-    "latitude": 38.56667,
-    "longitude": -7.9,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Corroios",
-    "latitude": 38.64502,
-    "longitude": -9.14843,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Cacém",
-    "latitude": 38.76698,
-    "longitude": -9.29793,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Barreiro",
-    "latitude": 38.66314,
-    "longitude": -9.0724,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Amora",
-    "latitude": 38.62961,
-    "longitude": -9.11557,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Amadora",
-    "latitude": 38.75382,
-    "longitude": -9.23083,
-    "country": "PT",
-    "radius": 5
-  },
-  {
-    "name": "Vila Nova de Gaia",
-    "latitude": 41.13363,
-    "longitude": -8.61742,
-    "country": "PT",
-    "radius": 4
   },
   {
     "name": "Porto",
@@ -6625,109 +1071,11 @@
     "radius": 5
   },
   {
-    "name": "Coimbra",
-    "latitude": 40.20564,
-    "longitude": -8.41955,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Braga",
-    "latitude": 41.55032,
-    "longitude": -8.42005,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Aveiro",
-    "latitude": 40.64427,
-    "longitude": -8.64554,
-    "country": "PT",
-    "radius": 4
-  },
-  {
-    "name": "Umeå",
-    "latitude": 63.82842,
-    "longitude": 20.25972,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Växjö",
-    "latitude": 56.87767,
-    "longitude": 14.80906,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Västerås",
-    "latitude": 59.61617,
-    "longitude": 16.55276,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Uppsala",
-    "latitude": 59.85882,
-    "longitude": 17.63889,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Täby",
-    "latitude": 59.4439,
-    "longitude": 18.06872,
-    "country": "SE",
-    "radius": 4
-  },
-  {
     "name": "Stockholm",
     "latitude": 59.33258,
     "longitude": 18.0649,
     "country": "SE",
     "radius": 11
-  },
-  {
-    "name": "Solna",
-    "latitude": 59.36004,
-    "longitude": 18.00086,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Sollentuna",
-    "latitude": 59.42804,
-    "longitude": 17.95093,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Södertälje",
-    "latitude": 59.19554,
-    "longitude": 17.62525,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Örebro",
-    "latitude": 59.27412,
-    "longitude": 15.2066,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Norrköping",
-    "latitude": 58.59419,
-    "longitude": 16.1826,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Mölndal",
-    "latitude": 57.6554,
-    "longitude": 12.01378,
-    "country": "SE",
-    "radius": 4
   },
   {
     "name": "Malmö",
@@ -6737,102 +1085,11 @@
     "radius": 5
   },
   {
-    "name": "Lund",
-    "latitude": 55.70584,
-    "longitude": 13.19321,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Linköping",
-    "latitude": 58.41086,
-    "longitude": 15.62157,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Karlstad",
-    "latitude": 59.3793,
-    "longitude": 13.50357,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Jönköping",
-    "latitude": 57.78145,
-    "longitude": 14.15618,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Huddinge",
-    "latitude": 59.23705,
-    "longitude": 17.98192,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Helsingborg",
-    "latitude": 56.04673,
-    "longitude": 12.69437,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Haninge",
-    "latitude": 59.16775,
-    "longitude": 18.14478,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Halmstad",
-    "latitude": 56.67446,
-    "longitude": 12.85676,
-    "country": "SE",
-    "radius": 4
-  },
-  {
     "name": "Göteborg",
     "latitude": 57.70716,
     "longitude": 11.96679,
     "country": "SE",
     "radius": 7
-  },
-  {
-    "name": "Gävle",
-    "latitude": 60.67452,
-    "longitude": 17.14174,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Eskilstuna",
-    "latitude": 59.36661,
-    "longitude": 16.5077,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Bromma",
-    "latitude": 59.34,
-    "longitude": 17.94,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Borås",
-    "latitude": 57.72101,
-    "longitude": 12.9401,
-    "country": "SE",
-    "radius": 4
-  },
-  {
-    "name": "Maribor",
-    "latitude": 46.55472,
-    "longitude": 15.64667,
-    "country": "SI",
-    "radius": 4
   },
   {
     "name": "Ljubljana",
@@ -6842,20 +1099,6 @@
     "radius": 5
   },
   {
-    "name": "Prešov",
-    "latitude": 48.99839,
-    "longitude": 21.23393,
-    "country": "SK",
-    "radius": 4
-  },
-  {
-    "name": "Poprad",
-    "latitude": 49.06144,
-    "longitude": 20.29798,
-    "country": "SK",
-    "radius": 4
-  },
-  {
     "name": "Košice",
     "latitude": 48.71395,
     "longitude": 21.25808,
@@ -6863,59 +1106,10 @@
     "radius": 5
   },
   {
-    "name": "Žilina",
-    "latitude": 49.22315,
-    "longitude": 18.73941,
-    "country": "SK",
-    "radius": 4
-  },
-  {
-    "name": "Trnava",
-    "latitude": 48.37741,
-    "longitude": 17.58723,
-    "country": "SK",
-    "radius": 4
-  },
-  {
-    "name": "Trenčín",
-    "latitude": 48.89452,
-    "longitude": 18.04436,
-    "country": "SK",
-    "radius": 4
-  },
-  {
-    "name": "Prievidza",
-    "latitude": 48.77446,
-    "longitude": 18.6275,
-    "country": "SK",
-    "radius": 4
-  },
-  {
-    "name": "Nitra",
-    "latitude": 48.30763,
-    "longitude": 18.08453,
-    "country": "SK",
-    "radius": 4
-  },
-  {
-    "name": "Martin",
-    "latitude": 49.06651,
-    "longitude": 18.92399,
-    "country": "SK",
-    "radius": 4
-  },
-  {
     "name": "Bratislava",
     "latitude": 48.14816,
     "longitude": 17.10674,
     "country": "SK",
     "radius": 6
-  },
-  {
-    "name": "Banská Bystrica",
-    "latitude": 48.73946,
-    "longitude": 19.15349,
-    "country": "SK",
-    "radius": 4
   }
 ]
