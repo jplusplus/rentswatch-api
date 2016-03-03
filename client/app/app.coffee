@@ -9,5 +9,3 @@ angular.module 'rentswatchApi', [
   'ui.bootstrap',
   'cfp.hotkeys'
 ]
-.config ($stateProvider, $urlRouterProvider, $locationProvider) ->
-  $urlRouterProvider.otherwise '/'

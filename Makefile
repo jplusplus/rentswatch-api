@@ -6,7 +6,7 @@ run:
 	grunt serve
 
 build:
-	grunt --force
+	grunt build --force
 
 deploy: build
 	heroku docker:release -a rentswatch-api

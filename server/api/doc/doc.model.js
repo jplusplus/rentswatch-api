@@ -72,7 +72,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
 // Filter rows in the given radius according to a center
 var inRadius = module.exports.inRadius = function(rows, latitude, longitude, radius) {
   // Convert KM radius in degree
-  var deg = radius * .01;
+  var deg = radius * 1/110.574;
   return _.filter(rows, function(row) {
     // Just using some Pythagorian intersection
     var a = longitude - row.longitude,
@@ -111,7 +111,7 @@ var all = module.exports.all = function() {
 // Gets all ads in a given radius
 var center = module.exports.center = function(lat, lng, distance) {
   // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * .01;
+  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
   // Return the promise
   var deferred = Q.defer();
   // Build a query to get every trustable ads
@@ -139,8 +139,8 @@ var center = module.exports.center = function(lat, lng, distance) {
   return deferred.promise;
 };
 
-// Count rents by decades
-var decades = module.exports.decades = function() {
+// Count rents by deciles
+var deciles = module.exports.deciles = function() {
   var deferred = Q.defer();
   // Build a query to get every trustable ads
   var query = [
@@ -172,7 +172,7 @@ var decades = module.exports.decades = function() {
 var centeredCount = module.exports.centeredCount = function(lat, lng, distance) {
   var deferred = Q.defer();
   // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * .01;
+  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
   // Build a query to get every trustable ads
   var query = [
     'SELECT COUNT(id) as "count"',
@@ -196,11 +196,11 @@ var centeredCount = module.exports.centeredCount = function(lat, lng, distance) 
   return deferred.promise;
 };
 
-// Count rents by decades around a point
-var centeredDecades = module.exports.centeredDecades = function(lat, lng, distance) {
+// Count rents by deciles around a point
+var centeredDeciles = module.exports.centeredDeciles = function(lat, lng, distance) {
   var deferred = Q.defer();
   // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * .01;
+  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
   // Build a query to get every trustable ads
   var query = [
     'SELECT',

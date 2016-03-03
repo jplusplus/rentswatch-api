@@ -1,6 +1,6 @@
 'use strict'
 
 angular
-  .module 'rentswatchApi'
+  .module('rentswatchApi')
     .controller 'MainCtrl', ->
       'ngInject'

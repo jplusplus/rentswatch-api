@@ -1,5 +1,5 @@
 angular
-  .module 'rentswatchApi'
+  .module('rentswatchApi')
     .constant 'settings',
       # Available currencies
       CURRENCIES:
