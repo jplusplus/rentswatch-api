@@ -165,6 +165,8 @@ var center = module.exports.center = function(lat, lon, radius) {
   radius = radius || DEFAULT_CENTER_DISTANCE;
   // Convert degree in radian
   var rad = (r)=> r * (Math.PI/180);
+  // Round value
+  var rn =(v)=> Math.round(v*1e9)/1e9
   // Compute square bounds
   var nlat = lat + radius / 110.574;
   var slat = lat - radius / 110.574;
@@ -179,8 +181,8 @@ var center = module.exports.center = function(lat, lon, radius) {
     'AND living_space < ' + MAX_LIVING_SPACE,
     // For performance reason we filter the rows using
     // a simple square comparaison
-    'AND ' + nlat + ' > latitude AND  ' + slat + ' < latitude',
-    'AND ' + wlon + ' < longitude AND ' + elon + ' > longitude'
+    'AND ' + rn(nlat) + ' > latitude AND  ' + rn(slat) + ' < latitude',
+    'AND ' + rn(wlon) + ' < longitude AND ' + rn(elon) + ' > longitude'
   ].join("\n");
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {

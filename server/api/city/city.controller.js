@@ -1,7 +1,8 @@
 'use strict';
 
 // External helpers
-var _ = require('lodash');
+var   _ = require('lodash'),
+request = require('request');
 // Internal helpers
 var response = require("../response"),
    paginator = require("../paginator");
@@ -13,8 +14,8 @@ var INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
 /**
  * @api {get} /api/cities List of cities
- * @apiGroup Cities
- * @apiName Index
+ * @apiGroup cities
+ * @apiName index
  *
  * @apiDescription
  *  An array of cities based on a hardcoded list.
@@ -37,10 +38,10 @@ var INDEX_EXCLUDE = ['months', 'neighborhoods'];
  *
  * @apiError 401 Only authenticated users can access the data.
  * @apiErrorExample Response (example):
-*     HTTP/1.1 401 Not Authenticated
-*     {
-*       "error": "Not authenticated request."
-*     }
+ *     HTTP/1.1 401 Not Authenticated
+ *     {
+ *       "error": "Not authenticated request."
+ *     }
  */
 exports.index = function(req, res) {
   // Build paginator parameters
@@ -59,8 +60,8 @@ exports.index = function(req, res) {
 /**
  * @api {get} /api/cities/:slug Statistics about a single city
  * @apiParam {String} slug Slug of the city
- * @apiGroup Cities
- * @apiName Show
+ * @apiGroup cities
+ * @apiName show
  *
  * @apiDescription
  *  A full object describing a city by its statistics.
@@ -84,10 +85,10 @@ exports.index = function(req, res) {
  *
  * @apiError 401 Only authenticated users can access the data.
  * @apiErrorExample Response (example):
-*     HTTP/1.1 401 Not Authenticated
-*     {
-*       "error": "Not authenticated request."
-*     }
+ *     HTTP/1.1 401 Not Authenticated
+ *     {
+ *       "error": "Not authenticated request."
+ *     }
  */
 exports.show = function(req, res) {
   var city = cities.get({ name: req.params.name });
@@ -102,14 +103,64 @@ exports.show = function(req, res) {
   }
 };
 
-// Get stats arround a given place
+/**
+ * @api {get} /api/geocode Statistics about a given location
+ * @apiParam {String} q Query to geocode the location
+ * @apiParam {Number} radius Radius in which we extract documents.
+ * @apiGroup cities
+ * @apiName geocode
+ *
+ * @apiDescription
+ *  The average rent and standard error for the location within the specified radius
+ *
+ * @apiExample {curl} Example usage:
+ *     curl -i http://api.rentswatch.com/api/cities/geocode?q=Marseille
+ *
+ * @apiSuccess {String}   name              Name of the location.
+ * @apiSuccess {String}   type              Type of the location.
+ * @apiSuccess {Number}   latitude          Latitude of the epicenter of the location.
+ * @apiSuccess {Number}   longitude         Longitude of the epicenter of the location.
+ * @apiSuccess {Number}   radius            Distance from the epicenter in KM covered by this location.
+ * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
+ * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
+ * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices.
+ *
+ * @apiError 401 Only authenticated users can access the data.
+ * @apiErrorExample Response (example):
+ *     HTTP/1.1 401 Not Authenticated
+ *     {
+ *       "error": "Not authenticated request."
+ *     }
+ */
 exports.geocode = function(req, res) {
-  var place = { q: req.query.q, radius: req.query.radius };
-  if(place) {
-    docs.center(52.52437, 13.41053, 20).then(function(rows) {
-      res.status(200).json(docs.getStats(rows));
-    }, response.handleError(res, 500)).fail(response.handleError(res, 500));
-  } else {
-    response.handleError(res, 404)('Not found');
-  }
+  // Default and maxium radius is 20
+  var place = { radius: Math.min(req.query.radius || 20, 20) };
+  // Build geocoder URL
+  var url = "http://nominatim.openstreetmap.org/search?";
+  url += "format=json&";
+  url += "limit=1&";
+  url += "osm_type=N&";
+  url += "&q=" + req.query.q;
+  // Geocode the query
+  request({ url: url, json: true }, function(err, resp, body) {
+    // Field copied from OSM
+    // No error?
+    if(!err && body.length) {
+      // Extend place with the result
+      place = _.extend(place, {
+        latitude:  body[0].lat * 1,
+        longitude: body[0].lon * 1,
+        name:      body[0].display_name,
+        type:      body[0].type
+      });
+      // Get rows for this place
+      docs.center(place.latitude, place.longitude, place.radius).then(function(rows) {
+        // Return the place and the stats associated to it
+        res.status(200).json(_.extend(place, docs.getStats(rows) ));
+      }, response.handleError(res, 500)).fail(response.handleError(res, 500));
+    } else {
+      response.handleError(res, 404)('Not found');
+    }
+  });
 };

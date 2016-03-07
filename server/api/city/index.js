@@ -6,7 +6,7 @@ var controller = require('./city.controller');
 var router = express.Router();
 
 router.get('/', controller.index);
-router.get('/:name', controller.show);
 router.get('/geocode', controller.geocode);
+router.get('/:name', controller.show);
 
 module.exports = router;
