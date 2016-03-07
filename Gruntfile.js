@@ -111,9 +111,7 @@ module.exports = function (grunt) {
         files: [
           '{.tmp,<%= yeoman.client %>}/app/**/*.css',
           '{.tmp,<%= yeoman.client %>}/app/**/*.html',
-
           '{.tmp,<%= yeoman.client %>}/app/**/*.js',
-
           '!{.tmp,<%= yeoman.client %>}app/**/*.spec.js',
           '!{.tmp,<%= yeoman.client %>}/app/**/*.mock.js',
           '<%= yeoman.client %>/assets/images/{,*//*}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -121,6 +119,13 @@ module.exports = function (grunt) {
         options: {
           livereload: true
         }
+      },
+      apidoc: {
+        files: [
+          'package.json',
+          'server/api/**/*.js',
+        ],
+        tasks: ['apidoc']
       },
       express: {
         files: [
@@ -165,6 +170,17 @@ module.exports = function (grunt) {
           '<%= yeoman.client %>/app/**/*.spec.js',
           '<%= yeoman.client %>/app/**/*.mock.js'
         ]
+      }
+    },
+
+    apidoc: {
+      dist: {
+        src: "server/api/",
+        dest: "server/views/doc/",
+        options: {
+          debug: false,
+          includeFilters: [ ".*\\.js$" ]
+        }
       }
     },
 
