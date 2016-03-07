@@ -1,11 +1,13 @@
 'use strict';
 
+// External helpers
 var _ = require('lodash');
-
+// Internal helpers
 var response = require("../response"),
    paginator = require("../paginator");
-
+// Collections and models
 var cities = require('./city.collection');
+var docs   = require('../doc/doc.model');
 
 var INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
@@ -33,6 +35,18 @@ exports.show = function(req, res) {
       city = _.extend( _.cloneDeep(city), stats);
       res.status(200).json(city);
     }).fail( response.handleError(res, 500) ); */
+  } else {
+    response.handleError(res, 404)('Not found');
+  }
+};
+
+// Get stats arround a given place
+exports.geocode = function(req, res) {
+  var place = { q: req.query.q, radius: req.query.radius };
+  if(place) {
+    docs.center(52.52437, 13.41053, 20).then(function(rows) {
+      res.status(200).json(docs.getStats(rows));
+    }, response.handleError(res, 500)).fail(response.handleError(res, 500));
   } else {
     response.handleError(res, 404)('Not found');
   }
