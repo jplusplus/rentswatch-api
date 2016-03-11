@@ -14,7 +14,7 @@ const TILE_HOST = process.env.TILE_HOST || 'https://s3-eu-west-1.amazonaws.com/r
  * @apiGroup tiles
  * @apiName proxy
  *
- * @apiDescription
+ * @apiDescription Tiles as geojson
  *
  * @apiExample {curl} Example usage:
  *     curl -i http://api.rentswatch.com/api/tiles/10/489/379
