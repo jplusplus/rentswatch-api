@@ -14,6 +14,7 @@ var INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
 /**
  * @api {get} /api/cities List of cities
+ * @apiPermission Public
  * @apiGroup cities
  * @apiName index
  *
@@ -40,7 +41,7 @@ var INDEX_EXCLUDE = ['months', 'neighborhoods'];
  * @apiErrorExample Response (example):
  *     HTTP/1.1 401 Not Authenticated
  *     {
- *       "error": "Not authenticated request."
+ *       "error": "Unauthorized token."
  *     }
  */
 exports.index = function(req, res) {
@@ -60,6 +61,7 @@ exports.index = function(req, res) {
 /**
  * @api {get} /api/cities/:slug Statistics about a single city
  * @apiParam {String} slug Slug of the city
+ * @apiPermission Public
  * @apiGroup cities
  * @apiName show
  *
@@ -83,21 +85,17 @@ exports.index = function(req, res) {
  * @apiSuccess {Number}   inequalityIndex   A build-in inequality index.
  * @apiSuccess {Object[]} months            Embeded statistics about the city by month.
  *
- * @apiError 401 Only authenticated users can access the data.
+ * @apiError 404 City not found
  * @apiErrorExample Response (example):
- *     HTTP/1.1 401 Not Authenticated
+ *     HTTP/1.1 404 Not Authenticated
  *     {
- *       "error": "Not authenticated request."
+ *       "error": "Not found."
  *     }
  */
 exports.show = function(req, res) {
   var city = cities.get({ name: req.params.name });
   if(city) {
     res.status(200).json(city);
-    /*city.getStats().then(function(stats) {
-      city = _.extend( _.cloneDeep(city), stats);
-      res.status(200).json(city);
-    }).fail( response.handleError(res, 500) ); */
   } else {
     response.handleError(res, 404)('Not found');
   }
@@ -105,8 +103,10 @@ exports.show = function(req, res) {
 
 /**
  * @api {get} /api/geocode Statistics about a given location
- * @apiParam {String} q Query to geocode the location
- * @apiParam {Number} radius Radius in which we extract documents.
+ * @apiParam {String} q Query to geocode the location.
+ * @apiParam {Number} [radius=20] Radius in which we extract documents.
+ * @apiParam {String} token User token (protected ressource).
+ * @apiPermission Authenticated
  * @apiGroup cities
  * @apiName geocode
  *
@@ -114,7 +114,7 @@ exports.show = function(req, res) {
  *  The average rent and standard error for the location within the specified radius
  *
  * @apiExample {curl} Example usage:
- *     curl -i http://api.rentswatch.com/api/cities/geocode?q=Marseille
+ *     curl -i http://api.rentswatch.com/api/cities/geocode?q=Marseille&token=<TOKEN>
  *
  * @apiSuccess {String}   name              Name of the location.
  * @apiSuccess {String}   type              Type of the location.
@@ -130,7 +130,7 @@ exports.show = function(req, res) {
  * @apiErrorExample Response (example):
  *     HTTP/1.1 401 Not Authenticated
  *     {
- *       "error": "Not authenticated request."
+ *       "error": "Unauthorized token."
  *     }
  */
 exports.geocode = function(req, res) {

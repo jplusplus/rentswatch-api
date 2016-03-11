@@ -6,8 +6,8 @@ var authentication = require('../authentication');
 
 var router = express.Router();
 
-router.get('/', authentication.token, controller.index);
+router.get('/', controller.index);
 router.get('/geocode', authentication.token, controller.geocode);
-router.get('/:name', authentication.token, controller.show);
+router.get('/:name', controller.show);
 
 module.exports = router;
