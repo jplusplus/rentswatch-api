@@ -10,7 +10,7 @@ var response = require("../response"),
 var cities = require('./city.collection');
 var docs   = require('../doc/doc.model');
 
-var INDEX_EXCLUDE = ['months', 'neighborhoods'];
+const INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
 /**
  * @api {get} /api/cities List of cities
@@ -96,7 +96,7 @@ exports.show = function(req, res) {
   var city = cities.get({ name: req.params.name });
   if(city) {
     // Temporary sync method to get city's stats
-    if(req.query.sync) {
+    if(req.query.sync && req.app.get('env') === 'development') {
       city.getStats().then(function(stats) {
         city = _.extend( _.cloneDeep(city), stats);
         res.status(200).json(city);

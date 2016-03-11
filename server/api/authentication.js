@@ -1,7 +1,4 @@
-var _ = require('lodash');
 var response = require("./response");
-// Get auth tokens
-const TOKENS = _.compact( (process.env.AUTH_TOKENS || '').split(',') );
 
 module.exports.token = function(req, res, next) {
   // Handle missing token
@@ -10,7 +7,7 @@ module.exports.token = function(req, res, next) {
       error: 'Missing authentication token.'
     });
   // Unauthorized token
-  } else if( TOKENS.indexOf(req.query.token) === -1 ) {
+  } else if( req.app.get('auth_tokens').indexOf(req.query.token) === -1 ) {
     return response.handleError(res, 401)({
       error: 'Unauthorized token.'
     });

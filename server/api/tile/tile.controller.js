@@ -2,8 +2,6 @@
 
 var request = require('request');
 var response = require("../response");
-// Where should we find the tiles?
-const TILE_HOST = process.env.TILE_HOST || 'https://s3-eu-west-1.amazonaws.com/rentswatch-api/'
 
 /**
  * @api {get} /api/tiles/:x/:y/:z Tile as geojson for a given location
@@ -28,7 +26,7 @@ const TILE_HOST = process.env.TILE_HOST || 'https://s3-eu-west-1.amazonaws.com/r
  *     }
  */
 exports.proxy = function(req, res) {
-  var url = TILE_HOST + "tiles/";
+  var url = req.app.get('tiles_host') + "tiles/";
   url += [req.params.x, req.params.y, req.params.z].join('/');
   url += ".geojson";
   request({ url: url, json: true }, function(err, r, geojson) {

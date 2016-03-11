@@ -21,7 +21,7 @@ var getValues = module.exports.getValues = function(rows) {
 var getSlope = module.exports.getSlope = function(rows) {
   // Pluck two values at a time
   var values = getValues(rows);
-  var sum_xy = sum_xx = 0;
+  var sum_xy = 0, sum_xx = 0;
 
   for (var i = 0; i < values.y.length; i++) {
     sum_xy += (values.x[i]*values.y[i]);
