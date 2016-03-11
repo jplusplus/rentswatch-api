@@ -1,3 +1,5 @@
+'use strict';
+
 var sqldb = require('../../sqldb'),
         _ = require('lodash'),
      math = require('mathjs'),
@@ -86,6 +88,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
     residualsSum += distanceToLine
   }
   var std = 1/Math.sqrt(residualsSum/(values.y.length-1));
+  var stdErr = 1/std / Math.sqrt(values.y.length);
   // Colect full statistics about this row
   var stats = {
     // Extract number of documents
@@ -95,7 +98,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
     // Timestamp of the last snapshot
     lastSnapshot:  ~~(Date.now()/1e3),
     // Caculate std for this area
-    stdErr: rows.length ? math.std( _.map(rows, 'total_rent') ) : null
+    stdErr: stdErr
   };
   // Create an array containg stats aggregated by month
   if(byMonth) {
