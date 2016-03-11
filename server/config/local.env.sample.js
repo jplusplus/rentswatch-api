@@ -10,4 +10,6 @@ module.exports = {
   SESSION_SECRET: 'rentswatchApi-secret',
   // Control debug level for modules using visionmedia/debug
   DEBUG: '',
+  // Token allowing API access
+  AUTH_TOKENS: ''
 };

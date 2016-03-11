@@ -134,6 +134,7 @@ exports.show = function(req, res) {
  *     }
  */
 exports.geocode = function(req, res) {
+  if(!req.query.q) return response.handleError(res, 400)("Missing 'q' parameter.")
   // Default and maxium radius is 20
   var place = { radius: Math.min(req.query.radius || 20, 20) };
   // Build geocoder URL

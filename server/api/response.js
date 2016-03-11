@@ -15,6 +15,9 @@ module.exports.handleError = function(res, statusCode) {
   return function(err) {
     if( err instanceof Error) {
       res.send(statusCode, err.message);
+    } else if( typeof err === 'string') {
+      console.log(err)
+      res.send(statusCode, { error: err });
     } else {
       res.send(statusCode, err);
     }
