@@ -34,7 +34,7 @@ var INDEX_EXCLUDE = ['months', 'neighborhoods'];
  * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
  * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
  * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
- * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices per m².
  * @apiSuccess {Number}   inequalityIndex   A build-in inequality index.
  *
  * @apiError 401 Only authenticated users can access the data.
@@ -81,7 +81,7 @@ exports.index = function(req, res) {
  * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
  * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
  * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
- * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices per m².
  * @apiSuccess {Number}   inequalityIndex   A build-in inequality index.
  * @apiSuccess {Object[]} months            Embeded statistics about the city by month.
  *
@@ -95,7 +95,15 @@ exports.index = function(req, res) {
 exports.show = function(req, res) {
   var city = cities.get({ name: req.params.name });
   if(city) {
-    res.status(200).json(city);
+    // Temporary sync method to get city's stats
+    if(req.query.sync) {
+      city.getStats().then(function(stats) {
+        city = _.extend( _.cloneDeep(city), stats);
+        res.status(200).json(city);
+      }).fail( response.handleError(res, 500) );
+    } else {
+      res.status(200).json(city);
+    }
   } else {
     response.handleError(res, 404)('Not found');
   }
@@ -124,7 +132,7 @@ exports.show = function(req, res) {
  * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
  * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
  * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
- * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices per m².
  *
  * @apiError 401 Only authenticated users can access the data.
  * @apiErrorExample Response (example):

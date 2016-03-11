@@ -8,15 +8,17 @@ const DEFAULT_CENTER_DISTANCE = 5;
 const MAX_TOTAL_RENT = module.exports.MAX_TOTAL_RENT = 3000;
 const MAX_LIVING_SPACE = module.exports.MAX_LIVING_SPACE = 200;
 
-
-var getSlope = module.exports.getSlope = function(rows) {
-  // Pluck two values at a time
-  var values = _.reduce(rows, function(res, row) {
+var getValues = module.exports.getValues = function(rows) {
+  return _.reduce(rows, function(res, row) {
     res.x.push(row.total_rent);
     res.y.push(row.living_space);
     return res;
   }, { x:[], y:[] });
+}
 
+var getSlope = module.exports.getSlope = function(rows) {
+  // Pluck two values at a time
+  var values = getValues(rows);
   var sum_xy = sum_xx = 0;
 
   for (var i = 0; i < values.y.length; i++) {
@@ -75,16 +77,25 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
     var month = "0" + (date.getMonth() + 1)
     return date.getFullYear() + '-' + month.substr(month.length - 2)
   };
+  var values = getValues(rows);
+  var slope = getSlope(rows);
+  // Calculate standard error by sqm
+  var residualsSum = 0;
+  for(var i = 0; i < values.y.length; i++) {
+    var distanceToLine = Math.abs(values.x[i]*slope - values.y[i]) / Math.sqrt(Math.pow(slope, 2) + 1)
+    residualsSum += distanceToLine
+  }
+  var std = 1/Math.sqrt(residualsSum/(values.y.length-1));
   // Colect full statistics about this row
   var stats = {
     // Extract number of documents
     total: rows.length,
     // Extract the slope for the given rows
-    avgPricePerSqm: 1/getSlope(rows),
+    avgPricePerSqm: 1/slope,
     // Timestamp of the last snapshot
     lastSnapshot:  ~~(Date.now()/1e3),
     // Caculate std for this area
-    stdErr: rows.length ? math.std( _.map(rows, 'total_rent') ) : null,
+    stdErr: rows.length ? math.std( _.map(rows, 'total_rent') ) : null
   };
   // Create an array containg stats aggregated by month
   if(byMonth) {
