@@ -14,6 +14,7 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
 /**
  * @api {get} /api/cities List of cities
+ * @apiParam {Number} [offset=0] Offset to start from (each page returns 50 cities) 
  * @apiPermission Public
  * @apiGroup cities
  * @apiName index
