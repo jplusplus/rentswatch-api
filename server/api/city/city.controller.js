@@ -34,8 +34,8 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods'];
  * @apiSuccess {String}   slug              A slug version of the name of the city.
  * @apiSuccess {Number}   total             Total number of data points used to generate the statistics.
  * @apiSuccess {Number}   avgPricePerSqm    Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
- * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noticed.
- * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price.
+ * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noted.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price. The actual rent prices in a city are avgPricePerSqm + or - stdErr per square meters.
  * @apiSuccess {Number}   inequalityIndex   A build-in inequality index. It is the standard deviation of the rent prices between neighborhoods. An inequality index of 0 means that rents in all neighborhoods are the same. The larger the differences, the larger the index.
  *
  * @apiError 401 Only authenticated users can access the data.
@@ -67,24 +67,24 @@ exports.index = function(req, res) {
  * @apiName show
  *
  * @apiDescription
- *  A full object describing a city by its statistics.
+ *  A series of statistics for a given city.
  *
  * @apiExample {curl} Example usage:
  *     curl -i http://api.rentswatch.com/api/cities/berlin
  *
  * @apiSuccess {String}   name              Name of the city.
- * @apiSuccess {Number}   latitude          Latitude of the epicenter of the city.
- * @apiSuccess {Number}   longitude         Longitude of the epicenter of the city.
- * @apiSuccess {String}   country           ISO3 code of the country.
- * @apiSuccess {Number}   radius            Distance from the epicenter in KM covered by this city.
- * @apiSuccess {Object[]} neighborhoods     Embeded statistics about the city's neighborhoods.
+ * @apiSuccess {Number}   latitude          Latitude of the geographical center of the city.
+ * @apiSuccess {Number}   longitude         Longitude of the geographical center of the city.
+ * @apiSuccess {String}   country           ISO-alpha 3 code of the country.
+ * @apiSuccess {Number}   radius            Radius of the city in kilometers.
+ * @apiSuccess {Object[]} neighborhoods     A list of neighborhoods for the city. For each neighborhood, the same statistics are provided.
  * @apiSuccess {String}   slug              A slug version of the name of the city.
- * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
- * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
- * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
- * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices per m².
- * @apiSuccess {Number}   inequalityIndex   A build-in inequality index.
- * @apiSuccess {Object[]} months            Embeded statistics about the city by month.
+ * @apiSuccess {Number}   total             Total number of data points used to generate the statistics.
+ * @apiSuccess {Number}   avgPricePerSqm    Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
+ * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noted.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price. The actual rent prices in a city are avgPricePerSqm + or - stdErr per square meters.
+ * @apiSuccess {Number}   inequalityIndex   A build-in inequality index. It is the standard deviation of the rent prices between neighborhoods. An inequality index of 0 means that rents in all neighborhoods are the same. The larger the differences, the larger the index.
+ * @apiSuccess {Object[]} months            Statistics about rent prices in the city by month.
  *
  * @apiError 404 City not found
  * @apiErrorExample Response (example):
@@ -113,27 +113,27 @@ exports.show = function(req, res) {
 /**
  * @api {get} /api/geocode Statistics about a given location
  * @apiParam {String} q Query to geocode the location.
- * @apiParam {Number} [radius=20] Radius in which we extract documents.
+ * @apiParam {Number} [radius=20] Radius of the circle to generate statistics from.
  * @apiParam {String} token User token (protected ressource).
  * @apiPermission Authenticated
  * @apiGroup cities
  * @apiName geocode
  *
  * @apiDescription
- *  The average rent and standard error for the location within the specified radius
+ *  A series of statistical indicators for a given location and a given radius. The query is geolocated using Open Street Map. It accepts city names, neighborhoods, addresses or any other descriptor.
  *
  * @apiExample {curl} Example usage:
  *     curl -i http://api.rentswatch.com/api/cities/geocode?q=Marseille&token=<TOKEN>
  *
  * @apiSuccess {String}   name              Name of the location.
- * @apiSuccess {String}   type              Type of the location.
- * @apiSuccess {Number}   latitude          Latitude of the epicenter of the location.
- * @apiSuccess {Number}   longitude         Longitude of the epicenter of the location.
- * @apiSuccess {Number}   radius            Distance from the epicenter in KM covered by this location.
- * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
- * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
- * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
- * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices per m².
+ * @apiSuccess {String}   type              OSM type of the location.
+ * @apiSuccess {Number}   latitude          Latitude of the geographical center of the location.
+ * @apiSuccess {Number}   longitude         Longitude of the geographical center of the location.
+ * @apiSuccess {Number}   radius            Radius of the city in kilometers.
+ * @apiSuccess {Number}   total             Total number of data points used to generate the statistics.
+ * @apiSuccess {Number}   avgPricePerSqm    Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
+ * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noted.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price. The actual rent prices in a city are avgPricePerSqm + or - stdErr per square meters.
  *
  * @apiError 401 Only authenticated users can access the data.
  * @apiErrorExample Response (example):
