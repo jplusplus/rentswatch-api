@@ -19,23 +19,24 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods'];
  * @apiName index
  *
  * @apiDescription
- *  An array of cities based on a hardcoded list.
- *  For each city, the average price, the standard error and the inequality index.
+ *  Returns a series of statistical information for each European city with a population above 100,000 inhabitants that Rentswatch monitors.
+ *  For each city, the method returns the average price, the standard error and the inequality index.
+ *  Cities are not defined by their administrative boundaries but by a circle around a geographical center. 
  *
  * @apiExample {curl} Example usage:
  *     curl -i http://api.rentswatch.com/api/cities
  *
  * @apiSuccess {String}   name              Name of the city.
- * @apiSuccess {Number}   latitude          Latitude of the epicenter of the city.
- * @apiSuccess {Number}   longitude         Longitude of the epicenter of the city.
- * @apiSuccess {String}   country           ISO3 code of the country.
- * @apiSuccess {Number}   radius            Distance from the epicenter in KM covered by this city.
+ * @apiSuccess {Number}   latitude          Latitude of the geographical center of the city.
+ * @apiSuccess {Number}   longitude         Longitude of the geographical center of the city.
+ * @apiSuccess {String}   country           ISO-alpha 3 code of the country.
+ * @apiSuccess {Number}   radius            Radius of the city in kilometers.
  * @apiSuccess {String}   slug              A slug version of the name of the city.
- * @apiSuccess {Number}   total             Total number of documents used to generates statistics.
- * @apiSuccess {Number}   avgPricePerSqm    Average price per m² in Euro.
- * @apiSuccess {Number}   lastSnapshot      Timestamp of the last snapshot of this data.
- * @apiSuccess {Number}   stdErr            Standard deviation of the rent prices per m².
- * @apiSuccess {Number}   inequalityIndex   A build-in inequality index.
+ * @apiSuccess {Number}   total             Total number of data points used to generate the statistics.
+ * @apiSuccess {Number}   avgPricePerSqm    Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
+ * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noticed.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price.
+ * @apiSuccess {Number}   inequalityIndex   A build-in inequality index. It is the standard deviation of the rent prices between neighborhoods. An inequality index of 0 means that rents in all neighborhoods are the same. The larger the differences, the larger the index.
  *
  * @apiError 401 Only authenticated users can access the data.
  * @apiErrorExample Response (example):
