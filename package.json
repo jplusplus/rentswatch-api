@@ -1,9 +1,9 @@
 {
   "name": "rentswatch-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "server/app.js",
   "apidoc": {
-    "description": "",
+    "description": "The Rentswatch API lets you access the largest database of rent prices in Europe. For any question, send us an email at contact@rentswatch.com",
     "name": "Rentswatch API",
     "template": {
       "forceLanguage": "en"
