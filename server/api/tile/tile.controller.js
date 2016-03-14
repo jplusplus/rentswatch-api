@@ -18,7 +18,9 @@ var response = require("../response");
  *     curl -i http://api.rentswatch.com/api/tiles/10/489/379
  *
  * @apiSuccess {String} type  Type of the geojson.
+ * @apiSuccess {Object} features  The GeoJSON features.
  * @apiSuccess {Array} features.geometry  The GeoJSON geometry.
+ * @apiSuccess {Object} features.properties  The GeoJSON properties.
  * @apiSuccess {String} features.properties.price_per_sqm  Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
  * @apiError 404 Tile not found
  * @apiErrorExample Response (example):
