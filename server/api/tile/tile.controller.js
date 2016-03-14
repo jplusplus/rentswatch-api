@@ -9,7 +9,7 @@ var response = require("../response");
  * @apiParam {Number} x X number of the tile for the given zoom level
  * @apiParam {Number} y Y number of the tile for the given zoom level
  * @apiPermission Public
- * @apiGroup tiles
+ * @apiGroup Tiles
  * @apiName proxy
  *
  * @apiDescription GeoJSON tiles of the rent prices.

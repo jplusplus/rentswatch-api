@@ -14,15 +14,15 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods'];
 
 /**
  * @api {get} /api/cities List of cities
- * @apiParam {Number} [offset=0] Offset to start from (each page returns 50 cities) 
+ * @apiParam {Number} [offset=0] Offset to start from (each page returns 50 cities)
  * @apiPermission Public
- * @apiGroup cities
+ * @apiGroup Cities
  * @apiName index
  *
  * @apiDescription
  *  Returns a series of statistical information for each European city with a population above 100,000 inhabitants that Rentswatch monitors.
  *  For each city, the method returns the average price, the standard error and the inequality index.
- *  Cities are not defined by their administrative boundaries but by a circle around a geographical center. 
+ *  Cities are not defined by their administrative boundaries but by a circle around a geographical center.
  *
  * @apiExample {curl} Example usage:
  *     curl -i http://api.rentswatch.com/api/cities
@@ -64,7 +64,7 @@ exports.index = function(req, res) {
  * @api {get} /api/cities/:slug Statistics about a single city
  * @apiParam {String} slug Slug of the city
  * @apiPermission Public
- * @apiGroup cities
+ * @apiGroup Cities
  * @apiName show
  *
  * @apiDescription
@@ -117,7 +117,7 @@ exports.show = function(req, res) {
  * @apiParam {Number} [radius=20] Radius of the circle to generate statistics from.
  * @apiParam {String} token User token (protected ressource).
  * @apiPermission Authenticated
- * @apiGroup cities
+ * @apiGroup Cities
  * @apiName geocode
  *
  * @apiDescription
