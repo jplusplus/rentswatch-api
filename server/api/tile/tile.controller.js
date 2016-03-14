@@ -5,9 +5,9 @@ var response = require("../response");
 
 /**
  * @api {get} /api/tiles/:z/:x/:y GeoJSON tile for a given ZXY
+ * @apiParam {Number} z Zoom level of the tile
  * @apiParam {Number} x X number of the tile for the given zoom level
  * @apiParam {Number} y Y number of the tile for the given zoom level
- * @apiParam {Number} z Zoom level of the tile
  * @apiPermission Public
  * @apiGroup tiles
  * @apiName proxy
@@ -29,7 +29,7 @@ var response = require("../response");
  */
 exports.proxy = function(req, res) {
   var url = req.app.get('tiles_host') + "tiles/";
-  url += [req.params.x, req.params.y, req.params.z].join('/');
+  url += [req.params.z, req.params.x, req.params.y].join('/');
   url += ".geojson";
   request({ url: url, json: true }, function(err, r, geojson) {
     if(err || r.statusCode !== 200) {
