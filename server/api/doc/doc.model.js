@@ -103,7 +103,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
   // Create an array containg stats aggregated by month
   if(byMonth) {
     // Subsets with month must inclue an inequality index
-    stats.inequalityIndex = getInequalityIndex(rows);
+    stats.inequalityIndex = getInequalityIndex(rows) * slope;
     // Groups rows by month
     stats.months = _.chain(rows)
       // Use a custom function to obtain the key
