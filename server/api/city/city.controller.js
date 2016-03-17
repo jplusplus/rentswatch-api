@@ -145,19 +145,26 @@ exports.show = function(req, res) {
  */
 exports.geocode = function(req, res) {
   if(!req.query.q) return response.handleError(res, 400)("Missing 'q' parameter.")
+  // Get current radius
+  var radius = req.query.radius || 20;
+  radius = isNaN(radius) ? 20 : radius;
+  radius = Math.min(radius, 20);
   // Default and maxium radius is 20
-  var place = { radius: Math.min(req.query.radius || 20, 20) };
+  var place = { radius: radius };
   // Build geocoder URL
-  var url = "http://nominatim.openstreetmap.org/search?";
-  url += "format=json&";
-  url += "limit=1&";
-  url += "osm_type=N&";
-  url += "&q=" + req.query.q;
+  var url = "http://nominatim.openstreetmap.org/search";
+  // Build geocoder params
+  var params = {
+    format: "json",
+    limit: 1,
+    osm_type: "N",
+    q: req.query.q,
+  };
   // Geocode the query
-  request({ url: url, json: true }, function(err, resp, body) {
+  request({ url: url, json: true, qs: params }, function(err, resp, body) {
     // Field copied from OSM
     // No error?
-    if(!err && body.length) {
+    if(!err && body.length && body.push) {
       // Extend place with the result
       place = _.extend(place, {
         latitude:  body[0].lat * 1,
