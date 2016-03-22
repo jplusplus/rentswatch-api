@@ -2,7 +2,9 @@
 
 // External helpers
 var   _ = require('lodash'),
-request = require('request');
+request = require('request'),
+   slug = require('slug'),
+  fuzzy = require('fuzzy');
 // Internal helpers
 var response = require("../response"),
    paginator = require("../paginator");
@@ -39,12 +41,6 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods'];
  * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price. The actual rent prices in a city are avgPricePerSqm + or - stdErr per square meters.
  * @apiSuccess {Number}   inequalityIndex   A build-in inequality index. It is the standard deviation of the rent prices between neighborhoods. An inequality index of 0 means that rents in all neighborhoods are the same. The larger the differences, the larger the index.
  *
- * @apiError 401 Only authenticated users can access the data.
- * @apiErrorExample Response (example):
- *     HTTP/1.1 401 Not Authenticated
- *     {
- *       "error": "Unauthorized token."
- *     }
  */
 exports.index = function(req, res) {
   // Build paginator parameters
@@ -56,7 +52,6 @@ exports.index = function(req, res) {
     // Delete some properties
     INDEX_EXCLUDE.forEach(function(k) { delete city[k] });
     return city;
-  // Return a slice of the collections
   }));
 };
 
@@ -109,6 +104,59 @@ exports.show = function(req, res) {
   } else {
     response.handleError(res, 404)('Not found');
   }
+};
+
+/**
+ * @api {get} /api/search Search a city by its name
+ * @apiParam {String} q City name to look for.
+ * @apiParam {Number} [has_neighborhoods=0] If '1', cities without neighborhoods are excluded.
+ * @apiParam {Number} [offset=0] Offset to start from (each page returns 50 cities)
+ * @apiPermission Public
+ * @apiGroup Cities
+ * @apiName search
+ *
+ * @apiDescription
+ *  Find one or several cities for that Rentswatch monitors with there statistical information.
+ *
+ * @apiExample {curl} Example usage:
+ *     curl -i http://api.rentswatch.com/api/search?q=Berlin
+ *
+ * @apiSuccess {String}   name              Name of the city.
+ * @apiSuccess {Number}   latitude          Latitude of the geographical center of the city.
+ * @apiSuccess {Number}   longitude         Longitude of the geographical center of the city.
+ * @apiSuccess {String}   country           ISO-alpha 3 code of the country.
+ * @apiSuccess {Number}   radius            Radius of the city in kilometers.
+ * @apiSuccess {String}   slug              A slug version of the name of the city.
+ * @apiSuccess {Number}   total             Total number of data points used to generate the statistics.
+ * @apiSuccess {Number}   avgPricePerSqm    Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
+ * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noted.
+ * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price. The actual rent prices in a city are avgPricePerSqm + or - stdErr per square meters.
+ * @apiSuccess {Number}   inequalityIndex   A build-in inequality index. It is the standard deviation of the rent prices between neighborhoods. An inequality index of 0 means that rents in all neighborhoods are the same. The larger the differences, the larger the index.
+ *
+ */
+exports.search = function(req, res) {
+  // Build paginator parameters
+  var params = paginator.offset(req);
+  var q = slug(req.query.q || "");
+  // Must specified a query parameter
+  if(!q || q.length < 1) {
+    return response.validationError(res)({ error: "'q' parameter must not be empty."});
+  }
+  // Look for a city by its name
+  var filtered = cities.filter(function(item) {
+    if(1*req.query.has_neighborhoods && !item.neighborhoods) return false;
+    // Slugify city's name with slug
+    return fuzzy.test(q, slug(item.name || ''));
+  });
+  // Pick a slice
+  filtered = filtered.toArray().slice(params.offset, params.offset + params.limit);
+  // Maps the cities array to remove some properties
+  res.status(200).json(_.map(filtered, function(city) {
+    city = _.cloneDeep(city);
+    // Delete some properties
+    INDEX_EXCLUDE.forEach(function(k) { delete city[k] });
+    return city;
+  }));
 };
 
 /**

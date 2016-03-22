@@ -8,6 +8,7 @@ var router = express.Router();
 
 router.get('/', controller.index);
 router.get('/geocode', authentication.token, controller.geocode);
+router.get('/search', controller.search);
 router.get('/:name', controller.show);
 
 module.exports = router;
