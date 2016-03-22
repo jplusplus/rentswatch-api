@@ -17,6 +17,7 @@
     "composable-middleware": "0.3.0",
     "compression": "1.6.1",
     "cookie-parser": "1.4.1",
+    "cors": "^2.7.1",
     "dotenv": "2.0.0",
     "errorhandler": "1.4.3",
     "express": "4.13.4",
