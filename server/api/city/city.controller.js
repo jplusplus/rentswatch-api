@@ -178,7 +178,7 @@ exports.ranking = function(req, res) {
   var indicator = indicators.indexOf(req.query.indicator) > -1 ? req.query.indicator : 'avgPricePerSqm';
   // Pick a slice
   var ranking = _.chain(cities.toArray())
-             .sortBy('-' + indicator)
+             .sortBy( (c)=> -1* c[indicator] )
              .map( (c)=>[ c.name, c[indicator] ])
              .value()
   // Maps the cities array to remove some properties
