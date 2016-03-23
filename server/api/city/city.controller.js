@@ -119,7 +119,7 @@ exports.show = function(req, res) {
  *  Find one or several cities for that Rentswatch monitors with there statistical information.
  *
  * @apiExample {curl} Example usage:
- *     curl -i http://api.rentswatch.com/api/search?q=Berlin
+ *     curl -i http://api.rentswatch.com/api/cities/search?q=Berlin
  *
  * @apiSuccess {String}   name              Name of the city.
  * @apiSuccess {Number}   latitude          Latitude of the geographical center of the city.
@@ -157,6 +157,32 @@ exports.search = function(req, res) {
     INDEX_EXCLUDE.forEach(function(k) { delete city[k] });
     return city;
   }));
+};
+
+/**
+ * @api {get} /api/ranking Ranking of all cities
+ * @apiParam {String} [indicator=avgPricePerSqm] Indicator to use to build the ranking. Can be `avgPricePerSqm`, `total` and `inequalityIndex`.
+ * @apiPermission Public
+ * @apiGroup Cities
+ * @apiName ranking
+ *
+ * @apiDescription
+ *  A ranking of every cities according to a given indicator.
+ *
+ * @apiExample {curl} Example usage:
+ *     curl -i http://api.rentswatch.com/api/cities/ranking?indicator=inequalityIndex
+ *
+ */
+exports.ranking = function(req, res) {
+  const indicators = ['avgPricePerSqm', 'total', 'inequalityIndex']
+  var indicator = indicators.indexOf(req.query.indicator) > -1 ? req.query.indicator : 'avgPricePerSqm';
+  // Pick a slice
+  var ranking = _.chain(cities.toArray())
+             .sortBy('-' + indicator)
+             .map( (c)=>[ c.name, c[indicator] ])
+             .value()
+  // Maps the cities array to remove some properties
+  res.status(200).json(ranking);
 };
 
 /**
