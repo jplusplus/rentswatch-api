@@ -41,6 +41,7 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
   var avgPricesPerSqm = [];
   // Iterator over rows to collect bound
   rows.forEach(function(row) {
+    if(!row.latitude || !row.longitude) return;
     // Maximum latitude
     nlat = nlat === null ? row.latitude : Math.max(nlat, row.latitude);
     // Minimum latitude
@@ -57,7 +58,8 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
       var delon = 1/(111.320 * Math.cos(rad(dslat)));
       // Collect rows for this slot
       var slotRows = _.filter(rows, function(row) {
-        return row.latitude > dslat  && row.latitude  < dslat + dnlat &&
+        return row.latitude && row.longitude &&
+               row.latitude > dslat  && row.latitude  < dslat + dnlat &&
                row.longitude > dwlon && row.longitude < dwlon + delon;
       });
       // At leat 5 docs
@@ -72,7 +74,7 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
   return avgPricesPerSqm.length ? math.std(avgPricesPerSqm) : null;
 };
 
-var getStats = module.exports.getStats = function(rows, byMonth) {
+var getStats = module.exports.getStats = function(rows, radius, byMonth) {
   // Help to extract a uniq key by month for the given row
   var getMonthKey = function(row) {
     var date  = new Date(row.created_at);
@@ -102,8 +104,11 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
   };
   // Create an array containg stats aggregated by month
   if(byMonth) {
-    // Subsets with month must inclue an inequality index
-    stats.inequalityIndex = getInequalityIndex(rows) * slope;
+    // Calculate inequalityIndex for city with a radius smaller than 100km
+    if(radius && radius < 100) {
+      // Subsets with month must include an inequality index
+      stats.inequalityIndex = getInequalityIndex(rows) * slope;
+    }
     // Groups rows by month
     stats.months = _.chain(rows)
       // Use a custom function to obtain the key
@@ -116,7 +121,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
           // Create the key with the first rows (they all have the same)
           { month: getMonthKey(rows[0]) },
           // Merge objects
-          getStats(rows, false)
+          getStats(rows, radius, false)
         );
       })
       // Sort by month key
@@ -159,8 +164,9 @@ var all = module.exports.all = function() {
   ].join("\n");
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
+    if(err) deferred.reject(err);
     // We use the given connection
-    connection.query(query, function(err, rows) {
+    else connection.query(query, function(err, rows) {
       if(err) deferred.reject(err);
       else deferred.resolve(rows);
       // And done with the connection.

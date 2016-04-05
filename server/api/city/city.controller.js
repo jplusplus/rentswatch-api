@@ -249,7 +249,7 @@ exports.geocode = function(req, res) {
       // Get rows for this place
       docs.center(place.latitude, place.longitude, place.radius).then(function(rows) {
         // Return the place and the stats associated to it
-        res.status(200).json(_.extend(place, docs.getStats(rows) ));
+        res.status(200).json(_.extend(place, docs.getStats(rows, radius) ));
       }, response.handleError(res, 500)).fail(response.handleError(res, 500));
     } else {
       response.handleError(res, 404)('Not found');

@@ -1,5 +1,12 @@
 [
   {
+    "name": "all",
+    "latitude": 43.85,
+    "longitude": -12.86,
+    "country": null,
+    "radius": null
+  },
+  {
     "name": "Vienna",
     "latitude": 48.20849,
     "longitude": 16.37208,
