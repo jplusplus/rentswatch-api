@@ -12,7 +12,7 @@ var response = require("../response"),
 var cities = require('./city.collection');
 var docs   = require('../doc/doc.model');
 
-const INDEX_EXCLUDE = ['months', 'neighborhoods'];
+const INDEX_EXCLUDE = ['months', 'neighborhoods', 'deciles'];
 
 /**
  * @api {get} /api/cities List of cities
@@ -245,12 +245,18 @@ exports.geocode = function(req, res) {
         latitude:  body[0].lat * 1,
         longitude: body[0].lon * 1,
         name:      body[0].display_name,
-        type:      body[0].type
+        type:      body[0].type,
+        deciles:   []
       });
       // Get rows for this place
       docs.center(place.latitude, place.longitude, place.radius).then(function(rows) {
-        // Return the place and the stats associated to it
-        res.status(200).json(_.extend(place, docs.getStats(rows, radius) ));
+        place = _.extend(place, docs.getStats(rows, radius) );
+        // Get deciles for this place
+        docs.deciles(rows).then(function(deciles){
+          place.deciles = deciles;
+          // Return the place and the stats associated to it
+          res.status(200).json(place);
+        }, response.handleError(res, 500)).fail(response.handleError(res, 500));
       }, response.handleError(res, 500)).fail(response.handleError(res, 500));
     } else {
       response.handleError(res, 404)('Not found');

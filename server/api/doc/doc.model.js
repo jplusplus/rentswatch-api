@@ -225,65 +225,27 @@ var center = module.exports.center = function(lat, lon, radius) {
 };
 
 // Count rents by deciles
-var deciles = module.exports.deciles = function() {
+var deciles = module.exports.deciles = function(rows) {
   var deferred = Q.defer();
-  // Build a query to get every trustable ads
-  var query = [
-    'SELECT',
-      '10 * (total_rent div 10) as "from",',
-      '10 * (total_rent div 10) + 10 as "to",',
-      'COUNT(id) as "count"',
-    'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
-    'GROUP BY total_rent div 10'
-  ].join("\n");
-  // For better performance we use a poolConnection
-  sqldb.mysql.getConnection(function(err, connection) {
-    // We use the given connection
-    connection.query(query, function(err, rows, fields) {
-      if(err) deferred.reject(err);
-      else deferred.resolve(rows, fields);
-      // And done with the connection.
-      connection.release();
+  var deciles = [];
+  // Create a range for every decile
+  for(var i = 30; i < MAX_TOTAL_RENT;) {
+    deciles.push({
+      from: i,
+      to: i + 10,
+      count: _.filter(rows, function(row) {
+        return row.total_rent && row.total_rent >= i && row.total_rent < i + 10;
+      }).length
     });
-  });
+    // Move from 10 to 10
+    i += 10;
+  }
+  // We resolve a promise for retro-compatibility
+  deferred.resolve(deciles);
   // Return the promise
   return deferred.promise;
 };
 
-// Count rents by deciles around a point
-var centeredDeciles = module.exports.centeredDeciles = function(lat, lon, distance) {
-  var deferred = Q.defer();
-  // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
-  // Build a query to get every trustable ads
-  var query = [
-    'SELECT',
-      '10 * (total_rent div 10) as "from",',
-      '10 * (total_rent div 10) + 10 as "to",',
-      'COUNT(id) as "count"',
-    'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
-    'AND POWER(' + lon + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)',
-    'GROUP BY total_rent div 10'
-  ].join("\n");
-  // For better performance we use a poolConnection
-  sqldb.mysql.getConnection(function(err, connection) {
-    // We use the given connection
-    connection.query(query, function(err, rows, fields) {
-      if(err) deferred.reject(err);
-      else deferred.resolve(rows, fields);
-      // And done with the connection.
-      connection.release();
-    });
-  });
-  // Return the promise
-  return deferred.promise;
-};
 
 var losRegression = module.exports.losRegression = function() {
   // Return the promise
