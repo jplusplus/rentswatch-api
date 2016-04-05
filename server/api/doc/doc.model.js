@@ -94,7 +94,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
     // Extract number of documents
     total: rows.length,
     // Extract the slope for the given rows
-    avgPricePerSqm: 1/slope,
+    avgPricePerSqm: rows.length > 3 ? 1/slope : null,
     // Timestamp of the last snapshot
     lastSnapshot:  ~~(Date.now()/1e3),
     // Caculate std for this area
