@@ -4,7 +4,57 @@
     "latitude": 48.20849,
     "longitude": 16.37208,
     "country": "AT",
-    "radius": 14
+    "radius": 14,
+    "neighborhoods": [
+      {
+        "name": "Innere Stadt",
+        "radius": 2,
+        "latitude": 48.208877,
+        "longitude": 16.369743
+      },
+      {
+        "name": "Leopoldstadt",
+        "radius": 2,
+        "latitude": 48.217206,
+        "longitude": 16.391191
+      },
+      {
+        "name": "Landstrasse",
+        "radius": 2,
+        "latitude": 48.20174,
+        "longitude": 16.391612
+      },
+      {
+        "name": "Margareten",
+        "radius": 2,
+        "latitude": 48.185762,
+        "longitude": 16.353903
+      },
+      {
+        "name": "Mariahilf",
+        "radius": 2,
+        "latitude": 48.196378,
+        "longitude": 16.351577
+      },
+      {
+        "name": "Neubau",
+        "radius": 2,
+        "latitude": 48.204288,
+        "longitude": 16.34897
+      },
+      {
+        "name": "Josefstadt",
+        "radius": 2,
+        "latitude": 48.212476,
+        "longitude": 16.345401
+      },
+      {
+        "name": "Alsergrund",
+        "radius": 2,
+        "latitude": 48.224904,
+        "longitude": 16.356984
+      }
+    ]
   },
   {
     "name": "Graz",
@@ -32,7 +82,123 @@
     "latitude": 50.85045,
     "longitude": 4.34878,
     "country": "BE",
-    "radius": 10
+    "radius": 10,
+    "neighborhoods": [
+      {
+        "name": "Anderlecht",
+        "radius": 2,
+        "latitude": 50.836581,
+        "longitude": 4.308187
+      },
+      {
+        "name": "Auderghem",
+        "radius": 2,
+        "latitude": 50.816406,
+        "longitude": 4.426518
+      },
+      {
+        "name": "Berchem-Sainte-Agathe",
+        "radius": 2,
+        "latitude": 50.865782,
+        "longitude": 4.292598
+      },
+      {
+        "name": "Bruxelles",
+        "radius": 2,
+        "latitude": 50.85034,
+        "longitude": 4.35171
+      },
+      {
+        "name": "Etterbeek",
+        "radius": 2,
+        "latitude": 50.832578,
+        "longitude": 4.388994
+      },
+      {
+        "name": "Evere",
+        "radius": 2,
+        "latitude": 50.873935,
+        "longitude": 4.400942
+      },
+      {
+        "name": "Forest",
+        "radius": 2,
+        "latitude": 50.813433,
+        "longitude": 4.324834
+      },
+      {
+        "name": "Ganshoren",
+        "radius": 2,
+        "latitude": 50.872987,
+        "longitude": 4.309333
+      },
+      {
+        "name": "Ixelles",
+        "radius": 2,
+        "latitude": 50.833343,
+        "longitude": 4.366629
+      },
+      {
+        "name": "Jette",
+        "radius": 2,
+        "latitude": 50.880858,
+        "longitude": 4.322789
+      },
+      {
+        "name": "Koekelberg",
+        "radius": 2,
+        "latitude": 50.863381,
+        "longitude": 4.330338
+      },
+      {
+        "name": "Molenbeek-Saint-Jean",
+        "radius": 2,
+        "latitude": 50.852201,
+        "longitude": 4.330328
+      },
+      {
+        "name": "Saint-Gilles",
+        "radius": 2,
+        "latitude": 50.830144,
+        "longitude": 4.340218
+      },
+      {
+        "name": "Saint-Josse-ten-Noode",
+        "radius": 2,
+        "latitude": 50.853772,
+        "longitude": 4.370466
+      },
+      {
+        "name": "Schaerbeek",
+        "radius": 2,
+        "latitude": 50.867416,
+        "longitude": 4.377298
+      },
+      {
+        "name": "Uccle",
+        "radius": 2,
+        "latitude": 50.802398,
+        "longitude": 4.34067
+      },
+      {
+        "name": "Watermael-Boitsfort",
+        "radius": 2,
+        "latitude": 50.788157,
+        "longitude": 4.418007
+      },
+      {
+        "name": "Woluwe-Saint-Lambert",
+        "radius": 2,
+        "latitude": 50.848909,
+        "longitude": 4.432088
+      },
+      {
+        "name": "Woluwe-Saint-Pierre",
+        "radius": 2,
+        "latitude": 50.829981,
+        "longitude": 4.433504
+      }
+    ]
   },
   {
     "name": "Antwerpen",
@@ -46,14 +212,132 @@
     "latitude": 47.36667,
     "longitude": 8.55,
     "country": "CH",
-    "radius": 6
+    "radius": 6,
+    "neighborhoods": [
+      {
+        "name": "Kreis 1",
+        "radius": 2,
+        "latitude": 47.374156,
+        "longitude": 8.539632
+      },
+      {
+        "name": "Kreis 2",
+        "radius": 2,
+        "latitude": 47.343046,
+        "longitude": 8.527225
+      },
+      {
+        "name": "Kreis 3",
+        "radius": 2,
+        "latitude": 47.364101,
+        "longitude": 8.509246
+      },
+      {
+        "name": "Kreis 4",
+        "radius": 2,
+        "latitude": 47.380756,
+        "longitude": 8.517289
+      },
+      {
+        "name": "Kreis 5",
+        "radius": 2,
+        "latitude": 47.386674,
+        "longitude": 8.520589
+      },
+      {
+        "name": "Kreis 6",
+        "radius": 2,
+        "latitude": 47.393446,
+        "longitude": 8.545448
+      },
+      {
+        "name": "Kreis 7",
+        "radius": 2,
+        "latitude": 47.368398,
+        "longitude": 8.583532
+      },
+      {
+        "name": "Kreis 8",
+        "radius": 2,
+        "latitude": 47.357465,
+        "longitude": 8.565011
+      }
+    ]
   },
   {
     "name": "Prague",
     "latitude": 50.08804,
     "longitude": 14.42076,
     "country": "CZ",
-    "radius": 11
+    "radius": 11,
+    "neighborhoods": [
+      {
+        "name": "Cerny Most",
+        "radius": 2,
+        "latitude": 50.106449,
+        "longitude": 14.574448
+      },
+      {
+        "name": "Dejvice",
+        "radius": 2,
+        "latitude": 50.101743,
+        "longitude": 14.393182
+      },
+      {
+        "name": "Florenc",
+        "radius": 2,
+        "latitude": 50.09117,
+        "longitude": 14.438711
+      },
+      {
+        "name": "Holesovice",
+        "radius": 2,
+        "latitude": 50.100518,
+        "longitude": 14.450032
+      },
+      {
+        "name": "Letna",
+        "radius": 2,
+        "latitude": 50.099444,
+        "longitude": 14.420833
+      },
+      {
+        "name": "Podoli",
+        "radius": 2,
+        "latitude": 50.057588,
+        "longitude": 14.420736
+      },
+      {
+        "name": "Smichov",
+        "radius": 2,
+        "latitude": 50.07201,
+        "longitude": 14.404067
+      },
+      {
+        "name": "Stare Mesto",
+        "radius": 2,
+        "latitude": 50.089438,
+        "longitude": 14.419407
+      },
+      {
+        "name": "Vinohrady",
+        "radius": 2,
+        "latitude": 50.07802,
+        "longitude": 14.436324
+      },
+      {
+        "name": "Vrsovice",
+        "radius": 2,
+        "latitude": 50.069119,
+        "longitude": 14.452581
+      },
+      {
+        "name": "Zizkov",
+        "radius": 2,
+        "latitude": 50.080646,
+        "longitude": 14.45639
+      }
+    ]
   },
   {
     "name": "Ostrava",
@@ -207,7 +491,141 @@
     "latitude": 53.57532,
     "longitude": 10.01534,
     "country": "DE",
-    "radius": 14
+    "radius": 14,
+    "neighborhoods": [
+      {
+        "name": "Alsterdorf",
+        "radius": 2,
+        "latitude": 53.609999,
+        "longitude": 10.012282
+      },
+      {
+        "name": "Altona-Altstadt",
+        "radius": 2,
+        "latitude": 53.553577,
+        "longitude": 9.951865
+      },
+      {
+        "name": "Barmbek",
+        "radius": 2,
+        "latitude": 53.587424,
+        "longitude": 10.044472
+      },
+      {
+        "name": "Blankenese",
+        "radius": 2,
+        "latitude": 53.566344,
+        "longitude": 9.798389
+      },
+      {
+        "name": "Eimsbüttel",
+        "radius": 2,
+        "latitude": 53.574768,
+        "longitude": 9.959453
+      },
+      {
+        "name": "Eppendorf",
+        "radius": 2,
+        "latitude": 53.594151,
+        "longitude": 9.98943
+      },
+      {
+        "name": "Finkenwerder",
+        "radius": 2,
+        "latitude": 53.529481,
+        "longitude": 9.863512
+      },
+      {
+        "name": "Fuhlsbüttel",
+        "radius": 2,
+        "latitude": 53.629555,
+        "longitude": 9.991153
+      },
+      {
+        "name": "HafenCity",
+        "radius": 2,
+        "latitude": 53.539536,
+        "longitude": 10.005129
+      },
+      {
+        "name": "Hamburg-Altstadt",
+        "radius": 2,
+        "latitude": 53.54841,
+        "longitude": 9.99709
+      },
+      {
+        "name": "Hamm",
+        "radius": 2,
+        "latitude": 53.553145,
+        "longitude": 10.055476
+      },
+      {
+        "name": "Marienthal",
+        "radius": 2,
+        "latitude": 53.568327,
+        "longitude": 10.100759
+      },
+      {
+        "name": "Neustadt",
+        "radius": 2,
+        "latitude": 53.55112,
+        "longitude": 9.98112
+      },
+      {
+        "name": "Ottensen",
+        "radius": 2,
+        "latitude": 53.556026,
+        "longitude": 9.922617
+      },
+      {
+        "name": "Poppenbüttel",
+        "radius": 2,
+        "latitude": 53.65753,
+        "longitude": 10.081011
+      },
+      {
+        "name": "St. Georg",
+        "radius": 2,
+        "latitude": 53.553056,
+        "longitude": 10.015278
+      },
+      {
+        "name": "St. Pauli",
+        "radius": 2,
+        "latitude": 53.55235,
+        "longitude": 9.966492
+      },
+      {
+        "name": "Steinwerder",
+        "radius": 2,
+        "latitude": 53.534105,
+        "longitude": 9.956019
+      },
+      {
+        "name": "Sternschanze",
+        "radius": 2,
+        "latitude": 53.562087,
+        "longitude": 9.964417
+      },
+      {
+        "name": "Veddel",
+        "radius": 2,
+        "latitude": 53.519074,
+        "longitude": 10.037156
+      },
+      {
+        "name": "Wandsbek",
+        "radius": 2,
+        "latitude": 53.653645,
+        "longitude": 10.107023
+      },
+      {
+        "name": "Winterhude",
+        "radius": 2,
+        "latitude": 53.59731,
+        "longitude": 10.009204
+      }
+    ]
   },
   {
     "name": "Halle (Saale)",
@@ -383,6 +801,12 @@
         "radius": 2
       },
       {
+        "name": "Schöneberg",
+        "latitude": 52.483333,
+        "longitude": 13.366667,
+        "radius": 2
+      },
+      {
         "name": "Prenzlauer Berg",
         "latitude": 52.53878,
         "longitude": 13.42443,
@@ -427,7 +851,93 @@
     "latitude": 55.67594,
     "longitude": 12.56553,
     "country": "DK",
-    "radius": 11
+    "radius": 11,
+    "neighborhoods": [
+      {
+        "name": "Carlsberg",
+        "radius": 2,
+        "latitude": 55.667268,
+        "longitude": 12.530443
+      },
+      {
+        "name": "Christiania",
+        "radius": 2,
+        "latitude": 55.676042,
+        "longitude": 12.608115
+      },
+      {
+        "name": "Christianshavn",
+        "radius": 2,
+        "latitude": 55.671592,
+        "longitude": 12.59294
+      },
+      {
+        "name": "City Centre",
+        "radius": 2,
+        "latitude": 55.676111,
+        "longitude": 12.568333
+      },
+      {
+        "name": "Dragør",
+        "radius": 2,
+        "latitude": 55.583333,
+        "longitude": 12.666667
+      },
+      {
+        "name": "East Amager",
+        "radius": 2,
+        "latitude": 55.61077,
+        "longitude": 12.605163
+      },
+      {
+        "name": "Frederiksberg",
+        "radius": 2,
+        "latitude": 55.666667,
+        "longitude": 12.533333
+      },
+      {
+        "name": "Hellerup",
+        "radius": 2,
+        "latitude": 55.736654,
+        "longitude": 12.569196
+      },
+      {
+        "name": "Kødbyen",
+        "radius": 2,
+        "latitude": 55.668084,
+        "longitude": 12.55893
+      },
+      {
+        "name": "Nørrebro",
+        "radius": 2,
+        "latitude": 55.699117,
+        "longitude": 12.554248
+      },
+      {
+        "name": "Ørestad",
+        "radius": 2,
+        "latitude": 55.628435,
+        "longitude": 12.578776
+      },
+      {
+        "name": "Østerbro",
+        "radius": 2,
+        "latitude": 55.709155,
+        "longitude": 12.577498
+      },
+      {
+        "name": "Valby",
+        "radius": 2,
+        "latitude": 55.661658,
+        "longitude": 12.516775
+      },
+      {
+        "name": "Vesterbro",
+        "radius": 2,
+        "latitude": 55.663895,
+        "longitude": 12.54254
+      }
+    ]
   },
   {
     "name": "Århus",
@@ -588,7 +1098,135 @@
     "latitude": 40.4165,
     "longitude": -3.70256,
     "country": "ES",
-    "radius": 24
+    "radius": 24,
+    "neighborhoods": [
+      {
+        "name": "Arganzuela",
+        "radius": 2,
+        "latitude": 40.398897,
+        "longitude": -3.710223
+      },
+      {
+        "name": "Barajas",
+        "radius": 2,
+        "latitude": 40.46537,
+        "longitude": -3.595152
+      },
+      {
+        "name": "Carabanchel",
+        "radius": 2,
+        "latitude": 40.377818,
+        "longitude": -3.751232
+      },
+      {
+        "name": "Centro",
+        "radius": 2,
+        "latitude": 40.416775,
+        "longitude": -3.70379
+      },
+      {
+        "name": "Chamartín",
+        "radius": 2,
+        "latitude": 40.461517,
+        "longitude": -3.686584
+      },
+      {
+        "name": "Chamberí",
+        "radius": 2,
+        "latitude": 40.434429,
+        "longitude": -3.713178
+      },
+      {
+        "name": "Ciudad Lineal",
+        "radius": 2,
+        "latitude": 40.445668,
+        "longitude": -3.654384
+      },
+      {
+        "name": "Fuencarral-El Pardo",
+        "radius": 2,
+        "latitude": 40.532278,
+        "longitude": -3.78415
+      },
+      {
+        "name": "Hortaleza",
+        "radius": 2,
+        "latitude": 40.469387,
+        "longitude": -3.642499
+      },
+      {
+        "name": "Latina",
+        "radius": 2,
+        "latitude": 40.40248,
+        "longitude": -3.746462
+      },
+      {
+        "name": "Moncloa-Aravaca",
+        "radius": 2,
+        "latitude": 40.441782,
+        "longitude": -3.753666
+      },
+      {
+        "name": "Moratalaz",
+        "radius": 2,
+        "latitude": 40.40722,
+        "longitude": -3.657005
+      },
+      {
+        "name": "Puente de Vallecas",
+        "radius": 2,
+        "latitude": 40.387004,
+        "longitude": -3.669533
+      },
+      {
+        "name": "Retiro",
+        "radius": 2,
+        "latitude": 40.411335,
+        "longitude": -3.674908
+      },
+      {
+        "name": "Salamanca",
+        "radius": 2,
+        "latitude": 40.427949,
+        "longitude": -3.68675
+      },
+      {
+        "name": "San Blas",
+        "radius": 2,
+        "latitude": 40.432184,
+        "longitude": -3.62788
+      },
+      {
+        "name": "Tetuán",
+        "radius": 2,
+        "latitude": 40.458835,
+        "longitude": -3.697826
+      },
+      {
+        "name": "Usera",
+        "radius": 2,
+        "latitude": 40.382593,
+        "longitude": -3.709875
+      },
+      {
+        "name": "Vicálvaro",
+        "radius": 2,
+        "latitude": 40.394028,
+        "longitude": -3.602876
+      },
+      {
+        "name": "Villa de Vallecas",
+        "radius": 2,
+        "latitude": 40.366956,
+        "longitude": -3.606064
+      },
+      {
+        "name": "Villaverde",
+        "radius": 2,
+        "latitude": 40.346911,
+        "longitude": -3.710785
+      }
+    ]
   },
   {
     "name": "A Coruña",
@@ -630,7 +1268,135 @@
     "latitude": 41.38879,
     "longitude": 2.15899,
     "country": "ES",
-    "radius": 14
+    "radius": 14,
+    "neighborhoods": [
+      {
+        "name": "Dreta de l'Eixample",
+        "radius": 2,
+        "latitude": 41.39631,
+        "longitude": 2.165383
+      },
+      {
+        "name": "El Born",
+        "radius": 2,
+        "latitude": 41.384724,
+        "longitude": 2.182858
+      },
+      {
+        "name": "El Gòtic",
+        "radius": 2,
+        "latitude": 41.381906,
+        "longitude": 2.178185
+      },
+      {
+        "name": "El Poble-sec",
+        "radius": 2,
+        "latitude": 41.37243,
+        "longitude": 2.162878
+      },
+      {
+        "name": "El Poblenou",
+        "radius": 2,
+        "latitude": 41.397737,
+        "longitude": 2.201535
+      },
+      {
+        "name": "El Raval",
+        "radius": 2,
+        "latitude": 41.379716,
+        "longitude": 2.168184
+      },
+      {
+        "name": "Gràcia",
+        "radius": 2,
+        "latitude": 41.409775,
+        "longitude": 2.15392
+      },
+      {
+        "name": "Horta-Guinardó",
+        "radius": 2,
+        "latitude": 41.433472,
+        "longitude": 2.136887
+      },
+      {
+        "name": "L'Antiga Esquerra de l'Eixample",
+        "radius": 2,
+        "latitude": 41.388557,
+        "longitude": 2.157303
+      },
+      {
+        "name": "La Barceloneta",
+        "radius": 2,
+        "latitude": 41.380894,
+        "longitude": 2.189385
+      },
+      {
+        "name": "La Nova Esquerra de l'Eixample",
+        "radius": 2,
+        "latitude": 41.383733,
+        "longitude": 2.14748
+      },
+      {
+        "name": "La Sagrada Família",
+        "radius": 2,
+        "latitude": 41.404484,
+        "longitude": 2.175728
+      },
+      {
+        "name": "La Vila Olímpica",
+        "radius": 2,
+        "latitude": 41.390741,
+        "longitude": 2.194149
+      },
+      {
+        "name": "Les Corts",
+        "radius": 2,
+        "latitude": 41.38349,
+        "longitude": 2.116797
+      },
+      {
+        "name": "Nou Barris",
+        "radius": 2,
+        "latitude": 41.445699,
+        "longitude": 2.179414
+      },
+      {
+        "name": "Sant Andreu",
+        "radius": 2,
+        "latitude": 41.433675,
+        "longitude": 2.18579
+      },
+      {
+        "name": "Sant Antoni",
+        "radius": 2,
+        "latitude": 41.377266,
+        "longitude": 2.158531
+      },
+      {
+        "name": "Sant Martí",
+        "radius": 2,
+        "latitude": 41.403137,
+        "longitude": 2.199451
+      },
+      {
+        "name": "Sant Pere/Santa Caterina",
+        "radius": 2,
+        "latitude": 41.386821,
+        "longitude": 2.1831
+      },
+      {
+        "name": "Sants-Montjuïc",
+        "radius": 2,
+        "latitude": 41.356136,
+        "longitude": 2.149936
+      },
+      {
+        "name": "Sarrià-Sant Gervasi",
+        "radius": 2,
+        "latitude": 41.399317,
+        "longitude": 2.134175
+      }
+    ]
   },
   {
     "name": "Badalona",
@@ -728,7 +1494,159 @@
     "latitude": 48.85341,
     "longitude": 2.3488,
     "country": "FR",
-    "radius": 17
+    "radius": 17,
+    "neighborhoods": [
+      {
+        "name": "Bastille",
+        "radius": 2,
+        "latitude": 48.853078,
+        "longitude": 2.36955
+      },
+      {
+        "name": "Batignolles",
+        "radius": 2,
+        "latitude": 48.888299,
+        "longitude": 2.314768
+      },
+      {
+        "name": "Buttes-Chaumont - Belleville",
+        "radius": 2,
+        "latitude": 48.87929,
+        "longitude": 2.386528
+      },
+      {
+        "name": "Canal Saint-Martin",
+        "radius": 2,
+        "latitude": 48.876496,
+        "longitude": 2.367139
+      },
+      {
+        "name": "Champs-Elysées",
+        "radius": 2,
+        "latitude": 48.865784,
+        "longitude": 2.307314
+      },
+      {
+        "name": "Invalides - Ecole Militaire",
+        "radius": 2,
+        "latitude": 48.854194,
+        "longitude": 2.305881
+      },
+      {
+        "name": "La Chapelle",
+        "radius": 2,
+        "latitude": 48.892304,
+        "longitude": 2.365735
+      },
+      {
+        "name": "La Villette",
+        "radius": 2,
+        "latitude": 48.888389,
+        "longitude": 2.372445
+      },
+      {
+        "name": "Le Marais",
+        "radius": 2,
+        "latitude": 48.858703,
+        "longitude": 2.358804
+      },
+      {
+        "name": "Madeleine - Vendôme",
+        "radius": 2,
+        "latitude": 48.867489,
+        "longitude": 2.329244
+      },
+      {
+        "name": "Montmartre",
+        "radius": 2,
+        "latitude": 48.886715,
+        "longitude": 2.33889
+      },
+      {
+        "name": "Montparnasse",
+        "radius": 2,
+        "latitude": 48.837273,
+        "longitude": 2.335387
+      },
+      {
+        "name": "Notre Dame - Ile de La Cité",
+        "radius": 2,
+        "latitude": 48.854883,
+        "longitude": 2.347493
+      },
+      {
+        "name": "Opéra - Grands Boulevards",
+        "radius": 2,
+        "latitude": 48.856614,
+        "longitude": 2.352222
+      },
+      {
+        "name": "Palais Royal",
+        "radius": 2,
+        "latitude": 48.865221,
+        "longitude": 2.335364
+      },
+      {
+        "name": "Père Lachaise - Ménilmontant",
+        "radius": 2,
+        "latitude": 48.862965,
+        "longitude": 2.387466
+      },
+      {
+        "name": "Pigalle - Saint-Georges",
+        "radius": 2,
+        "latitude": 48.882255,
+        "longitude": 2.337573
+      },
+      {
+        "name": "Port-Royal",
+        "radius": 2,
+        "latitude": 48.839884,
+        "longitude": 2.337036
+      },
+      {
+        "name": "Porte de Clignancourt",
+        "radius": 2,
+        "latitude": 48.899692,
+        "longitude": 2.343128
+      },
+      {
+        "name": "Quartier Latin",
+        "radius": 2,
+        "latitude": 48.851378,
+        "longitude": 2.343215
+      },
+      {
+        "name": "République",
+        "radius": 2,
+        "latitude": 48.867503,
+        "longitude": 2.363811
+      },
+      {
+        "name": "Saint-Germain-des-Prés - Odéon",
+        "radius": 2,
+        "latitude": 48.854417,
+        "longitude": 2.333618
+      },
+      {
+        "name": "Saint-Paul - Ile Saint-Louis",
+        "radius": 2,
+        "latitude": 48.851833,
+        "longitude": 2.356548
+      },
+      {
+        "name": "Tour Eiffel - Champ de Mars",
+        "radius": 2,
+        "latitude": 48.85837,
+        "longitude": 2.294481
+      },
+      {
+        "name": "Vaugirard",
+        "radius": 2,
+        "latitude": 48.842162,
+        "longitude": 2.292766
+      }
+    ]
   },
   {
     "name": "Nice",
@@ -787,13 +1705,6 @@
     "radius": 8
   },
   {
-    "name": "Zagreb - Centar",
-    "latitude": 45.81313,
-    "longitude": 15.97753,
-    "country": "HR",
-    "radius": 8
-  },
-  {
     "name": "Debrecen",
     "latitude": 47.53333,
     "longitude": 21.63333,
@@ -847,7 +1758,177 @@
     "latitude": 41.89193,
     "longitude": 12.51133,
     "country": "IT",
-    "radius": 18
+    "radius": 18,
+    "neighborhoods": [
+      {
+        "name": "Aurelio",
+        "radius": 2,
+        "latitude": 41.896351,
+        "longitude": 12.437365
+      },
+      {
+        "name": "Balduina",
+        "radius": 2,
+        "latitude": 41.920676,
+        "longitude": 12.436561
+      },
+      {
+        "name": "Campitelli",
+        "radius": 2,
+        "latitude": 41.893184,
+        "longitude": 12.479565
+      },
+      {
+        "name": "Castro Pretorio",
+        "radius": 2,
+        "latitude": 41.907301,
+        "longitude": 12.504675
+      },
+      {
+        "name": "Celio",
+        "radius": 2,
+        "latitude": 41.883333,
+        "longitude": 12.5
+      },
+      {
+        "name": "Colonna",
+        "radius": 2,
+        "latitude": 41.832827,
+        "longitude": 12.753355
+      },
+      {
+        "name": "Esquilino",
+        "radius": 2,
+        "latitude": 41.893289,
+        "longitude": 12.495124
+      },
+      {
+        "name": "EUR",
+        "radius": 2,
+        "latitude": 41.826611,
+        "longitude": 12.46672
+      },
+      {
+        "name": "Garbatella",
+        "radius": 2,
+        "latitude": 41.867191,
+        "longitude": 12.493635
+      },
+      {
+        "name": "Monti",
+        "radius": 2,
+        "latitude": 41.874,
+        "longitude": 12.460353
+      },
+      {
+        "name": "Ostiense",
+        "radius": 2,
+        "latitude": 41.872783,
+        "longitude": 12.483898
+      },
+      {
+        "name": "Parione",
+        "radius": 2,
+        "latitude": 41.898661,
+        "longitude": 12.470807
+      },
+      {
+        "name": "Pigna",
+        "radius": 2,
+        "latitude": 41.89703,
+        "longitude": 12.478008
+      },
+      {
+        "name": "Pigneto",
+        "radius": 2,
+        "latitude": 41.888603,
+        "longitude": 12.528204
+      },
+      {
+        "name": "Portuense",
+        "radius": 2,
+        "latitude": 41.855102,
+        "longitude": 12.452388
+      },
+      {
+        "name": "Prati",
+        "radius": 2,
+        "latitude": 41.51359,
+        "longitude": 13.127183
+      },
+      {
+        "name": "Quadraro",
+        "radius": 2,
+        "latitude": 41.861878,
+        "longitude": 12.54924
+      },
+      {
+        "name": "Regola",
+        "radius": 2,
+        "latitude": 41.893126,
+        "longitude": 12.473547
+      },
+      {
+        "name": "Ripa",
+        "radius": 2,
+        "latitude": 41.910696,
+        "longitude": 12.499882
+      },
+      {
+        "name": "Roma Centro",
+        "radius": 2,
+        "latitude": 41.902784,
+        "longitude": 12.496366
+      },
+      {
+        "name": "San Giovanni",
+        "radius": 2,
+        "latitude": 41.768319,
+        "longitude": 12.50686
+      },
+      {
+        "name": "San Lorenzo",
+        "radius": 2,
+        "latitude": 41.921513,
+        "longitude": 13.099982
+      },
+      {
+        "name": "Sant'Angelo",
+        "radius": 2,
+        "latitude": 41.901878,
+        "longitude": 12.466444
+      },
+      {
+        "name": "Sant'Eustachio",
+        "radius": 2,
+        "latitude": 41.898192,
+        "longitude": 12.475614
+      },
+      {
+        "name": "Testaccio",
+        "radius": 2,
+        "latitude": 41.875952,
+        "longitude": 12.475694
+      },
+      {
+        "name": "Trastevere",
+        "radius": 2,
+        "latitude": 41.876324,
+        "longitude": 12.46907
+      },
+      {
+        "name": "Trevi",
+        "radius": 2,
+        "latitude": 41.900933,
+        "longitude": 12.483313
+      },
+      {
+        "name": "Trieste",
+        "radius": 2,
+        "latitude": 41.920473,
+        "longitude": 12.50939
+      }
+    ]
   },
   {
     "name": "Padova",
@@ -952,14 +2033,168 @@
     "latitude": 52.37403,
     "longitude": 4.88969,
     "country": "NL",
-    "radius": 8
+    "radius": 8,
+    "neighborhoods": [
+      {
+        "name": "Centrum",
+        "radius": 2,
+        "latitude": 52.37172,
+        "longitude": 4.902073
+      },
+      {
+        "name": "De Pijp",
+        "radius": 2,
+        "latitude": 52.349556,
+        "longitude": 4.895923
+      },
+      {
+        "name": "Jodenbuurt & Plantage",
+        "radius": 2,
+        "latitude": 52.370216,
+        "longitude": 4.895168
+      },
+      {
+        "name": "Jordaan",
+        "radius": 2,
+        "latitude": 52.373932,
+        "longitude": 4.880876
+      },
+      {
+        "name": "Leidseplein",
+        "radius": 2,
+        "latitude": 52.363708,
+        "longitude": 4.882023
+      },
+      {
+        "name": "Museumplein & Vondelpark",
+        "radius": 2,
+        "latitude": 52.357995,
+        "longitude": 4.868648
+      },
+      {
+        "name": "Rembrandtplein",
+        "radius": 2,
+        "latitude": 52.366293,
+        "longitude": 4.897135
+      }
+    ]
   },
   {
     "name": "Warsaw",
     "latitude": 52.22977,
     "longitude": 21.01178,
     "country": "PL",
-    "radius": 14
+    "radius": 14,
+    "neighborhoods": [
+      {
+        "name": "Bemowo",
+        "radius": 2,
+        "latitude": 52.240907,
+        "longitude": 20.91133
+      },
+      {
+        "name": "Bialoleka",
+        "radius": 2,
+        "latitude": 52.328988,
+        "longitude": 21.007679
+      },
+      {
+        "name": "Bielany",
+        "radius": 2,
+        "latitude": 52.293323,
+        "longitude": 20.928664
+      },
+      {
+        "name": "Mokotow",
+        "radius": 2,
+        "latitude": 52.194157,
+        "longitude": 21.034695
+      },
+      {
+        "name": "Ochota",
+        "radius": 2,
+        "latitude": 52.210336,
+        "longitude": 20.971221
+      },
+      {
+        "name": "Praga Polnoc",
+        "radius": 2,
+        "latitude": 52.263301,
+        "longitude": 21.028317
+      },
+      {
+        "name": "Praga Poludnie",
+        "radius": 2,
+        "latitude": 52.241681,
+        "longitude": 21.08406
+      },
+      {
+        "name": "Rembertow",
+        "radius": 2,
+        "latitude": 52.263071,
+        "longitude": 21.145839
+      },
+      {
+        "name": "Srodmiescie",
+        "radius": 2,
+        "latitude": 52.229676,
+        "longitude": 21.012229
+      },
+      {
+        "name": "Targowek",
+        "radius": 2,
+        "latitude": 52.282382,
+        "longitude": 21.065368
+      },
+      {
+        "name": "Ursus",
+        "radius": 2,
+        "latitude": 52.195123,
+        "longitude": 20.883789
+      },
+      {
+        "name": "Ursynow",
+        "radius": 2,
+        "latitude": 52.137854,
+        "longitude": 21.029123
+      },
+      {
+        "name": "Wawer",
+        "radius": 2,
+        "latitude": 52.196217,
+        "longitude": 21.178225
+      },
+      {
+        "name": "Wesola",
+        "radius": 2,
+        "latitude": 52.23294,
+        "longitude": 21.225198
+      },
+      {
+        "name": "Wilanow",
+        "radius": 2,
+        "latitude": 52.15613,
+        "longitude": 21.111628
+      },
+      {
+        "name": "Wlochy",
+        "radius": 2,
+        "latitude": 52.179906,
+        "longitude": 20.947816
+      },
+      {
+        "name": "Wola",
+        "radius": 2,
+        "latitude": 52.233375,
+        "longitude": 20.957183
+      },
+      {
+        "name": "Zoliborz",
+        "radius": 2,
+        "latitude": 52.269329,
+        "longitude": 20.981875
+      }
+    ]
   },
   {
     "name": "Radom",
@@ -1135,5 +2370,50 @@
     "longitude": 17.10674,
     "country": "SK",
     "radius": 6
+  },
+  {
+    "name": "Geneva",
+    "latitude": 46.201284,
+    "longitude": 6.146902,
+    "country": "CH",
+    "radius": 5,
+    "neighborhoods": [
+      {
+        "name": "Carouge",
+        "radius": 2,
+        "latitude": 46.182967,
+        "longitude": 6.137854
+      },
+      {
+        "name": "Cologny",
+        "radius": 2,
+        "latitude": 46.224552,
+        "longitude": 6.182737
+      },
+      {
+        "name": "Lausanne",
+        "radius": 2,
+        "latitude": 46.219106,
+        "longitude": 6.14896
+      },
+      {
+        "name": "Les Eaux-Vives",
+        "radius": 2,
+        "latitude": 46.200495,
+        "longitude": 6.165454
+      },
+      {
+        "name": "Les Pâquis",
+        "radius": 2,
+        "latitude": 46.212126,
+        "longitude": 6.149746
+      },
+      {
+        "name": "Vieille Ville",
+        "radius": 2,
+        "latitude": 46.201284,
+        "longitude": 6.146902
+      }
+    ]
   }
 ]
