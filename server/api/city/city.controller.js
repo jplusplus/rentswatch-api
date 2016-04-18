@@ -229,46 +229,63 @@ exports.ranking = function(req, res) {
  */
 exports.geocode = function(req, res) {
   if(!req.query.q) return response.handleError(res, 400)("Missing 'q' parameter.")
+  // Send place's stats to the current request
+  var sendCenter = function(place) {
+    // Get rows for this place
+    docs.center(place.latitude, place.longitude, place.radius).then(function(rows) {
+      place = _.extend(place, docs.getStats(rows, radius) );
+      // Get deciles for this place
+      docs.deciles(rows).then(function(deciles){
+        place.deciles = deciles;
+        // Return the place and the stats associated to it
+        res.status(200).json(place);
+      }, response.handleError(res, 500)).fail(response.handleError(res, 500));
+    }, response.handleError(res, 500)).fail(response.handleError(res, 500));
+  }
   // Get current radius
   var radius = req.query.radius || 20;
   radius = isNaN(radius) ? 20 : radius;
   radius = Math.min(radius, 20);
   // Default and maxium radius is 20
   var place = { radius: radius };
-  // Build geocoder URL
-  var url = "http://nominatim.openstreetmap.org/search";
-  // Build geocoder params
-  var params = {
-    format: "json",
-    limit: 1,
-    osm_type: "N",
-    q: req.query.q,
-  };
-  // Geocode the query
-  request({ url: url, json: true, qs: params }, function(err, resp, body) {
-    // Field copied from OSM
-    // No error?
-    if(!err && body.length && body.push) {
-      // Extend place with the result
-      place = _.extend(place, {
-        latitude:  body[0].lat * 1,
-        longitude: body[0].lon * 1,
-        name:      body[0].display_name,
-        type:      body[0].type,
-        deciles:   []
-      });
-      // Get rows for this place
-      docs.center(place.latitude, place.longitude, place.radius).then(function(rows) {
-        place = _.extend(place, docs.getStats(rows, radius) );
-        // Get deciles for this place
-        docs.deciles(rows).then(function(deciles){
-          place.deciles = deciles;
-          // Return the place and the stats associated to it
-          res.status(200).json(place);
-        }, response.handleError(res, 500)).fail(response.handleError(res, 500));
-      }, response.handleError(res, 500)).fail(response.handleError(res, 500));
-    } else {
-      response.handleError(res, 404)('Not found');
-    }
-  });
+  // Extract coordinates from query
+  var latlng = _( req.query.q.split(',') ).map(_.trim).map(Number).value();
+  // Skip geocoding if coordinates are given
+  if( latlng.length === 2 ) {
+    // Extend place with the result
+    sendCenter(_.extend(place, {
+      latitude:  latlng[0] * 1,
+      longitude: latlng[1] * 1,
+      name:      'unkown',
+      type:      'unkown',
+      deciles:   []
+    }));
+  } else {
+    // Build geocoder URL
+    var url = "http://nominatim.openstreetmap.org/search";
+    // Build geocoder params
+    var params = {
+      format: "json",
+      limit: 1,
+      osm_type: "N",
+      q: req.query.q,
+    };
+    // Geocode the query
+    request({ url: url, json: true, qs: params }, function(err, resp, body) {
+      // Field copied from OSM
+      // No error?
+      if(!err && body.length && body.push) {
+        // Extend place with the result
+        sendCenter(_.extend(place, {
+          latitude:  body[0].lat * 1,
+          longitude: body[0].lon * 1,
+          name:      body[0].display_name,
+          type:      body[0].type,
+          deciles:   []
+        }));
+      } else {
+        response.handleError(res, 404)('Not found');
+      }
+    });
+  }
 };
