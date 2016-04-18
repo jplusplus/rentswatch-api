@@ -197,8 +197,9 @@ exports.ranking = function(req, res) {
 
 /**
  * @api {get} /api/geocode Statistics about a given location
- * @apiParam {String} q Query to geocode the location.
+ * @apiParam {String} q Query to geocode the location (can be an address or coordinates).
  * @apiParam {Number} [radius=20] Radius of the circle to generate statistics from.
+ * @apiParam {Number} [limit=0] Maximum number of flats to analyse. '0' equals all.
  * @apiParam {String} token User token (protected ressource).
  * @apiPermission Authenticated
  * @apiGroup Cities
@@ -229,10 +230,15 @@ exports.ranking = function(req, res) {
  */
 exports.geocode = function(req, res) {
   if(!req.query.q) return response.handleError(res, 400)("Missing 'q' parameter.")
+  var radius = req.query.radius || 20;
+  radius = isNaN(radius) ? 20 : radius;
+  radius = Math.min(radius, 20);
+  // Extract coordinates from query
+  var latlng = _( req.query.q.split(',') ).map(_.trim).map(Number).value();
   // Send place's stats to the current request
   var sendCenter = function(place) {
     // Get rows for this place
-    docs.center(place.latitude, place.longitude, place.radius).then(function(rows) {
+    docs.center(place.latitude, place.longitude, place.radius, req.query.limit).then(function(rows) {
       place = _.extend(place, docs.getStats(rows, radius) );
       // Get deciles for this place
       docs.deciles(rows).then(function(deciles){
@@ -243,13 +249,8 @@ exports.geocode = function(req, res) {
     }, response.handleError(res, 500)).fail(response.handleError(res, 500));
   }
   // Get current radius
-  var radius = req.query.radius || 20;
-  radius = isNaN(radius) ? 20 : radius;
-  radius = Math.min(radius, 20);
   // Default and maxium radius is 20
   var place = { radius: radius };
-  // Extract coordinates from query
-  var latlng = _( req.query.q.split(',') ).map(_.trim).map(Number).value();
   // Skip geocoding if coordinates are given
   if( latlng.length === 2 ) {
     // Extend place with the result

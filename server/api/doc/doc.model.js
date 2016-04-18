@@ -178,7 +178,7 @@ var all = module.exports.all = function() {
 };
 
 // Gets all ads in a given radius
-var center = module.exports.center = function(lat, lon, radius) {
+var center = module.exports.center = function(lat, lon, radius, limit) {
   // Return the promise
   var deferred = Q.defer();
   // We may use a default radius
@@ -203,11 +203,15 @@ var center = module.exports.center = function(lat, lon, radius) {
     // a simple square comparaison
     'AND ' + rn(nlat) + ' > latitude AND  ' + rn(slat) + ' < latitude',
     'AND ' + rn(wlon) + ' < longitude AND ' + rn(elon) + ' > longitude'
-  ].join("\n");
+  ];
+  // Should we limit the query
+  if(limit && limit > 0) {
+    query.push('LIMIT ' + parseInt(limit) );
+  }
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
     // We use the given connection
-    connection.query(query, function(err, rows) {
+    connection.query(query.join("\n"), function(err, rows) {
       if(err) deferred.reject(err);
       else {
         // We refilter every rows to have more precise selection
