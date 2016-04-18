@@ -17,6 +17,7 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods', 'deciles'];
 /**
  * @api {get} /api/cities List of cities
  * @apiParam {Number} [offset=0] Offset to start from (each page returns 50 cities)
+ * @apiParam {Number} [has_neighborhoods=0] If '1', cities without neighborhoods are excluded.
  * @apiPermission Public
  * @apiGroup Cities
  * @apiName index
@@ -45,7 +46,15 @@ const INDEX_EXCLUDE = ['months', 'neighborhoods', 'deciles'];
 exports.index = function(req, res) {
   // Build paginator parameters
   var params = paginator.offset(req);
-  var list = cities.toArray().slice(params.offset, params.offset + params.limit);
+  var list = cities.toArray()
+  // Filter list to have only cities with a neighborhood
+  if(1*req.query.has_neighborhoods) {
+    list = list.filter(function(item) {
+      return item.neighborhoods
+    });
+  }
+  // Take a slice  of the list
+  list = list.slice(params.offset, params.offset + params.limit);
   // Maps the cities array to remove some properties
   res.status(200).json(_.map(list, function(city) {
     city = _.cloneDeep(city);
