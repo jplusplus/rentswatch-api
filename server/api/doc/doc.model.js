@@ -41,6 +41,7 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
   var avgPricesPerSqm = [];
   // Iterator over rows to collect bound
   rows.forEach(function(row) {
+    if(!row.latitude || !row.longitude) return;
     // Maximum latitude
     nlat = nlat === null ? row.latitude : Math.max(nlat, row.latitude);
     // Minimum latitude
@@ -57,7 +58,8 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
       var delon = 1/(111.320 * Math.cos(rad(dslat)));
       // Collect rows for this slot
       var slotRows = _.filter(rows, function(row) {
-        return row.latitude > dslat  && row.latitude  < dslat + dnlat &&
+        return row.latitude && row.longitude &&
+               row.latitude > dslat  && row.latitude  < dslat + dnlat &&
                row.longitude > dwlon && row.longitude < dwlon + delon;
       });
       // At leat 5 docs
@@ -72,7 +74,7 @@ var getInequalityIndex = module.exports.getInequalityIndex = function(rows) {
   return avgPricesPerSqm.length ? math.std(avgPricesPerSqm) : null;
 };
 
-var getStats = module.exports.getStats = function(rows, byMonth) {
+var getStats = module.exports.getStats = function(rows, radius, byMonth) {
   // Help to extract a uniq key by month for the given row
   var getMonthKey = function(row) {
     var date  = new Date(row.created_at);
@@ -94,7 +96,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
     // Extract number of documents
     total: rows.length,
     // Extract the slope for the given rows
-    avgPricePerSqm: 1/slope,
+    avgPricePerSqm: rows.length > 3 ? 1/slope : null,
     // Timestamp of the last snapshot
     lastSnapshot:  ~~(Date.now()/1e3),
     // Caculate std for this area
@@ -102,8 +104,11 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
   };
   // Create an array containg stats aggregated by month
   if(byMonth) {
-    // Subsets with month must inclue an inequality index
-    stats.inequalityIndex = getInequalityIndex(rows);
+    // Calculate inequalityIndex for city with a radius smaller than 100km
+    if(radius && radius < 100) {
+      // Subsets with month must include an inequality index
+      stats.inequalityIndex = getInequalityIndex(rows) * slope;
+    }
     // Groups rows by month
     stats.months = _.chain(rows)
       // Use a custom function to obtain the key
@@ -116,7 +121,7 @@ var getStats = module.exports.getStats = function(rows, byMonth) {
           // Create the key with the first rows (they all have the same)
           { month: getMonthKey(rows[0]) },
           // Merge objects
-          getStats(rows, false)
+          getStats(rows, radius, false)
         );
       })
       // Sort by month key
@@ -159,8 +164,9 @@ var all = module.exports.all = function() {
   ].join("\n");
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
+    if(err) deferred.reject(err);
     // We use the given connection
-    connection.query(query, function(err, rows) {
+    else connection.query(query, function(err, rows) {
       if(err) deferred.reject(err);
       else deferred.resolve(rows);
       // And done with the connection.
@@ -172,7 +178,7 @@ var all = module.exports.all = function() {
 };
 
 // Gets all ads in a given radius
-var center = module.exports.center = function(lat, lon, radius) {
+var center = module.exports.center = function(lat, lon, radius, limit) {
   // Return the promise
   var deferred = Q.defer();
   // We may use a default radius
@@ -197,11 +203,15 @@ var center = module.exports.center = function(lat, lon, radius) {
     // a simple square comparaison
     'AND ' + rn(nlat) + ' > latitude AND  ' + rn(slat) + ' < latitude',
     'AND ' + rn(wlon) + ' < longitude AND ' + rn(elon) + ' > longitude'
-  ].join("\n");
+  ];
+  // Should we limit the query
+  if(limit && limit > 0) {
+    query.push('LIMIT ' + parseInt(limit) );
+  }
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
     // We use the given connection
-    connection.query(query, function(err, rows) {
+    connection.query(query.join("\n"), function(err, rows) {
       if(err) deferred.reject(err);
       else {
         // We refilter every rows to have more precise selection
@@ -219,65 +229,27 @@ var center = module.exports.center = function(lat, lon, radius) {
 };
 
 // Count rents by deciles
-var deciles = module.exports.deciles = function() {
+var deciles = module.exports.deciles = function(rows) {
   var deferred = Q.defer();
-  // Build a query to get every trustable ads
-  var query = [
-    'SELECT',
-      '10 * (total_rent div 10) as "from",',
-      '10 * (total_rent div 10) + 10 as "to",',
-      'COUNT(id) as "count"',
-    'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
-    'GROUP BY total_rent div 10'
-  ].join("\n");
-  // For better performance we use a poolConnection
-  sqldb.mysql.getConnection(function(err, connection) {
-    // We use the given connection
-    connection.query(query, function(err, rows, fields) {
-      if(err) deferred.reject(err);
-      else deferred.resolve(rows, fields);
-      // And done with the connection.
-      connection.release();
+  var deciles = [];
+  // Create a range for every decile
+  for(var i = 30; i < MAX_TOTAL_RENT;) {
+    deciles.push({
+      from: i,
+      to: i + 10,
+      count: _.filter(rows, function(row) {
+        return row.total_rent && row.total_rent >= i && row.total_rent < i + 10;
+      }).length
     });
-  });
+    // Move from 10 to 10
+    i += 10;
+  }
+  // We resolve a promise for retro-compatibility
+  deferred.resolve(deciles);
   // Return the promise
   return deferred.promise;
 };
 
-// Count rents by deciles around a point
-var centeredDeciles = module.exports.centeredDeciles = function(lat, lon, distance) {
-  var deferred = Q.defer();
-  // Convert KM radius in degree
-  var deg = (distance || DEFAULT_CENTER_DISTANCE) * 1/110.574;
-  // Build a query to get every trustable ads
-  var query = [
-    'SELECT',
-      '10 * (total_rent div 10) as "from",',
-      '10 * (total_rent div 10) + 10 as "to",',
-      'COUNT(id) as "count"',
-    'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
-    'AND POWER(' + lon + ' - longitude, 2) + POWER(' + lat + ' - latitude, 2) <= POWER(' + deg + ', 2)',
-    'GROUP BY total_rent div 10'
-  ].join("\n");
-  // For better performance we use a poolConnection
-  sqldb.mysql.getConnection(function(err, connection) {
-    // We use the given connection
-    connection.query(query, function(err, rows, fields) {
-      if(err) deferred.reject(err);
-      else deferred.resolve(rows, fields);
-      // And done with the connection.
-      connection.release();
-    });
-  });
-  // Return the promise
-  return deferred.promise;
-};
 
 var losRegression = module.exports.losRegression = function() {
   // Return the promise

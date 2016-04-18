@@ -1,5 +1,13 @@
 [
   {
+    "name": "all",
+    "latitude": 43.85,
+    "longitude": -12.86,
+    "country": null,
+    "radius": null,
+    "ranked": false
+  },
+  {
     "name": "Vienna",
     "latitude": 48.20849,
     "longitude": 16.37208,
@@ -54,28 +62,32 @@
         "latitude": 48.224904,
         "longitude": 16.356984
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Graz",
     "latitude": 47.06667,
     "longitude": 15.45,
     "country": "AT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Gent",
     "latitude": 51.05,
     "longitude": 3.71667,
     "country": "BE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Charleroi",
     "latitude": 50.41136,
     "longitude": 4.44448,
     "country": "BE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Brussels",
@@ -198,14 +210,16 @@
         "latitude": 50.829981,
         "longitude": 4.433504
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Antwerpen",
     "latitude": 51.21989,
     "longitude": 4.40346,
     "country": "BE",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Zürich",
@@ -262,7 +276,8 @@
         "latitude": 47.357465,
         "longitude": 8.565011
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Prague",
@@ -337,154 +352,176 @@
         "latitude": 50.080646,
         "longitude": 14.45639
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Ostrava",
     "latitude": 49.83465,
     "longitude": 18.28204,
     "country": "CZ",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Brno",
     "latitude": 49.19522,
     "longitude": 16.60796,
     "country": "CZ",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Wuppertal",
     "latitude": 51.27027,
     "longitude": 7.16755,
     "country": "DE",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Wiesbaden",
     "latitude": 50.08258,
     "longitude": 8.24932,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Stuttgart",
     "latitude": 48.78232,
     "longitude": 9.17702,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Oberhausen",
     "latitude": 51.47311,
     "longitude": 6.88074,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Nürnberg",
     "latitude": 49.45421,
     "longitude": 11.07752,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Münster",
     "latitude": 51.96236,
     "longitude": 7.62571,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Munich",
     "latitude": 48.13743,
     "longitude": 11.57549,
     "country": "DE",
-    "radius": 11
+    "radius": 11,
+    "ranked": true
   },
   {
     "name": "Mönchengladbach",
     "latitude": 51.18539,
     "longitude": 6.44172,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Mannheim",
     "latitude": 49.49671,
     "longitude": 8.47955,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Magdeburg",
     "latitude": 52.12773,
     "longitude": 11.62916,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Lübeck",
     "latitude": 53.86893,
     "longitude": 10.68729,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Leipzig",
     "latitude": 51.33962,
     "longitude": 12.37129,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Krefeld",
     "latitude": 51.33921,
     "longitude": 6.58615,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Köln",
     "latitude": 50.93333,
     "longitude": 6.95,
     "country": "DE",
-    "radius": 10
+    "radius": 10,
+    "ranked": true
   },
   {
     "name": "Kiel",
     "latitude": 54.32133,
     "longitude": 10.13489,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Karlsruhe",
     "latitude": 49.00937,
     "longitude": 8.40444,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Hannover",
     "latitude": 52.37052,
     "longitude": 9.73322,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Wandsbek",
     "latitude": 53.56667,
     "longitude": 10.1,
     "country": "DE",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Marienthal",
     "latitude": 53.56667,
     "longitude": 10.08333,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Hamburg",
@@ -625,119 +662,136 @@
         "latitude": 53.59731,
         "longitude": 10.009204
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Halle (Saale)",
     "latitude": 51.5,
     "longitude": 12,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Gelsenkirchen",
     "latitude": 51.5075,
     "longitude": 7.12283,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Freiburg",
     "latitude": 47.9959,
     "longitude": 7.85222,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Frankfurt am Main",
     "latitude": 50.11552,
     "longitude": 8.68417,
     "country": "DE",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Essen",
     "latitude": 51.45657,
     "longitude": 7.01228,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Erfurt",
     "latitude": 50.9787,
     "longitude": 11.03283,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Düsseldorf",
     "latitude": 51.22172,
     "longitude": 6.77616,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Duisburg",
     "latitude": 51.43247,
     "longitude": 6.76516,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Dresden",
     "latitude": 51.05089,
     "longitude": 13.73832,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Dortmund",
     "latitude": 51.51494,
     "longitude": 7.466,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Chemnitz",
     "latitude": 50.8357,
     "longitude": 12.92922,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bremen",
     "latitude": 53.07516,
     "longitude": 8.80777,
     "country": "DE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Braunschweig",
     "latitude": 52.26594,
     "longitude": 10.52673,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bonn",
     "latitude": 50.73438,
     "longitude": 7.09549,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bochum",
     "latitude": 51.48165,
     "longitude": 7.21648,
     "country": "DE",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Bielefeld",
     "latitude": 52.03333,
     "longitude": 8.53333,
     "country": "DE",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Berlin",
@@ -745,60 +799,70 @@
     "longitude": 13.41053,
     "country": "DE",
     "radius": 25,
+    "ranked": true,
     "neighborhoods": [
       {
         "name": "Neukölln",
         "latitude": 52.440771,
         "longitude": 13.444507,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Marzahn",
         "latitude": 52.542659,
         "longitude": 13.549363,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Mitte",
         "latitude": 52.519444,
         "longitude": 13.406667,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Friedrichshain",
         "latitude": 52.515919,
         "longitude": 13.454574,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Kreuzberg",
         "latitude": 52.498605,
         "longitude": 13.391799,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Wilmersdorf",
         "latitude": 52.48333,
         "longitude": 13.31667,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Charlottenburg",
         "latitude": 52.51667,
         "longitude": 13.28333,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Moabit",
         "latitude": 52.52635,
         "longitude": 13.33903,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Pankow",
         "latitude": 52.56926,
         "longitude": 13.40186,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Schöneberg",
@@ -810,25 +874,29 @@
         "name": "Prenzlauer Berg",
         "latitude": 52.53878,
         "longitude": 13.42443,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Reinickendorf",
         "latitude": 52.56667,
         "longitude": 13.33333,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Wedding",
         "latitude": 52.54734,
         "longitude": 13.35594,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       },
       {
         "name": "Tempelhof",
         "latitude": 52.46667,
         "longitude": 13.4,
-        "radius": 2
+        "radius": 2,
+        "ranked": true
       }
     ]
   },
@@ -837,14 +905,16 @@
     "latitude": 48.37154,
     "longitude": 10.89851,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Aachen",
     "latitude": 50.77664,
     "longitude": 6.08342,
     "country": "DE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Copenhagen",
@@ -937,161 +1007,184 @@
         "latitude": 55.663895,
         "longitude": 12.54254
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Århus",
     "latitude": 56.15674,
     "longitude": 10.21076,
     "country": "DK",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Tallinn",
     "latitude": 59.43696,
     "longitude": 24.75353,
     "country": "EE",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Valencia",
     "latitude": 39.46975,
     "longitude": -0.37739,
     "country": "ES",
-    "radius": 9
+    "radius": 9,
+    "ranked": true
   },
   {
     "name": "Sevilla",
     "latitude": 37.38283,
     "longitude": -5.97317,
     "country": "ES",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Palma",
     "latitude": 39.56939,
     "longitude": 2.65024,
     "country": "ES",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Murcia",
     "latitude": 37.98704,
     "longitude": -1.13004,
     "country": "ES",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Málaga",
     "latitude": 36.72016,
     "longitude": -4.42034,
     "country": "ES",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Jerez de la Frontera",
     "latitude": 36.68645,
     "longitude": -6.13606,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Granada",
     "latitude": 37.18817,
     "longitude": -3.60667,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Elche",
     "latitude": 38.26218,
     "longitude": -0.70107,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Córdoba",
     "latitude": 37.89155,
     "longitude": -4.77275,
     "country": "ES",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Cartagena",
     "latitude": 37.60512,
     "longitude": -0.98623,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Alicante",
     "latitude": 38.34517,
     "longitude": -0.48149,
     "country": "ES",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Zaragoza",
     "latitude": 41.65606,
     "longitude": -0.87734,
     "country": "ES",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Gasteiz / Vitoria",
     "latitude": 42.84998,
     "longitude": -2.67268,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Vigo",
     "latitude": 42.23282,
     "longitude": -8.72264,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Valladolid",
     "latitude": 41.65518,
     "longitude": -4.72372,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Terrassa",
     "latitude": 41.56667,
     "longitude": 2.01667,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Sabadell",
     "latitude": 41.54329,
     "longitude": 2.10942,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Puente de Vallecas",
     "latitude": 40.39354,
     "longitude": -3.662,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Oviedo",
     "latitude": 43.36029,
     "longitude": -5.84476,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Móstoles",
     "latitude": 40.32234,
     "longitude": -3.86496,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Madrid",
@@ -1226,42 +1319,48 @@
         "latitude": 40.346911,
         "longitude": -3.710785
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "A Coruña",
     "latitude": 43.37135,
     "longitude": -8.396,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "L'Hospitalet de Llobregat",
     "latitude": 41.35967,
     "longitude": 2.10028,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Gijón",
     "latitude": 43.53573,
     "longitude": -5.66152,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Ciudad Lineal",
     "latitude": 40.45455,
     "longitude": -3.64808,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bilbao",
     "latitude": 43.26271,
     "longitude": -2.92528,
     "country": "ES",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Barcelona",
@@ -1396,98 +1495,112 @@
         "latitude": 41.399317,
         "longitude": 2.134175
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Badalona",
     "latitude": 41.45004,
     "longitude": 2.24741,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Alcalá de Henares",
     "latitude": 40.48205,
     "longitude": -3.35996,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Eixample",
     "latitude": 41.38896,
     "longitude": 2.16179,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Sant Martí",
     "latitude": 41.41814,
     "longitude": 2.19933,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Latina",
     "latitude": 40.38897,
     "longitude": -3.74569,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Carabanchel",
     "latitude": 40.39094,
     "longitude": -3.7242,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Fuencarral-El Pardo",
     "latitude": 40.4984,
     "longitude": -3.7314,
     "country": "ES",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Tampere",
     "latitude": 61.49911,
     "longitude": 23.78712,
     "country": "FI",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Helsinki",
     "latitude": 60.16952,
     "longitude": 24.93545,
     "country": "FI",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Espoo",
     "latitude": 60.2052,
     "longitude": 24.6522,
     "country": "FI",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Toulouse",
     "latitude": 43.60426,
     "longitude": 1.44367,
     "country": "FR",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Strasbourg",
     "latitude": 48.58392,
     "longitude": 7.74553,
     "country": "FR",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Rennes",
     "latitude": 48.11198,
     "longitude": -1.67429,
     "country": "FR",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Paris",
@@ -1646,112 +1759,128 @@
         "latitude": 48.842162,
         "longitude": 2.292766
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Nice",
     "latitude": 43.70313,
     "longitude": 7.26608,
     "country": "FR",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Nantes",
     "latitude": 47.21725,
     "longitude": -1.55336,
     "country": "FR",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Montpellier",
     "latitude": 43.61092,
     "longitude": 3.87723,
     "country": "FR",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Marseille",
     "latitude": 43.29695,
     "longitude": 5.38107,
     "country": "FR",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Lyon",
     "latitude": 45.74846,
     "longitude": 4.84671,
     "country": "FR",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Lille",
     "latitude": 50.63297,
     "longitude": 3.05858,
     "country": "FR",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bordeaux",
     "latitude": 44.84044,
     "longitude": -0.5805,
     "country": "FR",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Zagreb",
     "latitude": 45.81444,
     "longitude": 15.97798,
     "country": "HR",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Debrecen",
     "latitude": 47.53333,
     "longitude": 21.63333,
     "country": "HU",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Budapest",
     "latitude": 47.49801,
     "longitude": 19.03991,
     "country": "HU",
-    "radius": 14
+    "radius": 14,
+    "ranked": true
   },
   {
     "name": "Palermo",
     "latitude": 38.13205,
     "longitude": 13.33561,
     "country": "IT",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Messina",
     "latitude": 38.19394,
     "longitude": 15.55256,
     "country": "IT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Catania",
     "latitude": 37.49223,
     "longitude": 15.07041,
     "country": "IT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Verona",
     "latitude": 45.4299,
     "longitude": 10.98444,
     "country": "IT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Turin",
     "latitude": 45.07049,
     "longitude": 7.68682,
     "country": "IT",
-    "radius": 9
+    "radius": 9,
+    "ranked": true
   },
   {
     "name": "Rome",
@@ -1928,105 +2057,120 @@
         "latitude": 41.920473,
         "longitude": 12.50939
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Padova",
     "latitude": 45.40797,
     "longitude": 11.88586,
     "country": "IT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Napoli",
     "latitude": 40.85631,
     "longitude": 14.24641,
     "country": "IT",
-    "radius": 9
+    "radius": 9,
+    "ranked": true
   },
   {
     "name": "Milano",
     "latitude": 45.46427,
     "longitude": 9.18951,
     "country": "IT",
-    "radius": 11
+    "radius": 11,
+    "ranked": true
   },
   {
     "name": "Genoa",
     "latitude": 44.4264,
     "longitude": 8.91519,
     "country": "IT",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Florence",
     "latitude": 43.77925,
     "longitude": 11.24626,
     "country": "IT",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Bologna",
     "latitude": 44.49381,
     "longitude": 11.33875,
     "country": "IT",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Bari",
     "latitude": 41.11148,
     "longitude": 16.8554,
     "country": "IT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Vilnius",
     "latitude": 54.68916,
     "longitude": 25.2798,
     "country": "LT",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Kaunas",
     "latitude": 54.9,
     "longitude": 23.9,
     "country": "LT",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Riga",
     "latitude": 56.946,
     "longitude": 24.10589,
     "country": "LV",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Utrecht",
     "latitude": 52.09083,
     "longitude": 5.12222,
     "country": "NL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "The Hague",
     "latitude": 52.07667,
     "longitude": 4.29861,
     "country": "NL",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Rotterdam",
     "latitude": 51.9225,
     "longitude": 4.47917,
     "country": "NL",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Eindhoven",
     "latitude": 51.44083,
     "longitude": 5.47778,
     "country": "NL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Amsterdam",
@@ -2077,7 +2221,8 @@
         "latitude": 52.366293,
         "longitude": 4.897135
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Warsaw",
@@ -2194,175 +2339,200 @@
         "latitude": 52.269329,
         "longitude": 20.981875
       }
-    ]
+    ],
+    "ranked": true
   },
   {
     "name": "Radom",
     "latitude": 51.40253,
     "longitude": 21.14714,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Mokotów",
     "latitude": 52.1934,
     "longitude": 21.03487,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Lublin",
     "latitude": 51.25,
     "longitude": 22.56667,
     "country": "PL",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Kielce",
     "latitude": 50.87033,
     "longitude": 20.62752,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Białystok",
     "latitude": 53.13333,
     "longitude": 23.16433,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Wrocław",
     "latitude": 51.1,
     "longitude": 17.03333,
     "country": "PL",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Toruń",
     "latitude": 53.01375,
     "longitude": 18.59814,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Szczecin",
     "latitude": 53.42894,
     "longitude": 14.55302,
     "country": "PL",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Sosnowiec",
     "latitude": 50.28682,
     "longitude": 19.10385,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Poznań",
     "latitude": 52.40692,
     "longitude": 16.92993,
     "country": "PL",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Łódź",
     "latitude": 51.75,
     "longitude": 19.46667,
     "country": "PL",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Kraków",
     "latitude": 50.06143,
     "longitude": 19.93658,
     "country": "PL",
-    "radius": 8
+    "radius": 8,
+    "ranked": true
   },
   {
     "name": "Katowice",
     "latitude": 50.25841,
     "longitude": 19.02754,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Gdynia",
     "latitude": 54.51889,
     "longitude": 18.53188,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Gdańsk",
     "latitude": 54.35205,
     "longitude": 18.64637,
     "country": "PL",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Częstochowa",
     "latitude": 50.79646,
     "longitude": 19.12409,
     "country": "PL",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bydgoszcz",
     "latitude": 53.1235,
     "longitude": 18.00762,
     "country": "PL",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "Lisbon",
     "latitude": 38.71667,
     "longitude": -9.13333,
     "country": "PT",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Porto",
     "latitude": 41.14961,
     "longitude": -8.61099,
     "country": "PT",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Stockholm",
     "latitude": 59.33258,
     "longitude": 18.0649,
     "country": "SE",
-    "radius": 11
+    "radius": 11,
+    "ranked": true
   },
   {
     "name": "Malmö",
     "latitude": 55.60587,
     "longitude": 13.00073,
     "country": "SE",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Göteborg",
     "latitude": 57.70716,
     "longitude": 11.96679,
     "country": "SE",
-    "radius": 7
+    "radius": 7,
+    "ranked": true
   },
   {
     "name": "Ljubljana",
     "latitude": 46.05108,
     "longitude": 14.50513,
     "country": "SI",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Košice",
     "latitude": 48.71395,
     "longitude": 21.25808,
     "country": "SK",
-    "radius": 5
+    "radius": 5,
+    "ranked": true
   },
   {
     "name": "Bratislava",
@@ -2376,7 +2546,7 @@
     "latitude": 46.201284,
     "longitude": 6.146902,
     "country": "CH",
-    "radius": 5,
+    "radius": 6,
     "neighborhoods": [
       {
         "name": "Carouge",
@@ -2414,6 +2584,7 @@
         "latitude": 46.201284,
         "longitude": 6.146902
       }
-    ]
+    ],
+    "ranked": true
   }
 ]

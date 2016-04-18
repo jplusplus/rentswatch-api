@@ -5,11 +5,11 @@ var response = require("../response");
 
 /**
  * @api {get} /api/tiles/:z/:x/:y GeoJSON tile for a given ZXY
+ * @apiParam {Number} z Zoom level of the tile
  * @apiParam {Number} x X number of the tile for the given zoom level
  * @apiParam {Number} y Y number of the tile for the given zoom level
- * @apiParam {Number} z Zoom level of the tile
  * @apiPermission Public
- * @apiGroup tiles
+ * @apiGroup Tiles
  * @apiName proxy
  *
  * @apiDescription GeoJSON tiles of the rent prices.
@@ -18,7 +18,9 @@ var response = require("../response");
  *     curl -i http://api.rentswatch.com/api/tiles/10/489/379
  *
  * @apiSuccess {String} type  Type of the geojson.
+ * @apiSuccess {Object} features  The GeoJSON features.
  * @apiSuccess {Array} features.geometry  The GeoJSON geometry.
+ * @apiSuccess {Object} features.properties  The GeoJSON properties.
  * @apiSuccess {String} features.properties.price_per_sqm  Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
  * @apiError 404 Tile not found
  * @apiErrorExample Response (example):
@@ -29,7 +31,7 @@ var response = require("../response");
  */
 exports.proxy = function(req, res) {
   var url = req.app.get('tiles_host') + "tiles/";
-  url += [req.params.x, req.params.y, req.params.z].join('/');
+  url += [req.params.z, req.params.x, req.params.y].join('/');
   url += ".geojson";
   request({ url: url, json: true }, function(err, r, geojson) {
     if(err || r.statusCode !== 200) {

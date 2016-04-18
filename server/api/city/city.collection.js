@@ -29,10 +29,12 @@ var bind = function(fn, obj) {
 var getStats = function() {
   var deferred = Q.defer();
   var city = this;
+  // Flats arround a given place (if a radius is given) OR EVERY FLATS
+  var getRowsFunc = city.radius ? 'center' : 'all';
   // Extracting slope...
-  docs.center(city.latitude, city.longitude, city.radius).then(function(rows) {
+  docs[getRowsFunc](city.latitude, city.longitude, city.radius).then(function(rows) {
     // Colect full statistics about this row
-    var stats = docs.getStats(rows, true);
+    var stats = docs.getStats(rows, city.radius, true);
     // Does the city have neighborhoods?
     if( (city.neighborhoods || []).length ) {
       // Get stats for every neighborhood
@@ -41,15 +43,20 @@ var getStats = function() {
         // Extend the nh object
         _.extend(nh,
           // With statistics about the neighborhood (without months details)
-          docs.getStats(filteredRows, false)
+          docs.getStats(filteredRows, city.radius, false)
         );
       });
       // Add the new neighborhoods array to the stats
       stats.neighborhoods = city.neighborhoods;
     }
-    // Resolve the promise
-    deferred.resolve(stats);
-  // Request failed
+    // Extract deciles for this place
+    docs.deciles(rows).then(function(deciles) {
+      stats.deciles = deciles;
+      // Resolve the promise
+      deferred.resolve(stats);
+    // Deciles request failed
+    }, deferred.reject).fail(deferred.reject)
+  // Rows request failed
   }, deferred.reject).fail(deferred.reject)
   // Return a promise
   return deferred.promise;
