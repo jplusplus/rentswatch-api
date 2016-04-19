@@ -2343,22 +2343,6 @@
     "ranked": true
   },
   {
-    "name": "Radom",
-    "latitude": 51.40253,
-    "longitude": 21.14714,
-    "country": "PL",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Mokotów",
-    "latitude": 52.1934,
-    "longitude": 21.03487,
-    "country": "PL",
-    "radius": 5,
-    "ranked": true
-  },
-  {
     "name": "Lublin",
     "latitude": 51.25,
     "longitude": 22.56667,
@@ -2439,19 +2423,11 @@
     "ranked": true
   },
   {
-    "name": "Katowice",
+    "name": "Katowice / Metropolia Silesia",
     "latitude": 50.25841,
     "longitude": 19.02754,
     "country": "PL",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Gdynia",
-    "latitude": 54.51889,
-    "longitude": 18.53188,
-    "country": "PL",
-    "radius": 5,
+    "radius": 10,
     "ranked": true
   },
   {
@@ -2460,14 +2436,6 @@
     "longitude": 18.64637,
     "country": "PL",
     "radius": 6,
-    "ranked": true
-  },
-  {
-    "name": "Częstochowa",
-    "latitude": 50.79646,
-    "longitude": 19.12409,
-    "country": "PL",
-    "radius": 5,
     "ranked": true
   },
   {
