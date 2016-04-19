@@ -234,7 +234,7 @@ exports.geocode = function(req, res) {
   radius = isNaN(radius) ? 20 : radius;
   radius = Math.min(radius, 20);
   // Extract coordinates from query
-  var latlng = _( req.query.q.split(',') ).map(_.trim).map(Number).value();
+  var latlng = _( req.query.q.split(',') ).map(_.trim).map(Number).reject(isNaN).value();
   // Send place's stats to the current request
   var sendCenter = function(place) {
     // Get rows for this place
