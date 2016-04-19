@@ -207,6 +207,7 @@ var center = module.exports.center = function(lat, lon, radius, limit) {
   // Should we limit the query
   if(limit && limit > 0) {
     query.push('LIMIT ' + parseInt(limit) );
+    query.push('ORDER BY created_at DESC');
   }
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
