@@ -2432,6 +2432,13 @@
     "radius": 6
   },
   {
+    "name": "London",
+    "latitude": 51.507351,
+    "longitude": -0.127758,
+    "country": "UK",
+    "radius": 20
+  },
+  {
     "name": "Geneva",
     "latitude": 46.201284,
     "longitude": 6.146902,
