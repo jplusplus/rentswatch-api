@@ -1890,172 +1890,94 @@
     "radius": 18,
     "neighborhoods": [
       {
-        "name": "Aurelio",
-        "radius": 2,
-        "latitude": 41.896351,
-        "longitude": 12.437365
+        "name": "Centro Storico",
+        "latitude": 41.902356,
+        "longitude": 12.489655,
+        "radius": 2
       },
       {
-        "name": "Balduina",
-        "radius": 2,
-        "latitude": 41.920676,
-        "longitude": 12.436561
+        "name": "Parioli",
+        "latitude": 41.922368,
+        "longitude": 12.498279,
+        "radius": 2
       },
       {
-        "name": "Campitelli",
-        "radius": 2,
-        "latitude": 41.893184,
-        "longitude": 12.479565
+        "name": "Nomentano - San Lorenzo",
+        "latitude": 41.942533,
+        "longitude": 12.540984,
+        "radius": 2
       },
       {
-        "name": "Castro Pretorio",
-        "radius": 2,
-        "latitude": 41.907301,
-        "longitude": 12.504675
+        "name": "Monte Sacro",
+        "latitude": 41.921642,
+        "longitude": 12.553681,
+        "radius": 2
       },
       {
-        "name": "Celio",
-        "radius": 2,
-        "latitude": 41.883333,
-        "longitude": 12.5
+        "name": "Tiburtina",
+        "latitude": 41.891318,
+        "longitude": 12.551016,
+        "radius": 2
       },
       {
-        "name": "Colonna",
-        "radius": 2,
-        "latitude": 41.832827,
-        "longitude": 12.753355
+        "name": "Prenestino",
+        "latitude": 41.8911,
+        "longitude": 12.5492,
+        "radius": 2
       },
       {
-        "name": "Esquilino",
-        "radius": 2,
-        "latitude": 41.893289,
-        "longitude": 12.495124
+        "name": "Centocelle",
+        "latitude": 41.85011,
+        "longitude": 12.564226,
+        "radius": 2
       },
       {
-        "name": "EUR",
-        "radius": 2,
-        "latitude": 41.826611,
-        "longitude": 12.46672
-      },
-      {
-        "name": "Garbatella",
-        "radius": 2,
-        "latitude": 41.867191,
-        "longitude": 12.493635
-      },
-      {
-        "name": "Monti",
-        "radius": 2,
-        "latitude": 41.874,
-        "longitude": 12.460353
-      },
-      {
-        "name": "Ostiense",
-        "radius": 2,
-        "latitude": 41.872783,
-        "longitude": 12.483898
-      },
-      {
-        "name": "Parione",
-        "radius": 2,
-        "latitude": 41.898661,
-        "longitude": 12.470807
-      },
-      {
-        "name": "Pigna",
-        "radius": 2,
-        "latitude": 41.89703,
-        "longitude": 12.478008
-      },
-      {
-        "name": "Pigneto",
-        "radius": 2,
-        "latitude": 41.888603,
-        "longitude": 12.528204
-      },
-      {
-        "name": "Portuense",
-        "radius": 2,
-        "latitude": 41.855102,
-        "longitude": 12.452388
-      },
-      {
-        "name": "Prati",
-        "radius": 2,
-        "latitude": 41.51359,
-        "longitude": 13.127183
-      },
-      {
-        "name": "Quadraro",
-        "radius": 2,
-        "latitude": 41.861878,
-        "longitude": 12.54924
-      },
-      {
-        "name": "Regola",
-        "radius": 2,
-        "latitude": 41.893126,
-        "longitude": 12.473547
-      },
-      {
-        "name": "Ripa",
-        "radius": 2,
-        "latitude": 41.910696,
-        "longitude": 12.499882
-      },
-      {
-        "name": "Roma Centro",
-        "radius": 2,
-        "latitude": 41.902784,
-        "longitude": 12.496366
+        "name": "delle Torri",
+        "latitude": 41.855184,
+        "longitude": 12.518331,
+        "radius": 2
       },
       {
         "name": "San Giovanni",
-        "radius": 2,
         "latitude": 41.768319,
-        "longitude": 12.50686
+        "longitude": 12.50686,
+        "radius": 2
       },
       {
-        "name": "San Lorenzo",
-        "radius": 2,
-        "latitude": 41.921513,
-        "longitude": 13.099982
+        "name": "Cinecittà",
+        "latitude": 41.893056,
+        "longitude": 12.482778,
+        "radius": 2
       },
       {
-        "name": "Sant'Angelo",
-        "radius": 2,
-        "latitude": 41.901878,
-        "longitude": 12.466444
+        "name": "Appia Antica",
+        "latitude": 41.838917,
+        "longitude": 12.44379,
+        "radius": 2
       },
       {
-        "name": "Sant'Eustachio",
-        "radius": 2,
-        "latitude": 41.898192,
-        "longitude": 12.475614
+        "name": "EUR",
+        "latitude": 41.869533,
+        "longitude": 12.432327,
+        "radius": 2
       },
       {
-        "name": "Testaccio",
-        "radius": 2,
-        "latitude": 41.875952,
-        "longitude": 12.475694
+        "name": "Ostie",
+        "latitude": 41.902639,
+        "longitude": 12.397943,
+        "radius": 2
       },
       {
-        "name": "Trastevere",
-        "radius": 2,
-        "latitude": 41.876324,
-        "longitude": 12.46907
+        "name": "Fiumicino",
+        "latitude": 41.926453,
+        "longitude": 12.403673,
+        "radius": 2
       },
       {
-        "name": "Trevi",
-        "radius": 2,
-        "latitude": 41.900933,
-        "longitude": 12.483313
-      },
-      {
-        "name": "Trieste",
-        "radius": 2,
-        "latitude": 41.920473,
-        "longitude": 12.50939
+        "name": "Arvalia Portuense",
+        "latitude": 41.945231,
+        "longitude": 12.455255,
+        "radius": 2
       }
     ],
     "ranked": true
@@ -2517,40 +2439,100 @@
     "radius": 6,
     "neighborhoods": [
       {
-        "name": "Carouge",
-        "radius": 2,
-        "latitude": 46.182967,
-        "longitude": 6.137854
+        "name": "Aïre",
+        "latitude": 46.196821,
+        "longitude": 6.099552,
+        "radius": 1
       },
       {
-        "name": "Cologny",
-        "radius": 2,
-        "latitude": 46.224552,
-        "longitude": 6.182737
+        "name": "Champel",
+        "latitude": 46.189679,
+        "longitude": 6.15754,
+        "radius": 1
       },
       {
-        "name": "Lausanne",
-        "radius": 2,
-        "latitude": 46.219106,
-        "longitude": 6.14896
+        "name": "Cité-centre ",
+        "latitude": 46.201041,
+        "longitude": 6.148153,
+        "radius": 1
+      },
+      {
+        "name": "La Jonction",
+        "latitude": 46.201507,
+        "longitude": 6.127236,
+        "radius": 1
+      },
+      {
+        "name": "La Servette",
+        "latitude": 46.211093,
+        "longitude": 6.135192,
+        "radius": 1
+      },
+      {
+        "name": "Le Petit-Saconnex",
+        "latitude": 46.216888,
+        "longitude": 6.130688,
+        "radius": 1
+      },
+      {
+        "name": "Les Acacias ",
+        "latitude": 46.19009,
+        "longitude": 6.138757,
+        "radius": 1
+      },
+      {
+        "name": "Les Charmilles",
+        "latitude": 46.208051,
+        "longitude": 6.122701,
+        "radius": 1
       },
       {
         "name": "Les Eaux-Vives",
-        "radius": 2,
         "latitude": 46.200495,
-        "longitude": 6.165454
+        "longitude": 6.165454,
+        "radius": 1
+      },
+      {
+        "name": "Les Grottes ",
+        "latitude": 46.210479,
+        "longitude": 6.138952,
+        "radius": 1
       },
       {
         "name": "Les Pâquis",
-        "radius": 2,
         "latitude": 46.212126,
-        "longitude": 6.149746
+        "longitude": 6.149746,
+        "radius": 1
       },
       {
-        "name": "Vieille Ville",
-        "radius": 2,
-        "latitude": 46.201284,
-        "longitude": 6.146902
+        "name": "Les Vernets",
+        "latitude": 46.192925,
+        "longitude": 6.136223,
+        "radius": 1
+      },
+      {
+        "name": "Plainpalais",
+        "latitude": 46.193889,
+        "longitude": 6.141389,
+        "radius": 1
+      },
+      {
+        "name": "Saint-Gervais ",
+        "latitude": 46.21111,
+        "longitude": 6.138389,
+        "radius": 1
+      },
+      {
+        "name": "Saint-Jean ",
+        "latitude": 46.205426,
+        "longitude": 6.132192,
+        "radius": 1
+      },
+      {
+        "name": "Sécheron",
+        "latitude": 46.222049,
+        "longitude": 6.147041,
+        "radius": 1
       }
     ],
     "ranked": true
