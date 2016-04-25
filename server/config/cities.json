@@ -2429,14 +2429,16 @@
     "latitude": 48.14816,
     "longitude": 17.10674,
     "country": "SK",
-    "radius": 6
+    "radius": 6,
+    "ranked": true
   },
   {
     "name": "London",
     "latitude": 51.507351,
     "longitude": -0.127758,
     "country": "UK",
-    "radius": 20
+    "radius": 20,
+    "ranked": true
   },
   {
     "name": "Geneva",
