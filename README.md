@@ -30,6 +30,12 @@ Rentswatch only covers flats and houses on the open market, not subsidized housi
 
 Properties that are put on the market more often are overrepresented (because they appear more often). To estimate the average rents price over an area, we compute the relation between prices and living spaces, making sure to keep the intercept at 0. See this blog post, [Finding the right price per square meter](http://blog.rentswatch.com/finding-the-right-price-per-sqm/), for the details.
 
+## Which cities are monitored?
+
+We monitor all cities of more than 200,000 inhabitants in the countries included in the database (Austria, Belgium, Czechia, Denmark, Estonia, Finland, France, Germany, Italy, Latvia, Lithuania, Luxemburg, Netherlands, Poland, Portugal, Slovakia, Slovenia, Spain, Sweden, Switzerland). In the United Kingdom, only London is included.
+
+As we cover more countries, new cities will be included.
+
 ## Who pays for Rentswatch?
 
 Rentswatch is financed by the [center for media innovation of Babelsberg](http://www.miz-babelsberg.de/about-us), Brandenburg, Germany.
