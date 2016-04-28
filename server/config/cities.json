@@ -508,14 +508,6 @@
     "ranked": true
   },
   {
-    "name": "Wandsbek",
-    "latitude": 53.56667,
-    "longitude": 10.1,
-    "country": "DE",
-    "radius": 6,
-    "ranked": true
-  },
-  {
     "name": "Marienthal",
     "latitude": 53.56667,
     "longitude": 10.08333,
@@ -1123,7 +1115,7 @@
     "ranked": true
   },
   {
-    "name": "Gasteiz / Vitoria",
+    "name": "Vitoria-Gasteiz",
     "latitude": 42.84998,
     "longitude": -2.67268,
     "country": "ES",
@@ -1163,25 +1155,9 @@
     "ranked": true
   },
   {
-    "name": "Puente de Vallecas",
-    "latitude": 40.39354,
-    "longitude": -3.662,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
     "name": "Oviedo",
     "latitude": 43.36029,
     "longitude": -5.84476,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Móstoles",
-    "latitude": 40.32234,
-    "longitude": -3.86496,
     "country": "ES",
     "radius": 5,
     "ranked": true
@@ -1347,14 +1323,6 @@
     "ranked": true
   },
   {
-    "name": "Ciudad Lineal",
-    "latitude": 40.45455,
-    "longitude": -3.64808,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
     "name": "Bilbao",
     "latitude": 43.26271,
     "longitude": -2.92528,
@@ -1496,62 +1464,6 @@
         "longitude": 2.134175
       }
     ],
-    "ranked": true
-  },
-  {
-    "name": "Badalona",
-    "latitude": 41.45004,
-    "longitude": 2.24741,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Alcalá de Henares",
-    "latitude": 40.48205,
-    "longitude": -3.35996,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Eixample",
-    "latitude": 41.38896,
-    "longitude": 2.16179,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Sant Martí",
-    "latitude": 41.41814,
-    "longitude": 2.19933,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Latina",
-    "latitude": 40.38897,
-    "longitude": -3.74569,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Carabanchel",
-    "latitude": 40.39094,
-    "longitude": -3.7242,
-    "country": "ES",
-    "radius": 5,
-    "ranked": true
-  },
-  {
-    "name": "Fuencarral-El Pardo",
-    "latitude": 40.4984,
-    "longitude": -3.7314,
-    "country": "ES",
-    "radius": 5,
     "ranked": true
   },
   {
