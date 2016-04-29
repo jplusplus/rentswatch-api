@@ -1006,88 +1006,82 @@
     "radius": 11,
     "neighborhoods": [
       {
-        "name": "Carlsberg",
-        "radius": 2,
-        "latitude": 55.667268,
-        "longitude": 12.530443
-      },
-      {
-        "name": "Christiania",
-        "radius": 2,
-        "latitude": 55.676042,
-        "longitude": 12.608115
-      },
-      {
         "name": "Christianshavn",
-        "radius": 2,
         "latitude": 55.671592,
-        "longitude": 12.59294
+        "longitude": 12.59294,
+        "radius": 2
       },
       {
-        "name": "City Centre",
-        "radius": 2,
-        "latitude": 55.676111,
-        "longitude": 12.568333
+        "name": "Frederiksstaden",
+        "latitude": 55.684444,
+        "longitude": 12.5925,
+        "radius": 2
       },
       {
-        "name": "Dragør",
-        "radius": 2,
-        "latitude": 55.583333,
-        "longitude": 12.666667
+        "name": "Gammelholm",
+        "latitude": 55.6783,
+        "longitude": 12.5889,
+        "radius": 2
       },
       {
-        "name": "East Amager",
-        "radius": 2,
-        "latitude": 55.61077,
-        "longitude": 12.605163
+        "name": "Holmen",
+        "latitude": 55.68321,
+        "longitude": 12.606176,
+        "radius": 2
       },
       {
-        "name": "Frederiksberg",
-        "radius": 2,
-        "latitude": 55.666667,
-        "longitude": 12.533333
+        "name": "Latinerkvarteret",
+        "latitude": 55.6794,
+        "longitude": 12.5725,
+        "radius": 2
       },
       {
-        "name": "Hellerup",
-        "radius": 2,
-        "latitude": 55.736654,
-        "longitude": 12.569196
+        "name": "Ny København",
+        "latitude": 55.678298,
+        "longitude": 12.573545,
+        "radius": 2
       },
       {
-        "name": "Kødbyen",
-        "radius": 2,
-        "latitude": 55.668084,
-        "longitude": 12.55893
+        "name": "Nørrevold",
+        "latitude": 55.681922,
+        "longitude": 12.569549,
+        "radius": 2
       },
       {
-        "name": "Nørrebro",
-        "radius": 2,
-        "latitude": 55.699117,
-        "longitude": 12.554248
+        "name": "Slotsholmen",
+        "latitude": 55.674722,
+        "longitude": 12.580129,
+        "radius": 2
       },
       {
-        "name": "Ørestad",
-        "radius": 2,
-        "latitude": 55.628435,
-        "longitude": 12.578776
+        "name": "Larsens Plads",
+        "latitude": 55.684374,
+        "longitude": 12.596336,
+        "radius": 2
       },
       {
-        "name": "Østerbro",
-        "radius": 2,
-        "latitude": 55.709155,
-        "longitude": 12.577498
+        "name": "Nordre",
+        "latitude": 55.667761,
+        "longitude": 12.497005,
+        "radius": 2
       },
       {
-        "name": "Valby",
-        "radius": 2,
-        "latitude": 55.661658,
-        "longitude": 12.516775
+        "name": "Toldbod",
+        "latitude": 55.683627,
+        "longitude": 12.594633,
+        "radius": 2
       },
       {
-        "name": "Vesterbro",
-        "radius": 2,
-        "latitude": 55.663895,
-        "longitude": 12.54254
+        "name": "Nyboder",
+        "latitude": 55.688843,
+        "longitude": 12.587853,
+        "radius": 2
+      },
+      {
+        "name": "Nyhavn",
+        "latitude": 55.67981,
+        "longitude": 12.591469,
+        "radius": 2
       }
     ],
     "ranked": true
