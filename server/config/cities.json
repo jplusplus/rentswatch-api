@@ -16,51 +16,141 @@
     "neighborhoods": [
       {
         "name": "Innere Stadt",
-        "radius": 2,
         "latitude": 48.208877,
-        "longitude": 16.369743
+        "longitude": 16.369743,
+        "radius": 2
       },
       {
         "name": "Leopoldstadt",
-        "radius": 2,
         "latitude": 48.217206,
-        "longitude": 16.391191
+        "longitude": 16.391191,
+        "radius": 2
       },
       {
-        "name": "Landstrasse",
-        "radius": 2,
+        "name": "Landstraße",
         "latitude": 48.20174,
-        "longitude": 16.391612
+        "longitude": 16.391612,
+        "radius": 2
+      },
+      {
+        "name": "Wieden",
+        "latitude": 48.189444,
+        "longitude": 16.361667,
+        "radius": 2
       },
       {
         "name": "Margareten",
-        "radius": 2,
         "latitude": 48.185762,
-        "longitude": 16.353903
+        "longitude": 16.353903,
+        "radius": 2
       },
       {
         "name": "Mariahilf",
-        "radius": 2,
         "latitude": 48.196378,
-        "longitude": 16.351577
+        "longitude": 16.351577,
+        "radius": 2
       },
       {
         "name": "Neubau",
-        "radius": 2,
         "latitude": 48.204288,
-        "longitude": 16.34897
+        "longitude": 16.34897,
+        "radius": 2
       },
       {
         "name": "Josefstadt",
-        "radius": 2,
         "latitude": 48.212476,
-        "longitude": 16.345401
+        "longitude": 16.345401,
+        "radius": 2
       },
       {
         "name": "Alsergrund",
-        "radius": 2,
         "latitude": 48.224904,
-        "longitude": 16.356984
+        "longitude": 16.356984,
+        "radius": 2
+      },
+      {
+        "name": "Favoriten",
+        "latitude": 48.160477,
+        "longitude": 16.381991,
+        "radius": 2
+      },
+      {
+        "name": "Simmering",
+        "latitude": 48.163757,
+        "longitude": 16.445799,
+        "radius": 2
+      },
+      {
+        "name": "Meidling",
+        "latitude": 48.167368,
+        "longitude": 16.316047,
+        "radius": 2
+      },
+      {
+        "name": "Hietzing",
+        "latitude": 48.176182,
+        "longitude": 16.275655,
+        "radius": 2
+      },
+      {
+        "name": "Penzing",
+        "latitude": 48.199742,
+        "longitude": 16.267932,
+        "radius": 2
+      },
+      {
+        "name": "Rudolfsheim-Fünfhaus",
+        "latitude": 48.191933,
+        "longitude": 16.332489,
+        "radius": 2
+      },
+      {
+        "name": "Ottakring",
+        "latitude": 48.213435,
+        "longitude": 16.306549,
+        "radius": 2
+      },
+      {
+        "name": "Hernals",
+        "latitude": 48.231131,
+        "longitude": 16.294689,
+        "radius": 2
+      },
+      {
+        "name": "Währing",
+        "latitude": 48.222297,
+        "longitude": 16.341668,
+        "radius": 2
+      },
+      {
+        "name": "Döbling",
+        "latitude": 48.249432,
+        "longitude": 16.341749,
+        "radius": 2
+      },
+      {
+        "name": "Brigittenau",
+        "latitude": 48.242347,
+        "longitude": 16.374249,
+        "radius": 2
+      },
+      {
+        "name": "Floridsdorf",
+        "latitude": 48.27658,
+        "longitude": 16.409027,
+        "radius": 2
+      },
+      {
+        "name": "Donaustadt",
+        "latitude": 48.235551,
+        "longitude": 16.462392,
+        "radius": 2
+      },
+      {
+        "name": "Liesing",
+        "latitude": 48.137322,
+        "longitude": 16.298167,
+        "radius": 2
       }
     ],
     "ranked": true
