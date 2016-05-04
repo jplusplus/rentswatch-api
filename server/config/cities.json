@@ -2000,7 +2000,93 @@
     "longitude": 9.18951,
     "country": "IT",
     "radius": 11,
-    "ranked": true
+    "ranked": true,
+    "neighborhoods": [
+      {
+        "name": "Centro storico",
+        "latitude": 45.471282,
+        "longitude": 9.184999,
+        "radius": 2
+      },
+      {
+        "name": "Stazione Centrale",
+        "latitude": 45.486117,
+        "longitude": 9.203635,
+        "radius": 2
+      },
+      {
+        "name": "Città Studi",
+        "latitude": 45.478155,
+        "longitude": 9.226284,
+        "radius": 2
+      },
+      {
+        "name": "Porta Vittoria",
+        "latitude": 45.462222,
+        "longitude": 9.207222,
+        "radius": 2
+      },
+      {
+        "name": "Vigentino",
+        "latitude": 45.433056,
+        "longitude": 9.201111,
+        "radius": 2
+      },
+      {
+        "name": "Barona",
+        "latitude": 45.44,
+        "longitude": 9.155833,
+        "radius": 2
+      },
+      {
+        "name": "Baggio",
+        "latitude": 45.461666,
+        "longitude": 9.089813,
+        "radius": 2
+      },
+      {
+        "name": "Fiera",
+        "latitude": 45.520278,
+        "longitude": 9.078889,
+        "radius": 2
+      },
+      {
+        "name": "Porta Garibaldi",
+        "latitude": 45.480833,
+        "longitude": 9.186944,
+        "radius": 2
+      },
+      {
+        "name": "Turro",
+        "latitude": 45.49806,
+        "longitude": 9.225554,
+        "radius": 2
+      },
+      {
+        "name": "Lambrate",
+        "latitude": 45.482506,
+        "longitude": 9.241047,
+        "radius": 2
+      },
+      {
+        "name": "Forlanini",
+        "latitude": 45.458611,
+        "longitude": 9.245278,
+        "radius": 2
+      },
+      {
+        "name": "Chiaravalle",
+        "latitude": 45.4175,
+        "longitude": 9.239722,
+        "radius": 2
+      },
+      {
+        "name": "Giambellino-Lorenteggio",
+        "latitude": 45.444444,
+        "longitude": 9.120833,
+        "radius": 2
+      }
+    ]
   },
   {
     "name": "Genoa",
