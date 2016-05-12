@@ -1,6 +1,10 @@
 install:
 	npm install
 	bower install
+	make doc
+	
+doc:
+	grunt apidoc
 
 run:
 	grunt serve
