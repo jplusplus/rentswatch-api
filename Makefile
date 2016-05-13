@@ -2,7 +2,7 @@ install:
 	npm install
 	bower install
 	make doc
-	
+
 doc:
 	grunt apidoc
 
@@ -16,4 +16,5 @@ deploy: build
 	heroku docker:release -a rentswatch-api
 
 prefetch:
+	rm -f server/cache/cities/*.json
 	node server/commands/prefetch.js
