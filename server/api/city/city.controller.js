@@ -220,6 +220,7 @@ exports.ranking = function(req, res) {
  * @apiSuccess {Number}   avgPricePerSqm    Average price per square meter in Euro. The average price is the slope of the regression of each property's living space and total rent (including utilities).
  * @apiSuccess {Number}   lastSnapshot      Timestamp of the generation of these statistics. Starting point is September 2015 unless otherwise noted.
  * @apiSuccess {Number}   stdErr            Standard deviation of the average rent price. The actual rent prices in a city are avgPricePerSqm + or - stdErr per square meters.
+ * @apiSuccess {Object[]} months            Statistics about rent prices of the location by month.
  *
  * @apiError 401 Only authenticated users can access the data.
  * @apiErrorExample Response (example):
@@ -239,7 +240,7 @@ exports.geocode = function(req, res) {
   var sendCenter = function(place) {
     // Get rows for this place
     docs.center(place.latitude, place.longitude, place.radius, req.query.limit).then(function(rows) {
-      place = _.extend(place, docs.getStats(rows, radius) );
+      place = _.extend(place, docs.getStats(rows, radius, true) );
       // Get deciles for this place
       docs.deciles(rows).then(function(deciles){
         place.deciles = deciles;
