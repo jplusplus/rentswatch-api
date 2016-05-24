@@ -12,7 +12,7 @@ const MAX_LIVING_SPACE = module.exports.MAX_LIVING_SPACE = 200;
 
 var getValues = module.exports.getValues = function(rows) {
   return _.reduce(rows, function(res, row) {
-    res.x.push(row.total_rent);
+    res.x.push(row.base_rent);
     res.y.push(row.living_space);
     return res;
   }, { x:[], y:[] });
