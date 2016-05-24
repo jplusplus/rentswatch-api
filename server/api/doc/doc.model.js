@@ -156,10 +156,10 @@ var all = module.exports.all = function() {
   var deferred = Q.defer();
   // Build a query to get every trustable ads
   var query = [
-    'SELECT total_rent, living_space, latitude, longitude, created_at',
+    'SELECT base_rent, living_space, latitude, longitude, created_at',
     'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
+    'WHERE base_rent IS NOT NULL',
+    'AND base_rent < ' + MAX_TOTAL_RENT,
     'AND living_space < ' + MAX_LIVING_SPACE,
     // Rought Europe boundaries
     'AND latitude >= 33',
@@ -199,10 +199,10 @@ var center = module.exports.center = function(lat, lon, radius, limit) {
   var elon = lon + radius / (111.320 * Math.cos(rad(lat)));
   // Build a query to get every trustable ads
   var query = [
-    'SELECT total_rent, living_space, latitude, longitude, created_at',
+    'SELECT base_rent, living_space, latitude, longitude, created_at',
     'FROM ad',
-    'WHERE total_rent IS NOT NULL',
-    'AND total_rent < ' + MAX_TOTAL_RENT,
+    'WHERE base_rent IS NOT NULL',
+    'AND base_rent < ' + MAX_TOTAL_RENT,
     'AND living_space < ' + MAX_LIVING_SPACE,
     // For performance reason we filter the rows using
     // a simple square comparaison
@@ -244,7 +244,7 @@ var deciles = module.exports.deciles = function(rows) {
       from: i,
       to: i + 10,
       count: _.filter(rows, function(row) {
-        return row.total_rent && row.total_rent >= i && row.total_rent < i + 10;
+        return row.base_rent && row.base_rent >= i && row.base_rent < i + 10;
       }).length
     });
     // Move from 10 to 10
