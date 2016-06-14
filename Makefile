@@ -13,7 +13,7 @@ build:
 	grunt build --force
 
 deploy: build
-	heroku docker:release -a rentswatch-api
+	heroku container:push -a rentswatch-api
 
 prefetch:
 	rm -f server/cache/cities/*.json
