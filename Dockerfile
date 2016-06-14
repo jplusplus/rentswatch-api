@@ -22,3 +22,5 @@ RUN echo "export PATH=\"/app/heroku/node/bin:/app/user/node_modules/.bin:\$PATH\
 
 ADD . /app/user/
 RUN /app/heroku/node/bin/npm install --production
+
+CMD ["node", "server/app.js"]
