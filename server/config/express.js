@@ -36,7 +36,7 @@ module.exports = function(app) {
   app.use(cors());
 
   if ('production' === env) {
-    app.use(favicon(path.join(config.root, 'public', 'favicon.ico')));
+    app.use(favicon(path.join(config.root, 'client', 'favicon.ico')));
     app.use(morgan('dev'));
   }
 
