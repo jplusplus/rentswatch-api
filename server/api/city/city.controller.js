@@ -202,6 +202,7 @@ exports.ranking = function(req, res) {
  * @apiParam {Number} [limit=0] Maximum number of flats to analyse. '0' equals all.
  * @apiParam {Number} [min_living_space=0] Minimum living space size
  * @apiParam {Number} [max_living_space=200] Maximum living space size
+ * @apiParam {Number} [no_rooms] A commat separated list of rooms numer
  * @apiParam {String} token User token (protected ressource).
  * @apiPermission Authenticated
  * @apiGroup Cities
@@ -212,6 +213,7 @@ exports.ranking = function(req, res) {
  *
  * @apiExample {curl} Example usage:
  *     curl -i http://api.rentswatch.com/api/cities/geocode?q=Marseille&token=<TOKEN>
+ *     curl -i http://api.rentswatch.com/api/cities/geocode?q=Paris&no_rooms=1,2&token=<TOKEN>
  *
  * @apiSuccess {String}   name              Name of the location.
  * @apiSuccess {String}   type              OSM type of the location.
