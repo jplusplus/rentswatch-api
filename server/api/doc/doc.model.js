@@ -216,7 +216,7 @@ var center = module.exports.center = function(lat, lon, radius, minLivingSpace, 
   // Add rooms if any
   if( Array.isArray(noRooms) ) {
     // Starts the global condition for noRooms
-    query.push('AND (')
+    query.push('AND (');
       // Add rooms number one by one
       noRooms.forEach(function(no, i) {
         // Rooms numbers are cumulative
@@ -225,14 +225,13 @@ var center = module.exports.center = function(lat, lon, radius, minLivingSpace, 
         query.push("no_rooms = '" + parseInt(no) + "'")
       })
     // End the condition
-    query.push(')')
+    query.push(')');
   }
   // Should we limit the query
   if(limit && limit > 0) {
     query.push('ORDER BY created_at DESC');
     query.push('LIMIT ' + parseInt(limit) );
   }
-  console.log(query);
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
     // We use the given connection
