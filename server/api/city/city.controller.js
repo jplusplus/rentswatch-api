@@ -200,6 +200,8 @@ exports.ranking = function(req, res) {
  * @apiParam {String} q Query to geocode the location (can be an address or coordinates).
  * @apiParam {Number} [radius=20] Radius of the circle to generate statistics from.
  * @apiParam {Number} [limit=0] Maximum number of flats to analyse. '0' equals all.
+ * @apiParam {Number} [min_living_space=0] Minimum living space size
+ * @apiParam {Number} [max_living_space=200] Maximum living space size
  * @apiParam {String} token User token (protected ressource).
  * @apiPermission Authenticated
  * @apiGroup Cities
@@ -231,15 +233,35 @@ exports.ranking = function(req, res) {
  */
 exports.geocode = function(req, res) {
   if(!req.query.q) return response.handleError(res, 400)("Missing 'q' parameter.")
+  // Validates radius
   var radius = req.query.radius || 20;
   radius = isNaN(radius) ? 20 : radius;
   radius = Math.min(radius, 20);
+  // Validates minimum living splace
+  var minLivingSpace = req.query.min_living_space || 0;
+  minLivingSpace = isNaN(minLivingSpace) ? 0 : minLivingSpace;
+  // Validates maximum living splace
+  var maxLivingSpace = req.query.max_living_space || 200;
+  maxLivingSpace = isNaN(maxLivingSpace) ? 200 : maxLivingSpace;
+  // Validates number of rooms
+  if(req.query.no_rooms) {
+    var noRooms = req.query.no_rooms.split(',');
+    noRooms = _.chain(noRooms).map(_.trim).map(Number).reject(isNaN).value()
+  } else {
+    var noRooms = null;
+  }
   // Extract coordinates from query
   var latlng = _( req.query.q.split(',') ).map(_.trim).map(Number).reject(isNaN).value();
   // Send place's stats to the current request
   var sendCenter = function(place) {
     // Get rows for this place
-    docs.center(place.latitude, place.longitude, place.radius, req.query.limit).then(function(rows) {
+    docs.center(place.latitude,
+                place.longitude,
+                place.radius,
+                minLivingSpace,
+                maxLivingSpace,
+                noRooms,
+                req.query.limit).then(function(rows) {
       place = _.extend(place, docs.getStats(rows, radius, true) );
       // Get deciles for this place
       docs.deciles(rows).then(function(deciles){

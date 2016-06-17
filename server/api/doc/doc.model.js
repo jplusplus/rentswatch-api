@@ -183,7 +183,7 @@ var all = module.exports.all = function() {
 };
 
 // Gets all ads in a given radius
-var center = module.exports.center = function(lat, lon, radius, limit) {
+var center = module.exports.center = function(lat, lon, radius, minLivingSpace, maxLivingSpace, noRooms, limit) {
   // Return the promise
   var deferred = Q.defer();
   // We may use a default radius
@@ -197,23 +197,42 @@ var center = module.exports.center = function(lat, lon, radius, limit) {
   var slat = lat - radius / 110.574;
   var wlon = lon - radius / (111.320 * Math.cos(rad(lat)));
   var elon = lon + radius / (111.320 * Math.cos(rad(lat)));
+  // Validates living_space
+  minLivingSpace = minLivingSpace || 0;
+  maxLivingSpace = maxLivingSpace || MAX_LIVING_SPACE;
   // Build a query to get every trustable ads
   var query = [
     'SELECT base_rent, living_space, latitude, longitude, created_at',
     'FROM ad',
     'WHERE base_rent IS NOT NULL',
     'AND base_rent < ' + MAX_TOTAL_RENT,
-    'AND living_space < ' + MAX_LIVING_SPACE,
+    'AND living_space > ' + minLivingSpace,
+    'AND living_space < ' + maxLivingSpace,
     // For performance reason we filter the rows using
     // a simple square comparaison
     'AND ' + rn(nlat) + ' > latitude AND  ' + rn(slat) + ' < latitude',
     'AND ' + rn(wlon) + ' < longitude AND ' + rn(elon) + ' > longitude'
   ];
+  // Add rooms if any
+  if( Array.isArray(noRooms) ) {
+    // Starts the global condition for noRooms
+    query.push('AND (')
+      // Add rooms number one by one
+      noRooms.forEach(function(no, i) {
+        // Rooms numbers are cumulative
+        if(i > 0) { query.push('OR'); }
+        // They are stored as string
+        query.push("no_rooms = '" + parseInt(no) + "'")
+      })
+    // End the condition
+    query.push(')')
+  }
   // Should we limit the query
   if(limit && limit > 0) {
     query.push('ORDER BY created_at DESC');
     query.push('LIMIT ' + parseInt(limit) );
   }
+  console.log(query);
   // For better performance we use a poolConnection
   sqldb.mysql.getConnection(function(err, connection) {
     // We use the given connection
