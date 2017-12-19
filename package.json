@@ -26,7 +26,7 @@
     "haversine": "1.0.0",
     "jade": "1.11.0",
     "lodash": "4.6.1",
-    "mathjs": "2.7.0",
+    "mathjs": "3.17.0",
     "memjs": "0.9.0",
     "memory-cache": "0.1.4",
     "method-override": "2.3.5",
