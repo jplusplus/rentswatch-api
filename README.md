@@ -1,6 +1,8 @@
+'''Note: The Rentswatch domain is no longer in our hands. This project is no longer active.'''
+
 # Rentswatch API
 
-Read the complete API documentation here: http://api.rentswatch.com/
+Read the complete API documentation here: [REDACTED]
 
 # FAQ
 
@@ -28,7 +30,7 @@ We always tried to have as complete as possible a view of the rent, aggregating 
 
 Rentswatch only covers flats and houses on the open market, not subsidized housing. Rentswatch gives prices for _new leases_, not the average price of all rents over an area. 
 
-Properties that are put on the market more often are overrepresented (because they appear more often). To estimate the average rents price over an area, we compute the relation between prices and living spaces, making sure to keep the intercept at 0. See this blog post, [Finding the right price per square meter](http://blog.rentswatch.com/finding-the-right-price-per-sqm/), for the details.
+Properties that are put on the market more often are overrepresented (because they appear more often). To estimate the average rents price over an area, we compute the relation between prices and living spaces, making sure to keep the intercept at 0.
 
 ## Which cities are monitored?
 
